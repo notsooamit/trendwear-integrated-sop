@@ -1,0 +1,61 @@
+plant_id,period,max_units_capacity,already_allocated_units,maintenance_units,available_units,plant_name,region,production_type,weekly_capacity_units,flex_capacity_pct,net_available_capacity,utilization_pct,capacity_gap,capacity_status
+P001,W01,12000,9938,500,1562,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,11500,82.8,0,OPTIMAL
+P001,W02,12000,9814,0,2186,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,81.8,0,OPTIMAL
+P001,W03,12000,9182,0,2818,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,76.5,0,OPTIMAL
+P001,W04,12000,10528,0,1472,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,87.7,0,OPTIMAL
+P001,W05,12000,9402,1000,1598,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,11000,78.4,0,OPTIMAL
+P001,W06,12000,9026,0,2974,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,75.2,0,OPTIMAL
+P001,W07,12000,10367,0,1633,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,86.4,0,OPTIMAL
+P001,W08,12000,8905,500,2595,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,11500,74.2,0,OPTIMAL
+P001,W09,12000,10430,0,1570,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,86.9,0,OPTIMAL
+P001,W10,12000,10226,0,1774,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,85.2,0,OPTIMAL
+P001,W11,12000,9483,0,2517,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,12000,79.0,0,OPTIMAL
+P001,W12,12000,7783,1000,3217,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15,11000,64.9,0,OPTIMAL
+P002,W01,9500,6788,500,2212,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9000,71.5,0,OPTIMAL
+P002,W02,9500,7729,0,1771,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9500,81.4,0,OPTIMAL
+P002,W03,9500,6707,0,2793,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9500,70.6,0,OPTIMAL
+P002,W04,9500,8040,0,1460,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9500,84.6,0,OPTIMAL
+P002,W05,9500,6952,1000,1548,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,8500,73.2,0,OPTIMAL
+P002,W06,9500,8049,0,1451,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9500,84.7,0,OPTIMAL
+P002,W07,9500,7696,500,1304,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9000,81.0,0,OPTIMAL
+P002,W08,9500,6776,0,2724,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9500,71.3,0,OPTIMAL
+P002,W09,9500,5980,1000,2520,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,8500,62.9,0,OPTIMAL
+P002,W10,9500,6813,0,2687,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9500,71.7,0,OPTIMAL
+P002,W11,9500,6247,1000,2253,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,8500,65.8,0,OPTIMAL
+P002,W12,9500,7571,500,1429,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1,9000,79.7,0,OPTIMAL
+P003,W01,18000,13467,1000,3533,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,74.8,0,OPTIMAL
+P003,W02,18000,13578,0,4422,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,18000,75.4,0,OPTIMAL
+P003,W03,18000,12520,1000,4480,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,69.6,0,OPTIMAL
+P003,W04,18000,15303,500,2197,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17500,85.0,0,OPTIMAL
+P003,W05,18000,13052,1000,3948,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,72.5,0,OPTIMAL
+P003,W06,18000,12000,1000,0,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,66.7,0,OPTIMAL
+P003,W07,18000,13616,1000,3384,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,75.6,0,OPTIMAL
+P003,W08,18000,12770,1000,4230,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,70.9,0,OPTIMAL
+P003,W09,18000,13839,0,4161,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,18000,76.9,0,OPTIMAL
+P003,W10,18000,14126,1000,2874,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,78.5,0,OPTIMAL
+P003,W11,18000,14652,500,2848,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17500,81.4,0,OPTIMAL
+P003,W12,18000,14065,0,3935,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,18000,78.1,0,OPTIMAL
+P004,W01,8500,6557,0,1943,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,77.1,0,OPTIMAL
+P004,W02,8500,6634,0,1866,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,78.0,0,OPTIMAL
+P004,W03,8500,6010,1000,1490,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,70.7,0,OPTIMAL
+P004,W04,8500,6078,500,1922,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8000,71.5,0,OPTIMAL
+P004,W05,8500,6095,0,2405,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,71.7,0,OPTIMAL
+P004,W06,8500,8128,0,2233,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,95.6,0,HIGH_UTILIZATION
+P004,W07,8500,6051,1000,1449,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,71.2,0,OPTIMAL
+P004,W08,8500,6166,0,2334,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,72.5,0,OPTIMAL
+P004,W09,8500,5956,1000,1544,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,70.1,0,OPTIMAL
+P004,W10,8500,6040,0,2460,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,71.1,0,OPTIMAL
+P004,W11,8500,5590,1000,1910,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,65.8,0,OPTIMAL
+P004,W12,8500,6666,500,1334,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8000,78.4,0,OPTIMAL
+P005,W01,14000,9892,0,4108,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,14000,70.7,0,OPTIMAL
+P005,W02,14000,11139,1000,1861,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13000,79.6,0,OPTIMAL
+P005,W03,14000,11127,500,2373,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13500,79.5,0,OPTIMAL
+P005,W04,14000,10376,1000,2624,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13000,74.1,0,OPTIMAL
+P005,W05,14000,11781,500,1719,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13500,84.2,0,OPTIMAL
+P005,W06,14000,10611,0,3389,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,14000,75.8,0,OPTIMAL
+P005,W07,14000,10303,1000,2697,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13000,73.6,0,OPTIMAL
+P005,W08,14000,12121,0,1879,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,14000,86.6,0,OPTIMAL
+P005,W09,14000,10736,1000,2264,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13000,76.7,0,OPTIMAL
+P005,W10,14000,9397,1000,3603,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,13000,67.1,0,OPTIMAL
+P005,W11,14000,10208,0,3792,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,14000,72.9,0,OPTIMAL
+P005,W12,14000,10218,0,3782,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15,14000,73.0,0,OPTIMAL

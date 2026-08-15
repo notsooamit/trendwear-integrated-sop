@@ -1,0 +1,9 @@
+supplier_id,supplier_name,supplier_status,base_risk_factor,quality_score,otd_score,average_lead_time_weeks,lead_time_variability_weeks,financial_risk_score,capacity_tier,risk_category
+S001,Apex Textile Mills,Active,0.12,0.97,0.96,4,0.4,0.1,Tier-1,LOW
+S002,Global Weavers Ltd,Active,0.18,0.95,0.93,4,0.6,0.15,Tier-1,LOW
+S003,Oriental Fabric Corp,Active,0.32,0.91,0.89,5,1.1,0.28,Tier-2,MEDIUM
+S004,Budget FastTex Industries,Active,0.68,0.81,0.72,7,2.3,0.58,Tier-1,HIGH
+S005,EuroKnit Premium,Active,0.08,0.98,0.98,3,0.2,0.05,Tier-2,LOW
+S006,Pacific Spinners,Active,0.38,0.88,0.84,5,1.4,0.35,Tier-2,MEDIUM
+S007,Vanguard Textiles,Active,0.22,0.93,0.91,4,0.7,0.2,Tier-2,LOW
+S008,Southern Mill Co.,Active,0.35,0.9,0.88,5,1.2,0.3,Tier-3,MEDIUM

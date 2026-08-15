@@ -1,0 +1,6 @@
+plant_id,plant_name,region,production_type,weekly_capacity_units,flex_capacity_pct
+P001,Americas Hub - Plant 1,North America,Cut & Sew / Assembly,12000,0.15
+P002,EuroCraft Facility,Europe,Precision Tailoring,9500,0.1
+P003,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12
+P004,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2
+P005,South Asia Garment Hub,Asia-Pacific,Activewear & Tops,14000,0.15

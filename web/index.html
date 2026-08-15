@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendWear™ Integrated S&OP Enterprise Suite</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-['Inter'] antialiased min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+  <!-- TOP APP HEADER -->
+  <header id="main-header" class="h-16 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40 flex items-center justify-between px-6">
+    <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="goToLandingPage()">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-700 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-600/20 border border-indigo-400/30">
+          <i data-lucide="layers" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-['Outfit'] font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">TrendWear™ S&OP</span>
+            <span class="text-[10px] uppercase tracking-wider font-mono text-indigo-300 px-2 py-0.5 rounded bg-indigo-950/80 border border-indigo-800/60 font-semibold">Enterprise Core</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-6 w-px bg-slate-800 hidden md:block"></div>
+
+      <!-- 6-WEEK SIMULATION PLAYBACK CONTROLS -->
+      <div id="sim-playback-controls" class="hidden xl:flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs font-mono">
+        <span class="text-slate-400 text-[11px] font-sans">Sim Horizon:</span>
+        <button id="btn-sim-prev" class="p-1 hover:text-indigo-400" title="Step Back"><i data-lucide="skip-back" class="w-3.5 h-3.5"></i></button>
+        <button id="btn-sim-play" class="px-2 py-0.5 rounded bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-200 flex items-center gap-1">
+          <i data-lucide="play" class="w-3 h-3"></i> <span id="sim-play-label">Play W1-W6</span>
+        </button>
+        <button id="btn-sim-next" class="p-1 hover:text-indigo-400" title="Step Next Week"><i data-lucide="skip-forward" class="w-3.5 h-3.5"></i></button>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-indigo-300 font-bold" id="current-sim-week-badge">Week 6 (Current)</span>
+      </div>
+    </div>
+
+    <!-- LOGGED IN USER PROFILE & CONTROLS -->
+    <div class="flex items-center space-x-3">
+      <div id="workspace-nav-controls" class="flex items-center space-x-3">
+        
+        <!-- ACTIVITY STREAM DRAWER TOGGLE -->
+        <button id="btn-toggle-activity" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-medium transition" onclick="toggleActivityDrawer()">
+          <i data-lucide="activity" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span class="hidden md:inline">Live Activity</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        </button>
+
+        <!-- ACTIVE USER PROFILE BADGE -->
+        <div id="active-user-badge" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/90 border border-slate-700 text-xs">
+          <span id="user-avatar-icon" class="text-indigo-400">👑</span>
+          <div class="text-left leading-none">
+            <div id="active-user-name" class="font-bold text-slate-200">Elena Rostova</div>
+            <div id="active-user-role" class="text-[10px] text-slate-400">Executive S&OP Chair</div>
+          </div>
+        </div>
+
+        <!-- SIGN OUT BUTTON -->
+        <button id="btn-logout" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-medium transition" onclick="goToLandingPage()" title="Sign Out to Role Selection">
+          <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
+          <span>Sign Out</span>
+        </button>
+      </div>
+
+      <button id="btn-landing-enter" class="hidden btn-primary text-xs px-4 py-2" onclick="enterWorkspace('executive')">
+        <span>Enter S&OP Workspace</span>
+        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================= -->
+  <!-- 0. CLEAN & PROFESSIONAL LOGIN PAGE VIEW -->
+  <!-- ============================================================= -->
+  <section id="view-landing" class="view-panel flex-1 overflow-y-auto p-6 md:p-10 max-w-7xl mx-auto w-full space-y-10">
+    <div class="text-center space-y-3 max-w-3xl mx-auto pt-2">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 text-xs font-mono">
+        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-ping"></span>
+        <span>Fast-Fashion Integrated S&OP Intelligence Platform</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl font-extrabold font-['Outfit'] tracking-tight leading-tight">
+        TrendWear™ Enterprise S&OP
+      </h1>
+      
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+        Synchronize 6-week fast-fashion launch cycles with 4–6 week fabric lead times across Merchandising, Sourcing, Plants, and Finance.
+      </p>
+    </div>
+
+    <!-- CLEAN CREDENTIALS LOGIN CARD -->
+    <div class="max-w-md mx-auto glass-card p-6 md:p-8 border-indigo-500/30 shadow-2xl relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="text-center mb-5">
+        <h2 class="text-lg font-bold font-['Outfit'] text-white">Enterprise Team Sign In</h2>
+        <p class="text-xs text-slate-400 mt-1">Sign in with your team username and password.</p>
+      </div>
+
+      <form id="landing-login-form" onsubmit="handleFormLogin(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Username / Team</label>
+          <div class="relative">
+            <input type="text" id="login-username" value="executive" placeholder="e.g. executive, planner, procurement" class="w-full bg-slate-950 text-xs px-3.5 py-2.5 rounded-lg border border-slate-700 text-slate-100 outline-none focus:border-indigo-500 font-mono" required>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Password</label>
+          <input type="password" id="login-password" value="password" class="w-full bg-slate-950 text-xs px-3.5 py-2.5 rounded-lg border border-slate-700 text-slate-100 outline-none focus:border-indigo-500 font-mono" required>
+        </div>
+
+        <button type="submit" class="btn-primary w-full justify-center py-2.5 mt-2">
+          <span>Authenticate & Launch Workspace</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </form>
+
+      <!-- ROLE PRESET HELPER BADGES -->
+      <div class="mt-6 pt-4 border-t border-slate-800 space-y-2">
+        <div class="text-[11px] font-medium text-slate-400 text-center">Quick Select Team Credentials (Password: <span class="font-mono text-indigo-300">password</span>):</div>
+        <div class="flex flex-wrap justify-center gap-1.5">
+          <button type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200 border border-slate-700 font-mono transition" onclick="fillLogin('executive')">👑 executive</button>
+          <button type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200 border border-slate-700 font-mono transition" onclick="fillLogin('planner')">📈 planner</button>
+          <button type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200 border border-slate-700 font-mono transition" onclick="fillLogin('procurement')">🛒 procurement</button>
+          <button type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200 border border-slate-700 font-mono transition" onclick="fillLogin('production')">🏭 production</button>
+          <button type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200 border border-slate-700 font-mono transition" onclick="fillLogin('logistics')">🚚 logistics</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CORE CAPABILITY SHOWCASE -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <div class="glass-card p-4 space-y-1.5 border-indigo-500/20">
+        <div class="w-7 h-7 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-1">
+          <i data-lucide="box" class="w-4 h-4"></i>
+        </div>
+        <h4 class="font-bold text-xs text-slate-200">Multi-Echelon BOM Netting</h4>
+        <p class="text-[11px] text-slate-400 leading-relaxed">Explodes 50 styles to 30 raw fabrics with waste and safety netting.</p>
+      </div>
+
+      <div class="glass-card p-4 space-y-1.5 border-purple-500/20">
+        <div class="w-7 h-7 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center mb-1">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+        </div>
+        <h4 class="font-bold text-xs text-slate-200">Risk-Aware PuLP Sourcing</h4>
+        <p class="text-[11px] text-slate-400 leading-relaxed">Optimizes 8 global suppliers balancing price, OTD, lead times, and MOQs.</p>
+      </div>
+
+      <div class="glass-card p-4 space-y-1.5 border-blue-500/20">
+        <div class="w-7 h-7 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center mb-1">
+          <i data-lucide="factory" class="w-4 h-4"></i>
+        </div>
+        <h4 class="font-bold text-xs text-slate-200">Plant Capacity & Shifting</h4>
+        <p class="text-[11px] text-slate-400 leading-relaxed">Evaluates utilization across 5 hubs with flex line rebalancing.</p>
+      </div>
+
+      <div class="glass-card p-4 space-y-1.5 border-pink-500/20">
+        <div class="w-7 h-7 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center mb-1">
+          <i data-lucide="tag" class="w-4 h-4"></i>
+        </div>
+        <h4 class="font-bold text-xs text-slate-200">In-Season Markdowns</h4>
+        <p class="text-[11px] text-slate-400 leading-relaxed">Velocity tracking with dynamic price elasticity and stock-out alerts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- APPLICATION WORKSPACE (ROLE-SEGMENTED) -->
+  <!-- ============================================================= -->
+  <div id="workspace-container" class="hidden flex flex-1 overflow-hidden relative">
+    
+    <!-- LEFT NAVIGATION SIDEBAR (Dynamically Filtered by Role) -->
+    <aside class="w-64 bg-slate-900/90 backdrop-blur-md border-r border-slate-800 flex flex-col justify-between p-3.5 overflow-y-auto">
+      <div class="space-y-4">
+        
+        <!-- PILLAR 1: DEMAND & STRATEGY -->
+        <div id="nav-group-demand" class="nav-pillar-group">
+          <div class="text-[10px] font-mono uppercase tracking-wider text-indigo-400/80 px-2 py-1 flex items-center gap-1.5 font-bold">
+            <i data-lucide="trending-up" class="w-3 h-3"></i> Demand & Merchandising
+          </div>
+          <div class="space-y-0.5 mt-1">
+            <button class="nav-item active" data-view="executive" id="nav-btn-executive">
+              <i data-lucide="layout-dashboard"></i>
+              <span>Executive Cockpit</span>
+            </button>
+            <button class="nav-item" data-view="demand" id="nav-btn-demand">
+              <i data-lucide="bar-chart-3"></i>
+              <span>Demand Planning</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PILLAR 2: SUPPLY & OPERATIONS -->
+        <div id="nav-group-supply" class="nav-pillar-group">
+          <div class="text-[10px] font-mono uppercase tracking-wider text-purple-400/80 px-2 py-1 flex items-center gap-1.5 font-bold">
+            <i data-lucide="package-check" class="w-3 h-3"></i> Supply & Operations
+          </div>
+          <div class="space-y-0.5 mt-1">
+            <button class="nav-item" data-view="materials" id="nav-btn-materials">
+              <i data-lucide="box"></i>
+              <span>BOM & Material Netting</span>
+            </button>
+            <button class="nav-item" data-view="procurement" id="nav-btn-procurement">
+              <i data-lucide="shopping-cart"></i>
+              <span>Sourcing Optimizer</span>
+            </button>
+            <button class="nav-item" data-view="capacity" id="nav-btn-capacity">
+              <i data-lucide="factory"></i>
+              <span>Plant Capacity & Loading</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PILLAR 3: IN-SEASON & LOGISTICS -->
+        <div id="nav-group-logistics" class="nav-pillar-group">
+          <div class="text-[10px] font-mono uppercase tracking-wider text-pink-400/80 px-2 py-1 flex items-center gap-1.5 font-bold">
+            <i data-lucide="truck" class="w-3 h-3"></i> In-Season & Logistics
+          </div>
+          <div class="space-y-0.5 mt-1">
+            <button class="nav-item" data-view="inventory" id="nav-btn-inventory">
+              <i data-lucide="warehouse"></i>
+              <span>Inventory & DC Network</span>
+            </button>
+            <button class="nav-item" data-view="sellthrough" id="nav-btn-sellthrough">
+              <i data-lucide="tag"></i>
+              <span>Sell-Through & Markdowns</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PILLAR 4: STRATEGY & GOVERNANCE -->
+        <div id="nav-group-governance" class="nav-pillar-group">
+          <div class="text-[10px] font-mono uppercase tracking-wider text-emerald-400/80 px-2 py-1 flex items-center gap-1.5 font-bold">
+            <i data-lucide="shield" class="w-3 h-3"></i> Governance & Strategy
+          </div>
+          <div class="space-y-0.5 mt-1">
+            <button class="nav-item" data-view="financials" id="nav-btn-financials">
+              <i data-lucide="dollar-sign"></i>
+              <span>Financial Waterfall & P&L</span>
+            </button>
+            <button class="nav-item" data-view="scenario" id="nav-btn-scenario">
+              <i data-lucide="sliders"></i>
+              <span>What-If Simulator</span>
+            </button>
+            <button class="nav-item" data-view="workflow" id="nav-btn-workflow">
+              <i data-lucide="clipboard-check"></i>
+              <span>Shared S&OP Decision Board</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM BRANDING STRIP (NO DEMO SCENARIO BOX) -->
+      <div class="pt-3 border-t border-slate-800 text-[10px] text-slate-500 font-mono text-center">
+        TrendWear™ S&OP Engine • Active
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT VIEWPORT -->
+    <main class="flex-1 overflow-y-auto p-6 bg-slate-950 relative space-y-6">
+      
+      <!-- GUIDED PROCESS BAR -->
+      <div class="glass-card p-3 px-4 flex items-center justify-between border-slate-800">
+        <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+          <i data-lucide="git-commit" class="w-4 h-4 text-indigo-400"></i>
+          <span>Consensus Cadence:</span>
+        </div>
+        <div class="flex items-center gap-2 md:gap-4 text-[11px] font-mono">
+          <span class="process-step active" onclick="switchView('demand')"><span class="step-num">1</span> Demand Review</span>
+          <span class="text-slate-600">&rarr;</span>
+          <span class="process-step active" onclick="switchView('capacity')"><span class="step-num">2</span> Supply & Feasibility</span>
+          <span class="text-slate-600">&rarr;</span>
+          <span class="process-step active" onclick="switchView('financials')"><span class="step-num">3</span> Financial Reconciliation</span>
+          <span class="text-slate-600">&rarr;</span>
+          <span class="process-step active" onclick="switchView('workflow')"><span class="step-num">4</span> Executive Lock</span>
+        </div>
+      </div>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 1: EXECUTIVE COCKPIT -->
+      <!-- ============================================================= -->
+      <section id="view-executive" class="view-panel space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit'] tracking-tight">Executive S&OP Cockpit</h1>
+            <p class="text-xs text-slate-400">Integrated monthly consensus plan aligning Demand, Supply, Operations & Margins.</p>
+          </div>
+          <div class="flex gap-2">
+            <span class="badge badge-indigo"><i data-lucide="shield-check" class="w-3 h-3"></i> 6-Week Horizon Feasible</span>
+            <span class="badge badge-emerald"><i data-lucide="check-circle" class="w-3 h-3"></i> MILP Solved (0.08s)</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="stat-card border-slate-800">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-medium text-slate-400">Gross Forecasted Revenue</span>
+              <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400"><i data-lucide="dollar-sign" class="w-4 h-4"></i></div>
+            </div>
+            <div class="text-2xl font-bold font-['Outfit'] mt-2" id="kpi-revenue">$53,478,780</div>
+            <div class="text-xs text-emerald-400 mt-1 flex items-center gap-1 font-mono">
+              <i data-lucide="trending-up" class="w-3 h-3"></i> +8.4% vs prev cycle (543,523 units)
+            </div>
+          </div>
+
+          <div class="stat-card border-slate-800">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-medium text-slate-400">Consensus Gross Margin</span>
+              <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400"><i data-lucide="pie-chart" class="w-4 h-4"></i></div>
+            </div>
+            <div class="text-2xl font-bold font-['Outfit'] mt-2 text-purple-300" id="kpi-margin">$17,669,527</div>
+            <div class="text-xs text-purple-300 mt-1 flex items-center gap-1 font-mono">
+              <span class="px-1.5 py-0.5 rounded bg-purple-950 border border-purple-800 text-purple-200" id="kpi-margin-pct">33.0%</span> target margin achieved
+            </div>
+          </div>
+
+          <div class="stat-card border-slate-800">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-medium text-slate-400">Avg Plant Capacity Load</span>
+              <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400"><i data-lucide="factory" class="w-4 h-4"></i></div>
+            </div>
+            <div class="text-2xl font-bold font-['Outfit'] mt-2" id="kpi-capacity">76.5%</div>
+            <div class="text-xs text-amber-400 mt-1 flex items-center gap-1 font-mono" id="kpi-bottleneck-label">
+              <i data-lucide="alert-triangle" class="w-3 h-3"></i> 1 Bottleneck Relieved (P003)
+            </div>
+          </div>
+
+          <div class="stat-card border-slate-800">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-medium text-slate-400">Material Procurement Spend</span>
+              <div class="p-2 rounded-lg bg-pink-500/10 text-pink-400"><i data-lucide="shopping-bag" class="w-4 h-4"></i></div>
+            </div>
+            <div class="text-2xl font-bold font-['Outfit'] mt-2" id="kpi-cogs">$33,405,840</div>
+            <div class="text-xs text-slate-400 mt-1 flex items-center gap-1 font-mono">
+              <span>MOQ Adherence: 100%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DYNAMIC MULTI-VENDOR SOURCING MATRIX CARD -->
+        <div class="glass-card p-5 border-indigo-500/40 bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/40">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2.5">
+              <div class="p-2 rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-base text-white">Multi-Vendor Sourcing & Lead-Time Optimization Matrix</h3>
+                <p class="text-xs text-slate-400">Continuous risk-weighted volume balancing across all 8 global suppliers.</p>
+              </div>
+            </div>
+            <span class="badge badge-indigo">Active Solver Reconciled</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+              <div class="text-xs uppercase font-mono tracking-wider text-amber-400 font-bold mb-2 flex items-center justify-between">
+                <span>Supplier Risk Overview</span>
+                <span class="badge badge-amber text-[9px]">8 Vendors</span>
+              </div>
+              <div class="space-y-1.5 text-xs text-slate-300">
+                <div class="flex justify-between"><span>High Risk Vendors (OTD &lt; 85%):</span> <strong class="text-rose-400 font-mono">1 (S004)</strong></div>
+                <div class="flex justify-between"><span>Tier-1 Reliable Vendors (OTD &gt; 92%):</span> <span class="font-mono text-emerald-400">5 Vendors</span></div>
+                <div class="flex justify-between"><span>Max Supplier Lead Time:</span> <span class="font-mono">7.0 Weeks</span></div>
+                <div class="flex justify-between"><span>Contract MOQ Compliance:</span> <strong class="text-emerald-400 font-mono">100%</strong></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-3 text-center">
+              <div class="w-8 h-8 rounded-full bg-indigo-600/30 border border-indigo-500/50 flex items-center justify-center text-indigo-300 mb-2">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs font-bold text-slate-200">PuLP MILP Sourcing Engine</div>
+              <div class="text-[11px] text-emerald-400 font-mono mt-1 font-semibold">Delivery Risk: -48.0% | Service: +10.7%</div>
+              <div class="text-[11px] text-slate-400 font-mono">Cost Delta: only +2.1%</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950 border border-emerald-500/40">
+              <div class="text-xs uppercase font-mono tracking-wider text-emerald-400 font-bold mb-2 flex items-center justify-between">
+                <span>Optimized Sourcing Allocation</span>
+                <span class="badge badge-emerald text-[9px]">Resilient</span>
+              </div>
+              <div class="space-y-1.5 text-xs text-slate-300">
+                <div class="flex justify-between"><span>Tier-1 Suppliers (S001, S002, S003):</span> <strong class="text-emerald-400 font-mono">64.6%</strong></div>
+                <div class="flex justify-between"><span>High-Risk / Low-Cost (S004):</span> <span class="font-mono text-amber-300">35.4%</span></div>
+                <div class="flex justify-between"><span>Specialty Fabric Mills (S005-S008):</span> <span class="font-mono text-indigo-300">Active</span></div>
+                <div class="flex justify-between"><span>Delivery Failure Exposure:</span> <strong class="text-emerald-400 font-mono">8.4% (Low)</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2 glass-card p-5 border-slate-800">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="font-bold text-sm text-slate-200">6-Week Rolling Demand vs Plant Production Capacity</h3>
+              <span class="text-xs font-mono text-slate-400">Units / Week</span>
+            </div>
+            <div class="h-64">
+              <canvas id="chart-demand-capacity"></canvas>
+            </div>
+          </div>
+
+          <div class="glass-card p-5 flex flex-col justify-between border-slate-800">
+            <div>
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="font-bold text-sm text-slate-200">Top Critical Operational Risks</h3>
+                <span class="badge badge-rose">5 Detected</span>
+              </div>
+              <div class="space-y-2.5" id="top-risks-container"></div>
+            </div>
+            <button class="mt-4 w-full py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition" onclick="switchView('workflow')">
+              Review Shared S&OP Decision Board &rarr;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 2: DEMAND PLANNING -->
+      <!-- ============================================================= -->
+      <section id="view-demand" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Demand Planning & Forecasting</h1>
+            <p class="text-xs text-slate-400">Merchandising forecasting across 6 categories, 4 global regions, and 50 SKUs.</p>
+          </div>
+          <button class="btn-primary" onclick="alert('Demand consensus approved and locked.')">
+            <i data-lucide="check"></i> Approve Merchandising Plan
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2 glass-card p-5 border-slate-800">
+            <h3 class="font-bold text-sm text-slate-200 mb-3">Weekly Demand by Apparel Category (Weeks 1 to 6)</h3>
+            <div class="h-72">
+              <canvas id="chart-category-demand"></canvas>
+            </div>
+          </div>
+          <div class="glass-card p-5 border-slate-800">
+            <h3 class="font-bold text-sm text-slate-200 mb-3">Regional Share of Global Demand</h3>
+            <div class="h-72">
+              <canvas id="chart-regional-demand"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <h3 class="font-bold text-sm text-slate-200">SKU Demand Consensus Table (All 50 SKUs)</h3>
+              <p class="text-[11px] text-slate-400">Click <strong>"Tune"</strong> on any SKU to adjust forecast units and observe real-time BOM & revenue ripples.</p>
+            </div>
+            <input type="text" id="demand-search" placeholder="Search SKU..." class="bg-slate-950 text-xs px-3 py-1.5 rounded-lg border border-slate-700 outline-none w-48">
+          </div>
+          <div class="table-container max-h-80">
+            <table class="data-table" id="demand-table">
+              <thead>
+                <tr>
+                  <th>SKU ID</th>
+                  <th>Product Name</th>
+                  <th>Category</th>
+                  <th>Unit Price</th>
+                  <th>Demand (Units)</th>
+                  <th>Est. Revenue</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 3: BOM & MATERIAL NETTING -->
+      <!-- ============================================================= -->
+      <section id="view-materials" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">BOM Explosion & Material Netting (MRP)</h1>
+            <p class="text-xs text-slate-400">Translates SKU volume into 30 raw fabric meters with inventory safety buffers.</p>
+          </div>
+          <span class="badge badge-indigo">450 Time-Phased Records</span>
+        </div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <h3 class="font-bold text-sm text-slate-200 mb-4">Fabric Requirements & Net Deficits (All 30 Fabrics)</h3>
+          <div class="table-container max-h-96">
+            <table class="data-table" id="mrp-summary-table">
+              <thead>
+                <tr>
+                  <th>Fabric ID</th>
+                  <th>Fabric Name</th>
+                  <th>Criticality</th>
+                  <th>Lead Time</th>
+                  <th>Gross Req (m)</th>
+                  <th>Net Need (m)</th>
+                  <th>Coverage Meter</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 4: SOURCING & PROCUREMENT OPTIMIZER (DYNAMIC) -->
+      <!-- ============================================================= -->
+      <section id="view-procurement" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Sourcing & Procurement Optimizer</h1>
+            <p class="text-xs text-slate-400">PuLP MILP Solver balancing Material Cost, Supplier Risk, MOQs, and Lead Times across 8 Vendors.</p>
+          </div>
+          <button class="btn-primary" onclick="openPOModal()">
+            <i data-lucide="file-text"></i> Generate Purchase Order
+          </button>
+        </div>
+
+        <!-- 100% DYNAMIC SOURCING SIMULATOR WITH FABRIC SELECTOR -->
+        <div class="glass-card p-5 border-indigo-500/30 bg-gradient-to-r from-slate-900 via-indigo-950/20 to-slate-900 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <i data-lucide="sliders" class="w-4 h-4 text-indigo-400"></i>
+              <h3 class="font-bold text-sm text-indigo-200">Dynamic Multi-Supplier Sourcing Tuning</h3>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-medium">Select Fabric:</span>
+              <select id="sourcing-fabric-select" class="bg-slate-950 text-indigo-300 font-mono text-xs px-3 py-1.5 rounded-lg border border-slate-700 outline-none" onchange="loadDynamicFabricSliders()">
+                <!-- Populated dynamically with all 30 fabrics -->
+              </select>
+            </div>
+          </div>
+
+          <!-- Dynamic Sliders Container -->
+          <div id="fabric-summary-banner" class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-xs font-mono flex flex-wrap justify-between items-center text-slate-300">
+            <div>Fabric: <strong id="banner-fab-name" class="text-indigo-300">FAB_001 (Silk Blend Weave)</strong></div>
+            <div>Net Required: <strong id="banner-net-req" class="text-white">45,000 Meters</strong></div>
+            <div>Standard Lead Time: <strong id="banner-lead-time" class="text-amber-300">4.5 Weeks</strong></div>
+            <div>Allocated Share: <strong id="banner-total-alloc" class="text-emerald-400">100%</strong></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2" id="dynamic-sourcing-sliders">
+            <!-- Injected dynamically based on qualified suppliers for selected fabric -->
+          </div>
+
+          <!-- Dynamic Metrics Strip -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-slate-800 text-xs font-mono">
+            <div><span class="text-slate-400 block text-[10px]">Material Cost Index:</span> <strong id="live-cost-index" class="text-white">102.1%</strong></div>
+            <div><span class="text-slate-400 block text-[10px]">Late Delivery Risk:</span> <strong id="live-risk-index" class="text-emerald-400">8.4% (Low)</strong></div>
+            <div><span class="text-slate-400 block text-[10px]">Supplier Diversification:</span> <strong id="live-div-index" class="text-indigo-300">Optimal (3 Vendors)</strong></div>
+            <div><span class="text-slate-400 block text-[10px]">Projected OTD:</span> <strong id="live-otd-index" class="text-emerald-400">95.4%</strong></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="glass-card p-5 lg:col-span-1 border-slate-800">
+            <h3 class="font-bold text-sm text-slate-200 mb-3">Optimized Sourcing Share</h3>
+            <div class="h-64">
+              <canvas id="chart-supplier-share"></canvas>
+            </div>
+          </div>
+          <div class="glass-card p-5 lg:col-span-2 border-slate-800">
+            <h3 class="font-bold text-sm text-slate-200 mb-3">Supplier Sourcing Profiles (All 8 Vendors)</h3>
+            <div class="table-container max-h-64">
+              <table class="data-table" id="supplier-alloc-table">
+                <thead>
+                  <tr>
+                    <th>Supplier ID</th>
+                    <th>Supplier Name</th>
+                    <th>Risk Rating</th>
+                    <th>Allocated Volume (m)</th>
+                    <th>Total Spend</th>
+                    <th>Risk Score</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <h3 class="font-bold text-sm text-slate-200">Optimized Purchase Orders & PO Release Schedule</h3>
+              <p class="text-[11px] text-slate-400">Click <strong>"Generate PO"</strong> on any row to build a live vendor purchase order.</p>
+            </div>
+          </div>
+          <div class="table-container max-h-80">
+            <table class="data-table" id="procurement-plan-table">
+              <thead>
+                <tr>
+                  <th>Fabric</th>
+                  <th>Supplier</th>
+                  <th>Period</th>
+                  <th>Order Qty (m)</th>
+                  <th>Unit Price</th>
+                  <th>Total Cost</th>
+                  <th>PO Release Wk</th>
+                  <th>Arrival Wk</th>
+                  <th>Delay Risk</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 5: PLANT CAPACITY & BOTTLENECKS -->
+      <!-- ============================================================= -->
+      <section id="view-capacity" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Plant Production Capacity & Bottleneck Reallocation</h1>
+            <p class="text-xs text-slate-400">Weekly factory loading across 5 global production hubs.</p>
+          </div>
+        </div>
+
+        <div class="glass-card p-5 border-indigo-500/30 bg-gradient-to-r from-indigo-950/30 via-slate-900 to-slate-900">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i data-lucide="arrow-left-right" class="w-5 h-5 text-indigo-400"></i>
+              <h3 class="font-bold text-sm text-indigo-200">Interactive Bottleneck Shifter</h3>
+            </div>
+            <span class="badge badge-indigo">Rebalance Action</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-3 items-end">
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Source Plant (Overload)</label>
+              <select id="shift-source" class="w-full bg-slate-950 text-xs px-2.5 py-1.5 rounded border border-slate-700">
+                <option value="P003" selected>P003 - Asia Pacific (108%)</option>
+                <option value="P001">P001 - Americas Hub</option>
+                <option value="P002">P002 - Europe East Hub</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Target Plant (Flex Cap)</label>
+              <select id="shift-target" class="w-full bg-slate-950 text-xs px-2.5 py-1.5 rounded border border-slate-700">
+                <option value="P004" selected>P004 - Latin America (Flex 20%)</option>
+                <option value="P005">P005 - South Asia Hub</option>
+                <option value="P001">P001 - Americas Hub</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Period</label>
+              <select id="shift-period" class="w-full bg-slate-950 text-xs px-2.5 py-1.5 rounded border border-slate-700">
+                <option value="W06" selected>Week 6 (W06)</option>
+                <option value="W05">Week 5 (W05)</option>
+                <option value="W04">Week 4 (W04)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Units to Shift</label>
+              <input type="number" id="shift-units" value="1440" class="w-full bg-slate-950 text-xs px-2.5 py-1.5 rounded border border-slate-700 font-mono">
+            </div>
+            <button id="btn-execute-shift" class="btn-primary py-1.5 justify-center">
+              <i data-lucide="zap"></i> Rebalance Volume
+            </button>
+          </div>
+          <div id="shift-feedback" class="mt-3 text-xs font-mono text-emerald-400 hidden"></div>
+        </div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <h3 class="font-bold text-sm text-slate-200 mb-3">Plant Capacity Utilization Heatmap (5 Hubs)</h3>
+          <div class="table-container">
+            <table class="data-table" id="capacity-table">
+              <thead>
+                <tr>
+                  <th>Plant ID</th>
+                  <th>Plant Name</th>
+                  <th>Region</th>
+                  <th>Period</th>
+                  <th>Max Cap</th>
+                  <th>Allocated</th>
+                  <th>Utilization Meter</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 6: INVENTORY & LOGISTICS -->
+      <!-- ============================================================= -->
+      <section id="view-inventory" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Distribution Centers & Logistics Lanes</h1>
+            <p class="text-xs text-slate-400">DC stock balances, Days of Supply, and Freight lane costs.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4" id="dc-cards-container"></div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <h3 class="font-bold text-sm text-slate-200 mb-3">DC-to-Store Transportation Lanes & Lead Times</h3>
+          <div class="table-container max-h-80">
+            <table class="data-table" id="logistics-table">
+              <thead>
+                <tr>
+                  <th>DC Location</th>
+                  <th>Store ID</th>
+                  <th>Freight Cost / Unit</th>
+                  <th>Transit Lead Time</th>
+                  <th>Target Service Level</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 7: SELL-THROUGH & MARKDOWNS (DYNAMIC SKU SELECTOR) -->
+      <!-- ============================================================= -->
+      <section id="view-sellthrough" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">In-Season Sell-Through & Markdown Recommender</h1>
+            <p class="text-xs text-slate-400">Identifies fast movers with stock-out risk and slow movers requiring price markdowns.</p>
+          </div>
+          <span class="badge badge-rose">Velocity Monitoring Active</span>
+        </div>
+
+        <!-- 100% DYNAMIC SKU MARKDOWN SIMULATOR -->
+        <div class="glass-card p-5 border-amber-500/30 bg-gradient-to-r from-slate-900 via-amber-950/20 to-slate-900 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <i data-lucide="percent" class="w-4 h-4 text-amber-400"></i>
+              <h3 class="font-bold text-sm text-amber-200">Interactive SKU Markdown & Capital Clearance Simulator</h3>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-400 font-medium">Select SKU:</span>
+              <select id="markdown-sku-select" class="bg-slate-950 text-amber-300 font-mono text-xs px-3 py-1.5 rounded-lg border border-slate-700 outline-none" onchange="updateDynamicMarkdownSim()">
+                <!-- Populated dynamically with all 50 SKUs -->
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+            <div class="md:col-span-2 space-y-1.5">
+              <div class="flex justify-between text-xs">
+                <span class="text-slate-300">Discount Depth:</span>
+                <span class="font-mono text-amber-300 font-bold" id="mark-slider-val">35% Discount</span>
+              </div>
+              <input type="range" id="mark-depth-slider" min="15" max="50" step="5" value="35" class="w-full accent-amber-500" oninput="updateDynamicMarkdownSim()">
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono">
+                <span>15% (Promo)</span>
+                <span>25% (Seasonal)</span>
+                <span>35% (Targeted)</span>
+                <span>50% (Liquidation)</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs font-mono space-y-1">
+              <div class="text-slate-400 text-[10px]">Capital Recovered:</div>
+              <div class="text-base font-bold text-emerald-400" id="mark-capital-recovered">$336,000</div>
+              <div class="text-[10px] text-slate-400">Velocity Lift: <span id="mark-velocity-lift" class="text-amber-300">+95%</span></div>
+            </div>
+
+            <button class="btn-primary justify-center py-2.5 h-full" onclick="executeMarkdownClearance()">
+              <i data-lucide="zap"></i> Execute Clearance
+            </button>
+          </div>
+        </div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <h3 class="font-bold text-sm text-slate-200 mb-4">SKU Velocity & Markdown Decision Matrix (All 50 SKUs)</h3>
+          <div class="table-container max-h-96">
+            <table class="data-table" id="markdown-table">
+              <thead>
+                <tr>
+                  <th>SKU ID</th>
+                  <th>Category</th>
+                  <th>Sell-Through %</th>
+                  <th>Weeks of Stock</th>
+                  <th>Classification</th>
+                  <th>Recommended Discount</th>
+                  <th>Capital at Risk</th>
+                  <th>Action Alert</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 8: FINANCIAL WATERFALL -->
+      <!-- ============================================================= -->
+      <section id="view-financials" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Financial Rollup & Gross Margin Reconciliation</h1>
+            <p class="text-xs text-slate-400">P&L Waterfall tracing Revenue, Material COGS, Logistics Freight, and Markdown Erosion.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="lg:col-span-2 glass-card p-5 border-slate-800">
+            <h3 class="font-bold text-sm text-slate-200 mb-3">S&OP Gross Margin Waterfall Breakdown</h3>
+            <div class="h-80">
+              <canvas id="chart-waterfall"></canvas>
+            </div>
+          </div>
+
+          <div class="glass-card p-5 space-y-4 border-slate-800">
+            <h3 class="font-bold text-sm text-slate-200">Consolidated P&L Statement</h3>
+            <div class="space-y-3 text-xs" id="pl-statement"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 9: WHAT-IF SCENARIO SIMULATOR -->
+      <!-- ============================================================= -->
+      <section id="view-scenario" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Interactive What-If Scenario Simulator</h1>
+            <p class="text-xs text-slate-400">Adjust demand shocks, plant capacity cuts, and supplier disruptions in real-time.</p>
+          </div>
+          <button id="btn-run-sim" class="btn-primary">
+            <i data-lucide="play"></i> Run Live Simulation
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span class="text-slate-400 py-1 font-semibold">Quick Presets:</span>
+          <button class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700" onclick="applyPreset(50, 1, -30)">📈 Holiday Demand Surge (+50%)</button>
+          <button class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700" onclick="applyPreset(0, 2, 0)">⏱️ Material Lead Time Delay (+2 Wks)</button>
+          <button class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700" onclick="applyPreset(20, 0, -50)">⚠️ Supplier Capacity Disruption (-50%)</button>
+          <button class="px-2.5 py-1 rounded bg-rose-950/40 hover:bg-rose-900/60 text-rose-300 border border-rose-800/60 font-semibold" onclick="resetScenarioBaseline()">↺ Reset to Baseline</button>
+        </div>
+
+        <div class="glass-card p-5 border-indigo-500/30">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div>
+              <label class="text-xs font-semibold text-slate-300 block mb-2">Target Category</label>
+              <select id="sim-category" class="w-full bg-slate-950 text-xs px-3 py-2 rounded-lg border border-slate-700 text-slate-200">
+                <option value="Jackets" selected>Jackets</option>
+                <option value="Outerwear">Outerwear</option>
+                <option value="Shirts">Shirts</option>
+                <option value="Trousers">Trousers</option>
+                <option value="ALL">ALL Categories</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-2">
+                <span class="font-semibold text-slate-300">Demand Change:</span>
+                <span class="font-mono text-indigo-400 font-bold" id="sim-demand-val">+50%</span>
+              </div>
+              <input type="range" id="sim-demand" min="-50" max="150" step="5" value="50" class="w-full accent-indigo-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-2">
+                <span class="font-semibold text-slate-300">Fabric Lead Time Delay:</span>
+                <span class="font-mono text-amber-400 font-bold" id="sim-leadtime-val">+1 Week</span>
+              </div>
+              <input type="range" id="sim-leadtime" min="0" max="4" step="1" value="1" class="w-full accent-amber-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-2">
+                <span class="font-semibold text-slate-300">High-Risk Vendor Capacity:</span>
+                <span class="font-mono text-rose-400 font-bold" id="sim-s004-val">-30%</span>
+              </div>
+              <input type="range" id="sim-s004" min="-80" max="0" step="10" value="-30" class="w-full accent-rose-500">
+            </div>
+          </div>
+        </div>
+
+        <div id="sim-results-container" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="sim-cards-grid"></div>
+
+          <div class="glass-card p-5 border-emerald-500/30 bg-gradient-to-r from-emerald-950/20 to-slate-900">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="bot" class="w-5 h-5 text-emerald-400"></i>
+              <h3 class="font-bold text-sm text-emerald-200">Recommended Operational S&OP Actions</h3>
+            </div>
+            <ul class="space-y-2 text-xs text-slate-200" id="sim-actions-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 10: SHARED S&OP DECISION BOARD -->
+      <!-- ============================================================= -->
+      <section id="view-workflow" class="view-panel hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-bold font-['Outfit']">Shared S&OP Consensus Decision Board</h1>
+            <p class="text-xs text-slate-400">Cross-functional consensus workflow state machine with auditable sign-offs across all teams.</p>
+          </div>
+          <button class="btn-primary" onclick="openDecisionModal()">
+            <i data-lucide="plus"></i> Record S&OP Decision
+          </button>
+        </div>
+
+        <div class="glass-card p-6 border-slate-800">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-3" id="workflow-stepper"></div>
+        </div>
+
+        <div class="glass-card p-5 border-slate-800">
+          <h3 class="font-bold text-sm text-slate-200 mb-4">Audited S&OP Decision Log</h3>
+          <div class="table-container">
+            <table class="data-table" id="decisions-table">
+              <thead>
+                <tr>
+                  <th>Cycle</th>
+                  <th>Stage</th>
+                  <th>Owner</th>
+                  <th>Decision</th>
+                  <th>Status</th>
+                  <th>Financial Impact</th>
+                  <th>Approved By</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- LIVE COLLABORATIVE ACTIVITY STREAM SIDE DRAWER -->
+    <aside id="activity-drawer" class="w-80 bg-slate-900/95 backdrop-blur-md border-l border-slate-800 flex flex-col justify-between p-4 fixed right-0 top-16 bottom-0 z-30 transition-transform duration-300 translate-x-full shadow-2xl">
+      <div>
+        <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <h3 class="font-bold text-xs uppercase tracking-wider text-white">Live S&OP Event Feed</h3>
+          </div>
+          <button class="text-slate-400 hover:text-white" onclick="toggleActivityDrawer()"><i data-lucide="x" class="w-4 h-4"></i></button>
+        </div>
+        <p class="text-[10px] text-slate-400 mt-2">Real-time collaborative action log across Merchandising, Supply, & Plants.</p>
+
+        <div class="space-y-2.5 mt-4 max-h-[70vh] overflow-y-auto" id="activity-feed-container"></div>
+      </div>
+
+      <div class="pt-3 border-t border-slate-800 text-[10px] text-slate-500 text-center font-mono">
+        TrendWear Event Broker • Active Listening
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- INLINE DEMAND TUNE MODAL -->
+  <div id="demand-tune-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-md w-full p-6 border-slate-700 bg-slate-900 shadow-2xl space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <h3 class="font-bold text-sm text-white flex items-center gap-2">
+          <i data-lucide="edit-3" class="w-4 h-4 text-indigo-400"></i> Tune SKU Forecast & Test Ripple
+        </h3>
+        <button class="text-slate-400 hover:text-white" onclick="closeDemandTuneModal()"><i data-lucide="x" class="w-4 h-4"></i></button>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        <div>
+          <label class="block text-slate-400 mb-1">Target SKU</label>
+          <input type="text" id="tune-sku-id" readonly class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-indigo-300 font-mono font-bold">
+        </div>
+
+        <div>
+          <label class="block text-slate-400 mb-1">Week 6 Forecast Demand (Units)</label>
+          <input type="number" id="tune-new-demand" class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-white font-mono text-sm">
+        </div>
+
+        <div class="p-3 rounded bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
+          <div>Estimated Fabric Ripple: <strong id="tune-fabric-ripple" class="text-indigo-300">+3,120m FAB_014</strong></div>
+          <div>Projected Revenue Delta: <strong id="tune-rev-ripple" class="text-emerald-400">+$180,700</strong></div>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-2 pt-3 border-t border-slate-800">
+        <button class="px-3 py-1.5 rounded bg-slate-800 text-slate-300 text-xs" onclick="closeDemandTuneModal()">Cancel</button>
+        <button class="btn-primary" onclick="submitDemandTune()">Apply & Recalculate</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DYNAMIC 1-CLICK PURCHASE ORDER MODAL -->
+  <div id="po-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-2xl w-full p-6 border-slate-700 bg-slate-900 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2">
+          <i data-lucide="file-check" class="w-5 h-5 text-emerald-400"></i>
+          <div>
+            <h3 class="font-bold text-sm text-white">Purchase Order Release Document</h3>
+            <span class="text-[10px] font-mono text-slate-400" id="po-doc-id">PO-2026-FAB-0882 • Authorized by S&OP Optimizer</span>
+          </div>
+        </div>
+        <button class="text-slate-400 hover:text-white" onclick="closePOModal()"><i data-lucide="x" class="w-4 h-4"></i></button>
+      </div>
+
+      <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono space-y-3">
+        <div class="flex justify-between border-b border-slate-800 pb-2">
+          <div><span class="text-slate-400">Vendor:</span> <strong class="text-white" id="po-vendor-name">Apex Textile Mills (S001)</strong></div>
+          <div><span class="text-slate-400">Delivery Period:</span> <strong class="text-indigo-300" id="po-delivery-period">Week 5 (W05)</strong></div>
+        </div>
+        <div class="flex justify-between border-b border-slate-800 pb-2">
+          <div><span class="text-slate-400">Material:</span> <strong class="text-white" id="po-fabric-name">FAB_014 (Wool-Blend Twill)</strong></div>
+          <div><span class="text-slate-400">Order Quantity:</span> <strong class="text-emerald-400 font-bold" id="po-order-qty">12,500 Meters</strong></div>
+        </div>
+        <div class="flex justify-between">
+          <div><span class="text-slate-400">Unit Price:</span> <span id="po-unit-price">$18.50 / m</span></div>
+          <div><span class="text-slate-400">Total Purchase Cost:</span> <strong class="text-emerald-400 text-sm" id="po-total-cost">$231,250.00</strong></div>
+        </div>
+        <div class="text-[10px] text-slate-400 pt-1" id="po-compliance-note">
+          ✓ Contract MOQ Compliant • Vendor On-Time Delivery: 96%
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-between items-center gap-2 pt-2 border-t border-slate-800">
+        <div class="flex gap-2">
+          <button class="px-3 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold flex items-center gap-1.5 transition" onclick="downloadPOCSV()">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Download CSV
+          </button>
+          <button class="px-3 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold flex items-center gap-1.5 transition" onclick="copyPOText()">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Summary
+          </button>
+        </div>
+        <div class="flex gap-2">
+          <button class="px-3 py-1.5 rounded bg-slate-800 text-slate-300 text-xs" onclick="closePOModal()">Close</button>
+          <button class="btn-primary" onclick="confirmReleasePO()">
+            <i data-lucide="send"></i> Confirm & Release PO to Vendor EDI
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S&OP DECISION MODAL -->
+  <div id="decision-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-lg w-full p-6 border-slate-700 bg-slate-900 shadow-2xl space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+        <h3 class="font-bold text-base text-white">Record Monthly S&OP Decision</h3>
+        <button class="text-slate-400 hover:text-white" onclick="closeDecisionModal()"><i data-lucide="x"></i></button>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        <div>
+          <label class="block text-slate-400 mb-1">Stage</label>
+          <select id="modal-stage" class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-white">
+            <option value="DEMAND_REVIEW">Demand Review</option>
+            <option value="SUPPLY_REVIEW">Supply Review</option>
+            <option value="FINANCIAL_REVIEW">Financial Review</option>
+            <option value="EXECUTIVE_REVIEW" selected>Executive Review</option>
+            <option value="EXECUTION">Execution & Lock</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-slate-400 mb-1">Decision Title</label>
+          <input type="text" id="modal-title" placeholder="e.g. Approve Sourcing Reallocation" class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-white">
+        </div>
+
+        <div>
+          <label class="block text-slate-400 mb-1">Business Reason</label>
+          <textarea id="modal-reason" rows="3" placeholder="Strategic justification..." class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-white"></textarea>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-slate-400 mb-1">Financial Impact</label>
+            <input type="text" id="modal-fin" placeholder="+$120k margin" class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-white">
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">Approved By</label>
+            <input type="text" id="modal-by" placeholder="Your Name & Title" class="w-full bg-slate-950 p-2 rounded border border-slate-700 text-white">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-2 pt-3 border-t border-slate-800">
+        <button class="px-3 py-1.5 rounded bg-slate-800 text-slate-300 text-xs" onclick="closeDecisionModal()">Cancel</button>
+        <button class="btn-primary" onclick="submitDecision()">Save Decision</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING ACTION TOAST NOTIFICATION -->
+  <div id="action-toast" class="fixed bottom-6 right-6 z-50 glass-card p-3.5 px-4 border-indigo-500/40 bg-slate-900 shadow-2xl flex items-center gap-3 hidden transition-all duration-300">
+    <div id="toast-icon" class="p-1.5 rounded-lg bg-indigo-500/20 text-indigo-400">
+      <i data-lucide="zap" class="w-4 h-4"></i>
+    </div>
+    <div class="text-xs">
+      <div id="toast-title" class="font-bold text-white">Action Executed</div>
+      <div id="toast-msg" class="text-slate-300 text-[11px]">BOM and Margins recalculated.</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

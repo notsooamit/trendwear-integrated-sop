@@ -1,0 +1,3001 @@
+sku_id,region,period,forecasted_demand_units,forecast_version,forecast_confidence
+SKU_001,North America,W01,312,v1.0,0.89
+SKU_001,North America,W02,289,v1.0,0.84
+SKU_001,North America,W03,328,v1.0,0.85
+SKU_001,North America,W04,328,v1.0,0.84
+SKU_001,North America,W05,292,v1.0,0.85
+SKU_001,North America,W06,448,v1.0,0.91
+SKU_001,North America,W07,254,v1.0,0.92
+SKU_001,North America,W08,228,v1.0,0.93
+SKU_001,North America,W09,222,v1.0,0.93
+SKU_001,North America,W10,247,v1.0,0.93
+SKU_001,North America,W11,258,v1.0,0.89
+SKU_001,North America,W12,255,v1.0,0.92
+SKU_001,North America,M04,334,v1.0,0.86
+SKU_001,North America,M05,319,v1.0,0.94
+SKU_001,North America,M06,290,v1.0,0.94
+SKU_001,Europe,W01,270,v1.0,0.86
+SKU_001,Europe,W02,266,v1.0,0.82
+SKU_001,Europe,W03,258,v1.0,0.9
+SKU_001,Europe,W04,278,v1.0,0.93
+SKU_001,Europe,W05,268,v1.0,0.94
+SKU_001,Europe,W06,370,v1.0,0.9
+SKU_001,Europe,W07,230,v1.0,0.89
+SKU_001,Europe,W08,211,v1.0,0.92
+SKU_001,Europe,W09,214,v1.0,0.86
+SKU_001,Europe,W10,190,v1.0,0.91
+SKU_001,Europe,W11,198,v1.0,0.84
+SKU_001,Europe,W12,224,v1.0,0.87
+SKU_001,Europe,M04,265,v1.0,0.89
+SKU_001,Europe,M05,246,v1.0,0.9
+SKU_001,Europe,M06,238,v1.0,0.86
+SKU_001,Asia-Pacific,W01,162,v1.0,0.84
+SKU_001,Asia-Pacific,W02,155,v1.0,0.86
+SKU_001,Asia-Pacific,W03,156,v1.0,0.94
+SKU_001,Asia-Pacific,W04,169,v1.0,0.91
+SKU_001,Asia-Pacific,W05,159,v1.0,0.89
+SKU_001,Asia-Pacific,W06,219,v1.0,0.92
+SKU_001,Asia-Pacific,W07,134,v1.0,0.85
+SKU_001,Asia-Pacific,W08,123,v1.0,0.83
+SKU_001,Asia-Pacific,W09,125,v1.0,0.87
+SKU_001,Asia-Pacific,W10,126,v1.0,0.83
+SKU_001,Asia-Pacific,W11,125,v1.0,0.85
+SKU_001,Asia-Pacific,W12,136,v1.0,0.87
+SKU_001,Asia-Pacific,M04,160,v1.0,0.92
+SKU_001,Asia-Pacific,M05,164,v1.0,0.95
+SKU_001,Asia-Pacific,M06,163,v1.0,0.95
+SKU_001,Latin America,W01,72,v1.0,0.91
+SKU_001,Latin America,W02,81,v1.0,0.94
+SKU_001,Latin America,W03,85,v1.0,0.9
+SKU_001,Latin America,W04,89,v1.0,0.91
+SKU_001,Latin America,W05,77,v1.0,0.94
+SKU_001,Latin America,W06,120,v1.0,0.87
+SKU_001,Latin America,W07,69,v1.0,0.86
+SKU_001,Latin America,W08,69,v1.0,0.93
+SKU_001,Latin America,W09,61,v1.0,0.92
+SKU_001,Latin America,W10,62,v1.0,0.83
+SKU_001,Latin America,W11,69,v1.0,0.85
+SKU_001,Latin America,W12,70,v1.0,0.94
+SKU_001,Latin America,M04,79,v1.0,0.94
+SKU_001,Latin America,M05,82,v1.0,0.82
+SKU_001,Latin America,M06,72,v1.0,0.91
+SKU_002,North America,W01,424,v1.0,0.91
+SKU_002,North America,W02,492,v1.0,0.85
+SKU_002,North America,W03,502,v1.0,0.93
+SKU_002,North America,W04,489,v1.0,0.88
+SKU_002,North America,W05,475,v1.0,0.83
+SKU_002,North America,W06,654,v1.0,0.82
+SKU_002,North America,W07,406,v1.0,0.82
+SKU_002,North America,W08,342,v1.0,0.84
+SKU_002,North America,W09,340,v1.0,0.83
+SKU_002,North America,W10,373,v1.0,0.94
+SKU_002,North America,W11,365,v1.0,0.88
+SKU_002,North America,W12,391,v1.0,0.86
+SKU_002,North America,M04,468,v1.0,0.84
+SKU_002,North America,M05,427,v1.0,0.91
+SKU_002,North America,M06,409,v1.0,0.92
+SKU_002,Europe,W01,347,v1.0,0.93
+SKU_002,Europe,W02,384,v1.0,0.89
+SKU_002,Europe,W03,388,v1.0,0.91
+SKU_002,Europe,W04,403,v1.0,0.86
+SKU_002,Europe,W05,406,v1.0,0.87
+SKU_002,Europe,W06,562,v1.0,0.82
+SKU_002,Europe,W07,312,v1.0,0.85
+SKU_002,Europe,W08,322,v1.0,0.92
+SKU_002,Europe,W09,314,v1.0,0.86
+SKU_002,Europe,W10,305,v1.0,0.86
+SKU_002,Europe,W11,331,v1.0,0.95
+SKU_002,Europe,W12,354,v1.0,0.9
+SKU_002,Europe,M04,430,v1.0,0.82
+SKU_002,Europe,M05,414,v1.0,0.84
+SKU_002,Europe,M06,343,v1.0,0.89
+SKU_002,Asia-Pacific,W01,230,v1.0,0.89
+SKU_002,Asia-Pacific,W02,229,v1.0,0.85
+SKU_002,Asia-Pacific,W03,260,v1.0,0.91
+SKU_002,Asia-Pacific,W04,236,v1.0,0.94
+SKU_002,Asia-Pacific,W05,251,v1.0,0.84
+SKU_002,Asia-Pacific,W06,316,v1.0,0.9
+SKU_002,Asia-Pacific,W07,198,v1.0,0.83
+SKU_002,Asia-Pacific,W08,198,v1.0,0.89
+SKU_002,Asia-Pacific,W09,173,v1.0,0.92
+SKU_002,Asia-Pacific,W10,201,v1.0,0.89
+SKU_002,Asia-Pacific,W11,199,v1.0,0.83
+SKU_002,Asia-Pacific,W12,214,v1.0,0.85
+SKU_002,Asia-Pacific,M04,238,v1.0,0.9
+SKU_002,Asia-Pacific,M05,262,v1.0,0.87
+SKU_002,Asia-Pacific,M06,238,v1.0,0.85
+SKU_002,Latin America,W01,113,v1.0,0.83
+SKU_002,Latin America,W02,116,v1.0,0.88
+SKU_002,Latin America,W03,122,v1.0,0.91
+SKU_002,Latin America,W04,127,v1.0,0.84
+SKU_002,Latin America,W05,120,v1.0,0.93
+SKU_002,Latin America,W06,178,v1.0,0.84
+SKU_002,Latin America,W07,100,v1.0,0.92
+SKU_002,Latin America,W08,100,v1.0,0.9
+SKU_002,Latin America,W09,89,v1.0,0.87
+SKU_002,Latin America,W10,96,v1.0,0.86
+SKU_002,Latin America,W11,97,v1.0,0.88
+SKU_002,Latin America,W12,109,v1.0,0.88
+SKU_002,Latin America,M04,117,v1.0,0.9
+SKU_002,Latin America,M05,114,v1.0,0.86
+SKU_002,Latin America,M06,122,v1.0,0.94
+SKU_003,North America,W01,196,v1.0,0.94
+SKU_003,North America,W02,199,v1.0,0.83
+SKU_003,North America,W03,202,v1.0,0.89
+SKU_003,North America,W04,200,v1.0,0.9
+SKU_003,North America,W05,204,v1.0,0.9
+SKU_003,North America,W06,310,v1.0,0.89
+SKU_003,North America,W07,181,v1.0,0.95
+SKU_003,North America,W08,168,v1.0,0.92
+SKU_003,North America,W09,158,v1.0,0.85
+SKU_003,North America,W10,170,v1.0,0.92
+SKU_003,North America,W11,164,v1.0,0.88
+SKU_003,North America,W12,182,v1.0,0.87
+SKU_003,North America,M04,218,v1.0,0.91
+SKU_003,North America,M05,225,v1.0,0.92
+SKU_003,North America,M06,205,v1.0,0.84
+SKU_003,Europe,W01,172,v1.0,0.88
+SKU_003,Europe,W02,171,v1.0,0.94
+SKU_003,Europe,W03,189,v1.0,0.95
+SKU_003,Europe,W04,189,v1.0,0.88
+SKU_003,Europe,W05,170,v1.0,0.85
+SKU_003,Europe,W06,244,v1.0,0.83
+SKU_003,Europe,W07,148,v1.0,0.83
+SKU_003,Europe,W08,135,v1.0,0.94
+SKU_003,Europe,W09,133,v1.0,0.88
+SKU_003,Europe,W10,136,v1.0,0.83
+SKU_003,Europe,W11,154,v1.0,0.86
+SKU_003,Europe,W12,158,v1.0,0.89
+SKU_003,Europe,M04,193,v1.0,0.93
+SKU_003,Europe,M05,172,v1.0,0.89
+SKU_003,Europe,M06,161,v1.0,0.9
+SKU_003,Asia-Pacific,W01,105,v1.0,0.9
+SKU_003,Asia-Pacific,W02,118,v1.0,0.89
+SKU_003,Asia-Pacific,W03,112,v1.0,0.94
+SKU_003,Asia-Pacific,W04,114,v1.0,0.87
+SKU_003,Asia-Pacific,W05,115,v1.0,0.88
+SKU_003,Asia-Pacific,W06,153,v1.0,0.9
+SKU_003,Asia-Pacific,W07,94,v1.0,0.84
+SKU_003,Asia-Pacific,W08,84,v1.0,0.83
+SKU_003,Asia-Pacific,W09,87,v1.0,0.85
+SKU_003,Asia-Pacific,W10,81,v1.0,0.87
+SKU_003,Asia-Pacific,W11,92,v1.0,0.84
+SKU_003,Asia-Pacific,W12,91,v1.0,0.93
+SKU_003,Asia-Pacific,M04,119,v1.0,0.88
+SKU_003,Asia-Pacific,M05,111,v1.0,0.85
+SKU_003,Asia-Pacific,M06,100,v1.0,0.93
+SKU_003,Latin America,W01,49,v1.0,0.83
+SKU_003,Latin America,W02,57,v1.0,0.84
+SKU_003,Latin America,W03,58,v1.0,0.83
+SKU_003,Latin America,W04,57,v1.0,0.83
+SKU_003,Latin America,W05,52,v1.0,0.84
+SKU_003,Latin America,W06,81,v1.0,0.9
+SKU_003,Latin America,W07,47,v1.0,0.82
+SKU_003,Latin America,W08,45,v1.0,0.91
+SKU_003,Latin America,W09,41,v1.0,0.83
+SKU_003,Latin America,W10,42,v1.0,0.95
+SKU_003,Latin America,W11,47,v1.0,0.84
+SKU_003,Latin America,W12,50,v1.0,0.9
+SKU_003,Latin America,M04,60,v1.0,0.93
+SKU_003,Latin America,M05,53,v1.0,0.91
+SKU_003,Latin America,M06,51,v1.0,0.91
+SKU_004,North America,W01,282,v1.0,0.9
+SKU_004,North America,W02,258,v1.0,0.87
+SKU_004,North America,W03,267,v1.0,0.82
+SKU_004,North America,W04,281,v1.0,0.94
+SKU_004,North America,W05,277,v1.0,0.93
+SKU_004,North America,W06,384,v1.0,0.84
+SKU_004,North America,W07,249,v1.0,0.9
+SKU_004,North America,W08,232,v1.0,0.89
+SKU_004,North America,W09,219,v1.0,0.83
+SKU_004,North America,W10,216,v1.0,0.94
+SKU_004,North America,W11,222,v1.0,0.82
+SKU_004,North America,W12,253,v1.0,0.91
+SKU_004,North America,M04,280,v1.0,0.87
+SKU_004,North America,M05,293,v1.0,0.91
+SKU_004,North America,M06,259,v1.0,0.94
+SKU_004,Europe,W01,222,v1.0,0.92
+SKU_004,Europe,W02,228,v1.0,0.92
+SKU_004,Europe,W03,254,v1.0,0.93
+SKU_004,Europe,W04,239,v1.0,0.88
+SKU_004,Europe,W05,217,v1.0,0.92
+SKU_004,Europe,W06,339,v1.0,0.83
+SKU_004,Europe,W07,200,v1.0,0.89
+SKU_004,Europe,W08,177,v1.0,0.82
+SKU_004,Europe,W09,184,v1.0,0.82
+SKU_004,Europe,W10,178,v1.0,0.89
+SKU_004,Europe,W11,182,v1.0,0.85
+SKU_004,Europe,W12,208,v1.0,0.87
+SKU_004,Europe,M04,223,v1.0,0.88
+SKU_004,Europe,M05,236,v1.0,0.85
+SKU_004,Europe,M06,222,v1.0,0.89
+SKU_004,Asia-Pacific,W01,141,v1.0,0.95
+SKU_004,Asia-Pacific,W02,144,v1.0,0.85
+SKU_004,Asia-Pacific,W03,150,v1.0,0.89
+SKU_004,Asia-Pacific,W04,140,v1.0,0.89
+SKU_004,Asia-Pacific,W05,141,v1.0,0.95
+SKU_004,Asia-Pacific,W06,201,v1.0,0.92
+SKU_004,Asia-Pacific,W07,121,v1.0,0.84
+SKU_004,Asia-Pacific,W08,121,v1.0,0.84
+SKU_004,Asia-Pacific,W09,106,v1.0,0.92
+SKU_004,Asia-Pacific,W10,119,v1.0,0.83
+SKU_004,Asia-Pacific,W11,116,v1.0,0.92
+SKU_004,Asia-Pacific,W12,130,v1.0,0.9
+SKU_004,Asia-Pacific,M04,153,v1.0,0.83
+SKU_004,Asia-Pacific,M05,142,v1.0,0.9
+SKU_004,Asia-Pacific,M06,144,v1.0,0.93
+SKU_004,Latin America,W01,69,v1.0,0.9
+SKU_004,Latin America,W02,68,v1.0,0.85
+SKU_004,Latin America,W03,73,v1.0,0.9
+SKU_004,Latin America,W04,76,v1.0,0.94
+SKU_004,Latin America,W05,69,v1.0,0.91
+SKU_004,Latin America,W06,96,v1.0,0.95
+SKU_004,Latin America,W07,57,v1.0,0.92
+SKU_004,Latin America,W08,54,v1.0,0.88
+SKU_004,Latin America,W09,51,v1.0,0.93
+SKU_004,Latin America,W10,59,v1.0,0.89
+SKU_004,Latin America,W11,55,v1.0,0.92
+SKU_004,Latin America,W12,62,v1.0,0.91
+SKU_004,Latin America,M04,76,v1.0,0.91
+SKU_004,Latin America,M05,71,v1.0,0.91
+SKU_004,Latin America,M06,74,v1.0,0.83
+SKU_005,North America,W01,247,v1.0,0.87
+SKU_005,North America,W02,244,v1.0,0.9
+SKU_005,North America,W03,254,v1.0,0.92
+SKU_005,North America,W04,233,v1.0,0.83
+SKU_005,North America,W05,232,v1.0,0.93
+SKU_005,North America,W06,360,v1.0,0.87
+SKU_005,North America,W07,225,v1.0,0.86
+SKU_005,North America,W08,199,v1.0,0.85
+SKU_005,North America,W09,201,v1.0,0.89
+SKU_005,North America,W10,182,v1.0,0.87
+SKU_005,North America,W11,185,v1.0,0.83
+SKU_005,North America,W12,204,v1.0,0.94
+SKU_005,North America,M04,266,v1.0,0.94
+SKU_005,North America,M05,262,v1.0,0.93
+SKU_005,North America,M06,237,v1.0,0.91
+SKU_005,Europe,W01,214,v1.0,0.89
+SKU_005,Europe,W02,218,v1.0,0.92
+SKU_005,Europe,W03,229,v1.0,0.88
+SKU_005,Europe,W04,210,v1.0,0.9
+SKU_005,Europe,W05,187,v1.0,0.84
+SKU_005,Europe,W06,265,v1.0,0.9
+SKU_005,Europe,W07,190,v1.0,0.91
+SKU_005,Europe,W08,157,v1.0,0.86
+SKU_005,Europe,W09,170,v1.0,0.89
+SKU_005,Europe,W10,146,v1.0,0.93
+SKU_005,Europe,W11,159,v1.0,0.83
+SKU_005,Europe,W12,183,v1.0,0.93
+SKU_005,Europe,M04,199,v1.0,0.94
+SKU_005,Europe,M05,207,v1.0,0.87
+SKU_005,Europe,M06,210,v1.0,0.85
+SKU_005,Asia-Pacific,W01,133,v1.0,0.91
+SKU_005,Asia-Pacific,W02,139,v1.0,0.88
+SKU_005,Asia-Pacific,W03,127,v1.0,0.92
+SKU_005,Asia-Pacific,W04,140,v1.0,0.85
+SKU_005,Asia-Pacific,W05,120,v1.0,0.85
+SKU_005,Asia-Pacific,W06,181,v1.0,0.84
+SKU_005,Asia-Pacific,W07,103,v1.0,0.94
+SKU_005,Asia-Pacific,W08,106,v1.0,0.91
+SKU_005,Asia-Pacific,W09,101,v1.0,0.92
+SKU_005,Asia-Pacific,W10,100,v1.0,0.83
+SKU_005,Asia-Pacific,W11,103,v1.0,0.9
+SKU_005,Asia-Pacific,W12,111,v1.0,0.95
+SKU_005,Asia-Pacific,M04,142,v1.0,0.93
+SKU_005,Asia-Pacific,M05,130,v1.0,0.95
+SKU_005,Asia-Pacific,M06,131,v1.0,0.86
+SKU_005,Latin America,W01,59,v1.0,0.89
+SKU_005,Latin America,W02,60,v1.0,0.92
+SKU_005,Latin America,W03,66,v1.0,0.89
+SKU_005,Latin America,W04,66,v1.0,0.87
+SKU_005,Latin America,W05,65,v1.0,0.84
+SKU_005,Latin America,W06,94,v1.0,0.91
+SKU_005,Latin America,W07,54,v1.0,0.91
+SKU_005,Latin America,W08,47,v1.0,0.85
+SKU_005,Latin America,W09,50,v1.0,0.86
+SKU_005,Latin America,W10,50,v1.0,0.85
+SKU_005,Latin America,W11,52,v1.0,0.85
+SKU_005,Latin America,W12,55,v1.0,0.9
+SKU_005,Latin America,M04,65,v1.0,0.88
+SKU_005,Latin America,M05,62,v1.0,0.91
+SKU_005,Latin America,M06,60,v1.0,0.93
+SKU_006,North America,W01,236,v1.0,0.89
+SKU_006,North America,W02,270,v1.0,0.91
+SKU_006,North America,W03,268,v1.0,0.91
+SKU_006,North America,W04,265,v1.0,0.89
+SKU_006,North America,W05,256,v1.0,0.85
+SKU_006,North America,W06,357,v1.0,0.92
+SKU_006,North America,W07,210,v1.0,0.82
+SKU_006,North America,W08,194,v1.0,0.84
+SKU_006,North America,W09,201,v1.0,0.9
+SKU_006,North America,W10,191,v1.0,0.86
+SKU_006,North America,W11,198,v1.0,0.85
+SKU_006,North America,W12,225,v1.0,0.83
+SKU_006,North America,M04,239,v1.0,0.84
+SKU_006,North America,M05,237,v1.0,0.85
+SKU_006,North America,M06,249,v1.0,0.83
+SKU_006,Europe,W01,208,v1.0,0.85
+SKU_006,Europe,W02,206,v1.0,0.89
+SKU_006,Europe,W03,226,v1.0,0.86
+SKU_006,Europe,W04,210,v1.0,0.87
+SKU_006,Europe,W05,210,v1.0,0.9
+SKU_006,Europe,W06,289,v1.0,0.9
+SKU_006,Europe,W07,178,v1.0,0.95
+SKU_006,Europe,W08,160,v1.0,0.86
+SKU_006,Europe,W09,160,v1.0,0.92
+SKU_006,Europe,W10,159,v1.0,0.83
+SKU_006,Europe,W11,170,v1.0,0.88
+SKU_006,Europe,W12,192,v1.0,0.93
+SKU_006,Europe,M04,220,v1.0,0.94
+SKU_006,Europe,M05,207,v1.0,0.9
+SKU_006,Europe,M06,196,v1.0,0.94
+SKU_006,Asia-Pacific,W01,117,v1.0,0.86
+SKU_006,Asia-Pacific,W02,128,v1.0,0.9
+SKU_006,Asia-Pacific,W03,139,v1.0,0.9
+SKU_006,Asia-Pacific,W04,130,v1.0,0.94
+SKU_006,Asia-Pacific,W05,133,v1.0,0.94
+SKU_006,Asia-Pacific,W06,186,v1.0,0.89
+SKU_006,Asia-Pacific,W07,110,v1.0,0.84
+SKU_006,Asia-Pacific,W08,109,v1.0,0.84
+SKU_006,Asia-Pacific,W09,95,v1.0,0.85
+SKU_006,Asia-Pacific,W10,104,v1.0,0.92
+SKU_006,Asia-Pacific,W11,99,v1.0,0.87
+SKU_006,Asia-Pacific,W12,105,v1.0,0.94
+SKU_006,Asia-Pacific,M04,134,v1.0,0.83
+SKU_006,Asia-Pacific,M05,136,v1.0,0.89
+SKU_006,Asia-Pacific,M06,134,v1.0,0.83
+SKU_006,Latin America,W01,64,v1.0,0.83
+SKU_006,Latin America,W02,70,v1.0,0.87
+SKU_006,Latin America,W03,64,v1.0,0.92
+SKU_006,Latin America,W04,65,v1.0,0.84
+SKU_006,Latin America,W05,64,v1.0,0.84
+SKU_006,Latin America,W06,82,v1.0,0.87
+SKU_006,Latin America,W07,59,v1.0,0.93
+SKU_006,Latin America,W08,51,v1.0,0.93
+SKU_006,Latin America,W09,53,v1.0,0.89
+SKU_006,Latin America,W10,47,v1.0,0.94
+SKU_006,Latin America,W11,52,v1.0,0.9
+SKU_006,Latin America,W12,55,v1.0,0.92
+SKU_006,Latin America,M04,71,v1.0,0.88
+SKU_006,Latin America,M05,67,v1.0,0.89
+SKU_006,Latin America,M06,66,v1.0,0.88
+SKU_007,North America,W01,227,v1.0,0.88
+SKU_007,North America,W02,222,v1.0,0.85
+SKU_007,North America,W03,225,v1.0,0.82
+SKU_007,North America,W04,241,v1.0,0.93
+SKU_007,North America,W05,214,v1.0,0.88
+SKU_007,North America,W06,285,v1.0,0.94
+SKU_007,North America,W07,205,v1.0,0.88
+SKU_007,North America,W08,165,v1.0,0.88
+SKU_007,North America,W09,166,v1.0,0.85
+SKU_007,North America,W10,159,v1.0,0.87
+SKU_007,North America,W11,178,v1.0,0.89
+SKU_007,North America,W12,190,v1.0,0.84
+SKU_007,North America,M04,240,v1.0,0.87
+SKU_007,North America,M05,221,v1.0,0.85
+SKU_007,North America,M06,211,v1.0,0.85
+SKU_007,Europe,W01,190,v1.0,0.94
+SKU_007,Europe,W02,201,v1.0,0.91
+SKU_007,Europe,W03,188,v1.0,0.92
+SKU_007,Europe,W04,203,v1.0,0.87
+SKU_007,Europe,W05,196,v1.0,0.84
+SKU_007,Europe,W06,250,v1.0,0.9
+SKU_007,Europe,W07,164,v1.0,0.86
+SKU_007,Europe,W08,153,v1.0,0.84
+SKU_007,Europe,W09,134,v1.0,0.83
+SKU_007,Europe,W10,146,v1.0,0.84
+SKU_007,Europe,W11,142,v1.0,0.85
+SKU_007,Europe,W12,168,v1.0,0.91
+SKU_007,Europe,M04,187,v1.0,0.84
+SKU_007,Europe,M05,190,v1.0,0.86
+SKU_007,Europe,M06,175,v1.0,0.92
+SKU_007,Asia-Pacific,W01,123,v1.0,0.88
+SKU_007,Asia-Pacific,W02,125,v1.0,0.86
+SKU_007,Asia-Pacific,W03,129,v1.0,0.94
+SKU_007,Asia-Pacific,W04,112,v1.0,0.92
+SKU_007,Asia-Pacific,W05,107,v1.0,0.88
+SKU_007,Asia-Pacific,W06,154,v1.0,0.93
+SKU_007,Asia-Pacific,W07,105,v1.0,0.93
+SKU_007,Asia-Pacific,W08,88,v1.0,0.92
+SKU_007,Asia-Pacific,W09,87,v1.0,0.92
+SKU_007,Asia-Pacific,W10,90,v1.0,0.92
+SKU_007,Asia-Pacific,W11,88,v1.0,0.88
+SKU_007,Asia-Pacific,W12,106,v1.0,0.89
+SKU_007,Asia-Pacific,M04,131,v1.0,0.88
+SKU_007,Asia-Pacific,M05,122,v1.0,0.86
+SKU_007,Asia-Pacific,M06,109,v1.0,0.9
+SKU_007,Latin America,W01,52,v1.0,0.94
+SKU_007,Latin America,W02,60,v1.0,0.85
+SKU_007,Latin America,W03,62,v1.0,0.85
+SKU_007,Latin America,W04,64,v1.0,0.93
+SKU_007,Latin America,W05,55,v1.0,0.83
+SKU_007,Latin America,W06,82,v1.0,0.86
+SKU_007,Latin America,W07,47,v1.0,0.86
+SKU_007,Latin America,W08,44,v1.0,0.92
+SKU_007,Latin America,W09,41,v1.0,0.83
+SKU_007,Latin America,W10,47,v1.0,0.88
+SKU_007,Latin America,W11,48,v1.0,0.87
+SKU_007,Latin America,W12,47,v1.0,0.84
+SKU_007,Latin America,M04,57,v1.0,0.9
+SKU_007,Latin America,M05,63,v1.0,0.95
+SKU_007,Latin America,M06,57,v1.0,0.83
+SKU_008,North America,W01,369,v1.0,0.89
+SKU_008,North America,W02,385,v1.0,0.88
+SKU_008,North America,W03,407,v1.0,0.89
+SKU_008,North America,W04,424,v1.0,0.87
+SKU_008,North America,W05,422,v1.0,0.92
+SKU_008,North America,W06,514,v1.0,0.87
+SKU_008,North America,W07,358,v1.0,0.85
+SKU_008,North America,W08,299,v1.0,0.91
+SKU_008,North America,W09,314,v1.0,0.89
+SKU_008,North America,W10,311,v1.0,0.89
+SKU_008,North America,W11,328,v1.0,0.86
+SKU_008,North America,W12,347,v1.0,0.93
+SKU_008,North America,M04,425,v1.0,0.93
+SKU_008,North America,M05,386,v1.0,0.89
+SKU_008,North America,M06,384,v1.0,0.93
+SKU_008,Europe,W01,331,v1.0,0.88
+SKU_008,Europe,W02,361,v1.0,0.89
+SKU_008,Europe,W03,366,v1.0,0.93
+SKU_008,Europe,W04,355,v1.0,0.87
+SKU_008,Europe,W05,341,v1.0,0.86
+SKU_008,Europe,W06,436,v1.0,0.95
+SKU_008,Europe,W07,305,v1.0,0.84
+SKU_008,Europe,W08,280,v1.0,0.92
+SKU_008,Europe,W09,247,v1.0,0.86
+SKU_008,Europe,W10,259,v1.0,0.86
+SKU_008,Europe,W11,256,v1.0,0.91
+SKU_008,Europe,W12,272,v1.0,0.94
+SKU_008,Europe,M04,334,v1.0,0.82
+SKU_008,Europe,M05,322,v1.0,0.84
+SKU_008,Europe,M06,301,v1.0,0.9
+SKU_008,Asia-Pacific,W01,202,v1.0,0.88
+SKU_008,Asia-Pacific,W02,220,v1.0,0.9
+SKU_008,Asia-Pacific,W03,204,v1.0,0.85
+SKU_008,Asia-Pacific,W04,225,v1.0,0.82
+SKU_008,Asia-Pacific,W05,223,v1.0,0.91
+SKU_008,Asia-Pacific,W06,313,v1.0,0.93
+SKU_008,Asia-Pacific,W07,180,v1.0,0.9
+SKU_008,Asia-Pacific,W08,166,v1.0,0.92
+SKU_008,Asia-Pacific,W09,174,v1.0,0.93
+SKU_008,Asia-Pacific,W10,172,v1.0,0.83
+SKU_008,Asia-Pacific,W11,174,v1.0,0.89
+SKU_008,Asia-Pacific,W12,190,v1.0,0.93
+SKU_008,Asia-Pacific,M04,205,v1.0,0.85
+SKU_008,Asia-Pacific,M05,215,v1.0,0.83
+SKU_008,Asia-Pacific,M06,195,v1.0,0.87
+SKU_008,Latin America,W01,97,v1.0,0.91
+SKU_008,Latin America,W02,109,v1.0,0.94
+SKU_008,Latin America,W03,111,v1.0,0.89
+SKU_008,Latin America,W04,113,v1.0,0.92
+SKU_008,Latin America,W05,105,v1.0,0.91
+SKU_008,Latin America,W06,151,v1.0,0.88
+SKU_008,Latin America,W07,85,v1.0,0.92
+SKU_008,Latin America,W08,85,v1.0,0.89
+SKU_008,Latin America,W09,83,v1.0,0.89
+SKU_008,Latin America,W10,83,v1.0,0.94
+SKU_008,Latin America,W11,91,v1.0,0.89
+SKU_008,Latin America,W12,99,v1.0,0.93
+SKU_008,Latin America,M04,108,v1.0,0.9
+SKU_008,Latin America,M05,113,v1.0,0.86
+SKU_008,Latin America,M06,97,v1.0,0.89
+SKU_009,North America,W01,290,v1.0,0.94
+SKU_009,North America,W02,281,v1.0,0.95
+SKU_009,North America,W03,296,v1.0,0.87
+SKU_009,North America,W04,306,v1.0,0.95
+SKU_009,North America,W05,287,v1.0,0.89
+SKU_009,North America,W06,429,v1.0,0.86
+SKU_009,North America,W07,238,v1.0,0.85
+SKU_009,North America,W08,243,v1.0,0.82
+SKU_009,North America,W09,233,v1.0,0.91
+SKU_009,North America,W10,214,v1.0,0.89
+SKU_009,North America,W11,234,v1.0,0.94
+SKU_009,North America,W12,235,v1.0,0.82
+SKU_009,North America,M04,291,v1.0,0.84
+SKU_009,North America,M05,284,v1.0,0.9
+SKU_009,North America,M06,264,v1.0,0.93
+SKU_009,Europe,W01,219,v1.0,0.87
+SKU_009,Europe,W02,262,v1.0,0.92
+SKU_009,Europe,W03,260,v1.0,0.92
+SKU_009,Europe,W04,235,v1.0,0.93
+SKU_009,Europe,W05,245,v1.0,0.89
+SKU_009,Europe,W06,357,v1.0,0.9
+SKU_009,Europe,W07,200,v1.0,0.92
+SKU_009,Europe,W08,196,v1.0,0.83
+SKU_009,Europe,W09,173,v1.0,0.92
+SKU_009,Europe,W10,182,v1.0,0.93
+SKU_009,Europe,W11,193,v1.0,0.93
+SKU_009,Europe,W12,222,v1.0,0.85
+SKU_009,Europe,M04,257,v1.0,0.9
+SKU_009,Europe,M05,225,v1.0,0.92
+SKU_009,Europe,M06,228,v1.0,0.86
+SKU_009,Asia-Pacific,W01,135,v1.0,0.89
+SKU_009,Asia-Pacific,W02,145,v1.0,0.89
+SKU_009,Asia-Pacific,W03,150,v1.0,0.83
+SKU_009,Asia-Pacific,W04,161,v1.0,0.87
+SKU_009,Asia-Pacific,W05,147,v1.0,0.9
+SKU_009,Asia-Pacific,W06,208,v1.0,0.85
+SKU_009,Asia-Pacific,W07,125,v1.0,0.87
+SKU_009,Asia-Pacific,W08,114,v1.0,0.83
+SKU_009,Asia-Pacific,W09,118,v1.0,0.83
+SKU_009,Asia-Pacific,W10,115,v1.0,0.83
+SKU_009,Asia-Pacific,W11,122,v1.0,0.92
+SKU_009,Asia-Pacific,W12,123,v1.0,0.84
+SKU_009,Asia-Pacific,M04,158,v1.0,0.88
+SKU_009,Asia-Pacific,M05,156,v1.0,0.85
+SKU_009,Asia-Pacific,M06,147,v1.0,0.92
+SKU_009,Latin America,W01,70,v1.0,0.83
+SKU_009,Latin America,W02,80,v1.0,0.86
+SKU_009,Latin America,W03,83,v1.0,0.83
+SKU_009,Latin America,W04,79,v1.0,0.88
+SKU_009,Latin America,W05,72,v1.0,0.86
+SKU_009,Latin America,W06,105,v1.0,0.82
+SKU_009,Latin America,W07,62,v1.0,0.95
+SKU_009,Latin America,W08,61,v1.0,0.95
+SKU_009,Latin America,W09,57,v1.0,0.84
+SKU_009,Latin America,W10,54,v1.0,0.93
+SKU_009,Latin America,W11,58,v1.0,0.87
+SKU_009,Latin America,W12,68,v1.0,0.93
+SKU_009,Latin America,M04,73,v1.0,0.83
+SKU_009,Latin America,M05,82,v1.0,0.94
+SKU_009,Latin America,M06,76,v1.0,0.93
+SKU_010,North America,W01,124,v1.0,0.92
+SKU_010,North America,W02,130,v1.0,0.88
+SKU_010,North America,W03,133,v1.0,0.92
+SKU_010,North America,W04,129,v1.0,0.89
+SKU_010,North America,W05,135,v1.0,0.89
+SKU_010,North America,W06,124,v1.0,0.95
+SKU_010,North America,W07,116,v1.0,0.91
+SKU_010,North America,W08,103,v1.0,0.94
+SKU_010,North America,W09,102,v1.0,0.85
+SKU_010,North America,W10,94,v1.0,0.85
+SKU_010,North America,W11,110,v1.0,0.86
+SKU_010,North America,W12,113,v1.0,0.94
+SKU_010,North America,M04,127,v1.0,0.91
+SKU_010,North America,M05,137,v1.0,0.94
+SKU_010,North America,M06,123,v1.0,0.83
+SKU_010,Europe,W01,104,v1.0,0.93
+SKU_010,Europe,W02,111,v1.0,0.95
+SKU_010,Europe,W03,115,v1.0,0.91
+SKU_010,Europe,W04,121,v1.0,0.88
+SKU_010,Europe,W05,111,v1.0,0.83
+SKU_010,Europe,W06,97,v1.0,0.95
+SKU_010,Europe,W07,96,v1.0,0.91
+SKU_010,Europe,W08,82,v1.0,0.94
+SKU_010,Europe,W09,83,v1.0,0.88
+SKU_010,Europe,W10,89,v1.0,0.82
+SKU_010,Europe,W11,92,v1.0,0.87
+SKU_010,Europe,W12,93,v1.0,0.95
+SKU_010,Europe,M04,124,v1.0,0.86
+SKU_010,Europe,M05,104,v1.0,0.85
+SKU_010,Europe,M06,104,v1.0,0.95
+SKU_010,Asia-Pacific,W01,72,v1.0,0.94
+SKU_010,Asia-Pacific,W02,75,v1.0,0.85
+SKU_010,Asia-Pacific,W03,70,v1.0,0.87
+SKU_010,Asia-Pacific,W04,67,v1.0,0.91
+SKU_010,Asia-Pacific,W05,68,v1.0,0.91
+SKU_010,Asia-Pacific,W06,67,v1.0,0.91
+SKU_010,Asia-Pacific,W07,58,v1.0,0.89
+SKU_010,Asia-Pacific,W08,55,v1.0,0.86
+SKU_010,Asia-Pacific,W09,54,v1.0,0.88
+SKU_010,Asia-Pacific,W10,50,v1.0,0.9
+SKU_010,Asia-Pacific,W11,56,v1.0,0.91
+SKU_010,Asia-Pacific,W12,57,v1.0,0.84
+SKU_010,Asia-Pacific,M04,74,v1.0,0.94
+SKU_010,Asia-Pacific,M05,74,v1.0,0.88
+SKU_010,Asia-Pacific,M06,71,v1.0,0.92
+SKU_010,Latin America,W01,34,v1.0,0.89
+SKU_010,Latin America,W02,33,v1.0,0.83
+SKU_010,Latin America,W03,36,v1.0,0.91
+SKU_010,Latin America,W04,33,v1.0,0.93
+SKU_010,Latin America,W05,32,v1.0,0.82
+SKU_010,Latin America,W06,31,v1.0,0.95
+SKU_010,Latin America,W07,31,v1.0,0.86
+SKU_010,Latin America,W08,28,v1.0,0.93
+SKU_010,Latin America,W09,27,v1.0,0.92
+SKU_010,Latin America,W10,25,v1.0,0.84
+SKU_010,Latin America,W11,26,v1.0,0.82
+SKU_010,Latin America,W12,32,v1.0,0.9
+SKU_010,Latin America,M04,36,v1.0,0.9
+SKU_010,Latin America,M05,35,v1.0,0.85
+SKU_010,Latin America,M06,30,v1.0,0.83
+SKU_011,North America,W01,445,v1.0,0.89
+SKU_011,North America,W02,477,v1.0,0.91
+SKU_011,North America,W03,469,v1.0,0.93
+SKU_011,North America,W04,473,v1.0,0.84
+SKU_011,North America,W05,432,v1.0,0.82
+SKU_011,North America,W06,444,v1.0,0.82
+SKU_011,North America,W07,380,v1.0,0.87
+SKU_011,North America,W08,384,v1.0,0.95
+SKU_011,North America,W09,370,v1.0,0.83
+SKU_011,North America,W10,381,v1.0,0.95
+SKU_011,North America,W11,394,v1.0,0.88
+SKU_011,North America,W12,388,v1.0,0.88
+SKU_011,North America,M04,459,v1.0,0.87
+SKU_011,North America,M05,432,v1.0,0.92
+SKU_011,North America,M06,434,v1.0,0.86
+SKU_011,Europe,W01,383,v1.0,0.92
+SKU_011,Europe,W02,401,v1.0,0.89
+SKU_011,Europe,W03,428,v1.0,0.92
+SKU_011,Europe,W04,400,v1.0,0.88
+SKU_011,Europe,W05,402,v1.0,0.83
+SKU_011,Europe,W06,387,v1.0,0.89
+SKU_011,Europe,W07,327,v1.0,0.92
+SKU_011,Europe,W08,314,v1.0,0.89
+SKU_011,Europe,W09,306,v1.0,0.83
+SKU_011,Europe,W10,290,v1.0,0.87
+SKU_011,Europe,W11,304,v1.0,0.93
+SKU_011,Europe,W12,334,v1.0,0.87
+SKU_011,Europe,M04,410,v1.0,0.83
+SKU_011,Europe,M05,394,v1.0,0.84
+SKU_011,Europe,M06,392,v1.0,0.88
+SKU_011,Asia-Pacific,W01,243,v1.0,0.83
+SKU_011,Asia-Pacific,W02,258,v1.0,0.94
+SKU_011,Asia-Pacific,W03,260,v1.0,0.84
+SKU_011,Asia-Pacific,W04,246,v1.0,0.88
+SKU_011,Asia-Pacific,W05,227,v1.0,0.9
+SKU_011,Asia-Pacific,W06,231,v1.0,0.85
+SKU_011,Asia-Pacific,W07,206,v1.0,0.85
+SKU_011,Asia-Pacific,W08,200,v1.0,0.94
+SKU_011,Asia-Pacific,W09,196,v1.0,0.91
+SKU_011,Asia-Pacific,W10,176,v1.0,0.83
+SKU_011,Asia-Pacific,W11,194,v1.0,0.87
+SKU_011,Asia-Pacific,W12,211,v1.0,0.87
+SKU_011,Asia-Pacific,M04,263,v1.0,0.89
+SKU_011,Asia-Pacific,M05,263,v1.0,0.87
+SKU_011,Asia-Pacific,M06,228,v1.0,0.92
+SKU_011,Latin America,W01,125,v1.0,0.89
+SKU_011,Latin America,W02,126,v1.0,0.84
+SKU_011,Latin America,W03,133,v1.0,0.84
+SKU_011,Latin America,W04,129,v1.0,0.87
+SKU_011,Latin America,W05,116,v1.0,0.92
+SKU_011,Latin America,W06,111,v1.0,0.9
+SKU_011,Latin America,W07,97,v1.0,0.84
+SKU_011,Latin America,W08,92,v1.0,0.9
+SKU_011,Latin America,W09,89,v1.0,0.88
+SKU_011,Latin America,W10,99,v1.0,0.89
+SKU_011,Latin America,W11,90,v1.0,0.93
+SKU_011,Latin America,W12,100,v1.0,0.9
+SKU_011,Latin America,M04,125,v1.0,0.87
+SKU_011,Latin America,M05,114,v1.0,0.9
+SKU_011,Latin America,M06,111,v1.0,0.89
+SKU_012,North America,W01,388,v1.0,0.93
+SKU_012,North America,W02,381,v1.0,0.84
+SKU_012,North America,W03,378,v1.0,0.87
+SKU_012,North America,W04,380,v1.0,0.82
+SKU_012,North America,W05,391,v1.0,0.9
+SKU_012,North America,W06,352,v1.0,0.83
+SKU_012,North America,W07,315,v1.0,0.95
+SKU_012,North America,W08,297,v1.0,0.86
+SKU_012,North America,W09,310,v1.0,0.91
+SKU_012,North America,W10,307,v1.0,0.89
+SKU_012,North America,W11,341,v1.0,0.92
+SKU_012,North America,W12,332,v1.0,0.82
+SKU_012,North America,M04,425,v1.0,0.86
+SKU_012,North America,M05,422,v1.0,0.93
+SKU_012,North America,M06,392,v1.0,0.93
+SKU_012,Europe,W01,298,v1.0,0.88
+SKU_012,Europe,W02,316,v1.0,0.93
+SKU_012,Europe,W03,334,v1.0,0.87
+SKU_012,Europe,W04,323,v1.0,0.85
+SKU_012,Europe,W05,302,v1.0,0.89
+SKU_012,Europe,W06,328,v1.0,0.89
+SKU_012,Europe,W07,264,v1.0,0.91
+SKU_012,Europe,W08,269,v1.0,0.92
+SKU_012,Europe,W09,263,v1.0,0.88
+SKU_012,Europe,W10,270,v1.0,0.85
+SKU_012,Europe,W11,270,v1.0,0.9
+SKU_012,Europe,W12,305,v1.0,0.9
+SKU_012,Europe,M04,343,v1.0,0.91
+SKU_012,Europe,M05,334,v1.0,0.93
+SKU_012,Europe,M06,336,v1.0,0.85
+SKU_012,Asia-Pacific,W01,193,v1.0,0.85
+SKU_012,Asia-Pacific,W02,197,v1.0,0.88
+SKU_012,Asia-Pacific,W03,224,v1.0,0.92
+SKU_012,Asia-Pacific,W04,202,v1.0,0.9
+SKU_012,Asia-Pacific,W05,200,v1.0,0.83
+SKU_012,Asia-Pacific,W06,186,v1.0,0.92
+SKU_012,Asia-Pacific,W07,168,v1.0,0.9
+SKU_012,Asia-Pacific,W08,170,v1.0,0.85
+SKU_012,Asia-Pacific,W09,148,v1.0,0.86
+SKU_012,Asia-Pacific,W10,161,v1.0,0.92
+SKU_012,Asia-Pacific,W11,156,v1.0,0.86
+SKU_012,Asia-Pacific,W12,175,v1.0,0.89
+SKU_012,Asia-Pacific,M04,230,v1.0,0.93
+SKU_012,Asia-Pacific,M05,198,v1.0,0.93
+SKU_012,Asia-Pacific,M06,211,v1.0,0.88
+SKU_012,Latin America,W01,99,v1.0,0.82
+SKU_012,Latin America,W02,99,v1.0,0.84
+SKU_012,Latin America,W03,106,v1.0,0.93
+SKU_012,Latin America,W04,112,v1.0,0.88
+SKU_012,Latin America,W05,106,v1.0,0.94
+SKU_012,Latin America,W06,88,v1.0,0.89
+SKU_012,Latin America,W07,89,v1.0,0.91
+SKU_012,Latin America,W08,83,v1.0,0.82
+SKU_012,Latin America,W09,80,v1.0,0.86
+SKU_012,Latin America,W10,85,v1.0,0.92
+SKU_012,Latin America,W11,77,v1.0,0.84
+SKU_012,Latin America,W12,94,v1.0,0.86
+SKU_012,Latin America,M04,105,v1.0,0.89
+SKU_012,Latin America,M05,98,v1.0,0.9
+SKU_012,Latin America,M06,94,v1.0,0.84
+SKU_013,North America,W01,422,v1.0,0.93
+SKU_013,North America,W02,472,v1.0,0.86
+SKU_013,North America,W03,436,v1.0,0.93
+SKU_013,North America,W04,452,v1.0,0.93
+SKU_013,North America,W05,428,v1.0,0.89
+SKU_013,North America,W06,393,v1.0,0.87
+SKU_013,North America,W07,356,v1.0,0.85
+SKU_013,North America,W08,336,v1.0,0.89
+SKU_013,North America,W09,363,v1.0,0.94
+SKU_013,North America,W10,328,v1.0,0.86
+SKU_013,North America,W11,362,v1.0,0.93
+SKU_013,North America,W12,377,v1.0,0.86
+SKU_013,North America,M04,486,v1.0,0.83
+SKU_013,North America,M05,489,v1.0,0.89
+SKU_013,North America,M06,465,v1.0,0.85
+SKU_013,Europe,W01,339,v1.0,0.87
+SKU_013,Europe,W02,407,v1.0,0.84
+SKU_013,Europe,W03,381,v1.0,0.83
+SKU_013,Europe,W04,410,v1.0,0.93
+SKU_013,Europe,W05,362,v1.0,0.94
+SKU_013,Europe,W06,327,v1.0,0.92
+SKU_013,Europe,W07,336,v1.0,0.82
+SKU_013,Europe,W08,315,v1.0,0.9
+SKU_013,Europe,W09,278,v1.0,0.85
+SKU_013,Europe,W10,282,v1.0,0.89
+SKU_013,Europe,W11,319,v1.0,0.91
+SKU_013,Europe,W12,315,v1.0,0.84
+SKU_013,Europe,M04,368,v1.0,0.94
+SKU_013,Europe,M05,386,v1.0,0.83
+SKU_013,Europe,M06,365,v1.0,0.89
+SKU_013,Asia-Pacific,W01,220,v1.0,0.94
+SKU_013,Asia-Pacific,W02,252,v1.0,0.89
+SKU_013,Asia-Pacific,W03,232,v1.0,0.86
+SKU_013,Asia-Pacific,W04,258,v1.0,0.89
+SKU_013,Asia-Pacific,W05,216,v1.0,0.82
+SKU_013,Asia-Pacific,W06,232,v1.0,0.83
+SKU_013,Asia-Pacific,W07,198,v1.0,0.83
+SKU_013,Asia-Pacific,W08,186,v1.0,0.91
+SKU_013,Asia-Pacific,W09,193,v1.0,0.9
+SKU_013,Asia-Pacific,W10,188,v1.0,0.88
+SKU_013,Asia-Pacific,W11,186,v1.0,0.86
+SKU_013,Asia-Pacific,W12,194,v1.0,0.92
+SKU_013,Asia-Pacific,M04,257,v1.0,0.83
+SKU_013,Asia-Pacific,M05,255,v1.0,0.92
+SKU_013,Asia-Pacific,M06,229,v1.0,0.83
+SKU_013,Latin America,W01,120,v1.0,0.91
+SKU_013,Latin America,W02,112,v1.0,0.86
+SKU_013,Latin America,W03,125,v1.0,0.92
+SKU_013,Latin America,W04,120,v1.0,0.94
+SKU_013,Latin America,W05,109,v1.0,0.94
+SKU_013,Latin America,W06,104,v1.0,0.87
+SKU_013,Latin America,W07,96,v1.0,0.94
+SKU_013,Latin America,W08,92,v1.0,0.93
+SKU_013,Latin America,W09,88,v1.0,0.88
+SKU_013,Latin America,W10,85,v1.0,0.83
+SKU_013,Latin America,W11,95,v1.0,0.93
+SKU_013,Latin America,W12,98,v1.0,0.87
+SKU_013,Latin America,M04,124,v1.0,0.89
+SKU_013,Latin America,M05,117,v1.0,0.91
+SKU_013,Latin America,M06,106,v1.0,0.89
+SKU_014,North America,W01,158,v1.0,0.89
+SKU_014,North America,W02,156,v1.0,0.87
+SKU_014,North America,W03,165,v1.0,0.89
+SKU_014,North America,W04,172,v1.0,0.87
+SKU_014,North America,W05,150,v1.0,0.93
+SKU_014,North America,W06,146,v1.0,0.92
+SKU_014,North America,W07,132,v1.0,0.92
+SKU_014,North America,W08,126,v1.0,0.85
+SKU_014,North America,W09,123,v1.0,0.83
+SKU_014,North America,W10,129,v1.0,0.89
+SKU_014,North America,W11,126,v1.0,0.9
+SKU_014,North America,W12,134,v1.0,0.89
+SKU_014,North America,M04,170,v1.0,0.84
+SKU_014,North America,M05,169,v1.0,0.83
+SKU_014,North America,M06,140,v1.0,0.93
+SKU_014,Europe,W01,133,v1.0,0.87
+SKU_014,Europe,W02,133,v1.0,0.91
+SKU_014,Europe,W03,127,v1.0,0.93
+SKU_014,Europe,W04,143,v1.0,0.94
+SKU_014,Europe,W05,132,v1.0,0.82
+SKU_014,Europe,W06,114,v1.0,0.84
+SKU_014,Europe,W07,113,v1.0,0.87
+SKU_014,Europe,W08,106,v1.0,0.85
+SKU_014,Europe,W09,104,v1.0,0.86
+SKU_014,Europe,W10,103,v1.0,0.94
+SKU_014,Europe,W11,103,v1.0,0.94
+SKU_014,Europe,W12,112,v1.0,0.95
+SKU_014,Europe,M04,133,v1.0,0.83
+SKU_014,Europe,M05,122,v1.0,0.95
+SKU_014,Europe,M06,124,v1.0,0.84
+SKU_014,Asia-Pacific,W01,77,v1.0,0.87
+SKU_014,Asia-Pacific,W02,84,v1.0,0.83
+SKU_014,Asia-Pacific,W03,88,v1.0,0.93
+SKU_014,Asia-Pacific,W04,82,v1.0,0.93
+SKU_014,Asia-Pacific,W05,85,v1.0,0.85
+SKU_014,Asia-Pacific,W06,78,v1.0,0.87
+SKU_014,Asia-Pacific,W07,68,v1.0,0.87
+SKU_014,Asia-Pacific,W08,64,v1.0,0.89
+SKU_014,Asia-Pacific,W09,65,v1.0,0.88
+SKU_014,Asia-Pacific,W10,60,v1.0,0.87
+SKU_014,Asia-Pacific,W11,71,v1.0,0.93
+SKU_014,Asia-Pacific,W12,67,v1.0,0.95
+SKU_014,Asia-Pacific,M04,87,v1.0,0.84
+SKU_014,Asia-Pacific,M05,77,v1.0,0.82
+SKU_014,Asia-Pacific,M06,81,v1.0,0.88
+SKU_014,Latin America,W01,39,v1.0,0.95
+SKU_014,Latin America,W02,39,v1.0,0.9
+SKU_014,Latin America,W03,42,v1.0,0.88
+SKU_014,Latin America,W04,44,v1.0,0.9
+SKU_014,Latin America,W05,40,v1.0,0.84
+SKU_014,Latin America,W06,38,v1.0,0.89
+SKU_014,Latin America,W07,34,v1.0,0.87
+SKU_014,Latin America,W08,31,v1.0,0.9
+SKU_014,Latin America,W09,32,v1.0,0.93
+SKU_014,Latin America,W10,30,v1.0,0.89
+SKU_014,Latin America,W11,32,v1.0,0.89
+SKU_014,Latin America,W12,34,v1.0,0.95
+SKU_014,Latin America,M04,43,v1.0,0.91
+SKU_014,Latin America,M05,39,v1.0,0.88
+SKU_014,Latin America,M06,40,v1.0,0.84
+SKU_015,North America,W01,428,v1.0,0.93
+SKU_015,North America,W02,466,v1.0,0.86
+SKU_015,North America,W03,459,v1.0,0.89
+SKU_015,North America,W04,460,v1.0,0.85
+SKU_015,North America,W05,443,v1.0,0.91
+SKU_015,North America,W06,417,v1.0,0.91
+SKU_015,North America,W07,379,v1.0,0.9
+SKU_015,North America,W08,359,v1.0,0.94
+SKU_015,North America,W09,341,v1.0,0.82
+SKU_015,North America,W10,338,v1.0,0.94
+SKU_015,North America,W11,360,v1.0,0.86
+SKU_015,North America,W12,372,v1.0,0.95
+SKU_015,North America,M04,442,v1.0,0.84
+SKU_015,North America,M05,459,v1.0,0.9
+SKU_015,North America,M06,409,v1.0,0.92
+SKU_015,Europe,W01,345,v1.0,0.9
+SKU_015,Europe,W02,382,v1.0,0.89
+SKU_015,Europe,W03,395,v1.0,0.86
+SKU_015,Europe,W04,395,v1.0,0.82
+SKU_015,Europe,W05,364,v1.0,0.84
+SKU_015,Europe,W06,319,v1.0,0.92
+SKU_015,Europe,W07,305,v1.0,0.9
+SKU_015,Europe,W08,286,v1.0,0.85
+SKU_015,Europe,W09,297,v1.0,0.9
+SKU_015,Europe,W10,305,v1.0,0.92
+SKU_015,Europe,W11,307,v1.0,0.87
+SKU_015,Europe,W12,304,v1.0,0.92
+SKU_015,Europe,M04,368,v1.0,0.84
+SKU_015,Europe,M05,377,v1.0,0.82
+SKU_015,Europe,M06,383,v1.0,0.95
+SKU_015,Asia-Pacific,W01,228,v1.0,0.93
+SKU_015,Asia-Pacific,W02,248,v1.0,0.92
+SKU_015,Asia-Pacific,W03,237,v1.0,0.87
+SKU_015,Asia-Pacific,W04,244,v1.0,0.91
+SKU_015,Asia-Pacific,W05,216,v1.0,0.9
+SKU_015,Asia-Pacific,W06,225,v1.0,0.83
+SKU_015,Asia-Pacific,W07,191,v1.0,0.93
+SKU_015,Asia-Pacific,W08,172,v1.0,0.88
+SKU_015,Asia-Pacific,W09,178,v1.0,0.88
+SKU_015,Asia-Pacific,W10,192,v1.0,0.94
+SKU_015,Asia-Pacific,W11,179,v1.0,0.91
+SKU_015,Asia-Pacific,W12,197,v1.0,0.85
+SKU_015,Asia-Pacific,M04,241,v1.0,0.88
+SKU_015,Asia-Pacific,M05,226,v1.0,0.92
+SKU_015,Asia-Pacific,M06,218,v1.0,0.86
+SKU_015,Latin America,W01,112,v1.0,0.94
+SKU_015,Latin America,W02,110,v1.0,0.89
+SKU_015,Latin America,W03,117,v1.0,0.93
+SKU_015,Latin America,W04,121,v1.0,0.9
+SKU_015,Latin America,W05,110,v1.0,0.86
+SKU_015,Latin America,W06,112,v1.0,0.85
+SKU_015,Latin America,W07,100,v1.0,0.88
+SKU_015,Latin America,W08,95,v1.0,0.85
+SKU_015,Latin America,W09,91,v1.0,0.92
+SKU_015,Latin America,W10,90,v1.0,0.91
+SKU_015,Latin America,W11,101,v1.0,0.86
+SKU_015,Latin America,W12,92,v1.0,0.82
+SKU_015,Latin America,M04,112,v1.0,0.87
+SKU_015,Latin America,M05,117,v1.0,0.91
+SKU_015,Latin America,M06,108,v1.0,0.91
+SKU_016,North America,W01,215,v1.0,0.82
+SKU_016,North America,W02,222,v1.0,0.94
+SKU_016,North America,W03,249,v1.0,0.93
+SKU_016,North America,W04,257,v1.0,0.9
+SKU_016,North America,W05,238,v1.0,0.84
+SKU_016,North America,W06,228,v1.0,0.84
+SKU_016,North America,W07,205,v1.0,0.94
+SKU_016,North America,W08,189,v1.0,0.95
+SKU_016,North America,W09,192,v1.0,0.91
+SKU_016,North America,W10,174,v1.0,0.88
+SKU_016,North America,W11,202,v1.0,0.9
+SKU_016,North America,W12,216,v1.0,0.86
+SKU_016,North America,M04,240,v1.0,0.94
+SKU_016,North America,M05,247,v1.0,0.86
+SKU_016,North America,M06,212,v1.0,0.83
+SKU_016,Europe,W01,199,v1.0,0.87
+SKU_016,Europe,W02,195,v1.0,0.83
+SKU_016,Europe,W03,219,v1.0,0.85
+SKU_016,Europe,W04,200,v1.0,0.88
+SKU_016,Europe,W05,207,v1.0,0.9
+SKU_016,Europe,W06,172,v1.0,0.88
+SKU_016,Europe,W07,159,v1.0,0.92
+SKU_016,Europe,W08,150,v1.0,0.9
+SKU_016,Europe,W09,162,v1.0,0.91
+SKU_016,Europe,W10,142,v1.0,0.83
+SKU_016,Europe,W11,161,v1.0,0.85
+SKU_016,Europe,W12,169,v1.0,0.94
+SKU_016,Europe,M04,193,v1.0,0.9
+SKU_016,Europe,M05,213,v1.0,0.91
+SKU_016,Europe,M06,182,v1.0,0.91
+SKU_016,Asia-Pacific,W01,127,v1.0,0.89
+SKU_016,Asia-Pacific,W02,125,v1.0,0.94
+SKU_016,Asia-Pacific,W03,127,v1.0,0.88
+SKU_016,Asia-Pacific,W04,133,v1.0,0.92
+SKU_016,Asia-Pacific,W05,126,v1.0,0.89
+SKU_016,Asia-Pacific,W06,104,v1.0,0.94
+SKU_016,Asia-Pacific,W07,110,v1.0,0.88
+SKU_016,Asia-Pacific,W08,99,v1.0,0.94
+SKU_016,Asia-Pacific,W09,92,v1.0,0.91
+SKU_016,Asia-Pacific,W10,93,v1.0,0.9
+SKU_016,Asia-Pacific,W11,106,v1.0,0.83
+SKU_016,Asia-Pacific,W12,107,v1.0,0.94
+SKU_016,Asia-Pacific,M04,119,v1.0,0.88
+SKU_016,Asia-Pacific,M05,130,v1.0,0.9
+SKU_016,Asia-Pacific,M06,112,v1.0,0.83
+SKU_016,Latin America,W01,58,v1.0,0.84
+SKU_016,Latin America,W02,64,v1.0,0.94
+SKU_016,Latin America,W03,65,v1.0,0.87
+SKU_016,Latin America,W04,59,v1.0,0.9
+SKU_016,Latin America,W05,62,v1.0,0.84
+SKU_016,Latin America,W06,54,v1.0,0.91
+SKU_016,Latin America,W07,53,v1.0,0.88
+SKU_016,Latin America,W08,45,v1.0,0.89
+SKU_016,Latin America,W09,46,v1.0,0.89
+SKU_016,Latin America,W10,50,v1.0,0.88
+SKU_016,Latin America,W11,53,v1.0,0.82
+SKU_016,Latin America,W12,49,v1.0,0.92
+SKU_016,Latin America,M04,59,v1.0,0.84
+SKU_016,Latin America,M05,65,v1.0,0.91
+SKU_016,Latin America,M06,58,v1.0,0.91
+SKU_017,North America,W01,326,v1.0,0.9
+SKU_017,North America,W02,388,v1.0,0.82
+SKU_017,North America,W03,349,v1.0,0.9
+SKU_017,North America,W04,364,v1.0,0.94
+SKU_017,North America,W05,326,v1.0,0.91
+SKU_017,North America,W06,309,v1.0,0.84
+SKU_017,North America,W07,283,v1.0,0.86
+SKU_017,North America,W08,299,v1.0,0.88
+SKU_017,North America,W09,260,v1.0,0.9
+SKU_017,North America,W10,290,v1.0,0.83
+SKU_017,North America,W11,288,v1.0,0.92
+SKU_017,North America,W12,295,v1.0,0.92
+SKU_017,North America,M04,366,v1.0,0.93
+SKU_017,North America,M05,389,v1.0,0.91
+SKU_017,North America,M06,332,v1.0,0.95
+SKU_017,Europe,W01,294,v1.0,0.84
+SKU_017,Europe,W02,322,v1.0,0.92
+SKU_017,Europe,W03,325,v1.0,0.9
+SKU_017,Europe,W04,300,v1.0,0.84
+SKU_017,Europe,W05,279,v1.0,0.87
+SKU_017,Europe,W06,286,v1.0,0.89
+SKU_017,Europe,W07,254,v1.0,0.94
+SKU_017,Europe,W08,223,v1.0,0.83
+SKU_017,Europe,W09,244,v1.0,0.9
+SKU_017,Europe,W10,242,v1.0,0.82
+SKU_017,Europe,W11,242,v1.0,0.82
+SKU_017,Europe,W12,246,v1.0,0.83
+SKU_017,Europe,M04,319,v1.0,0.94
+SKU_017,Europe,M05,300,v1.0,0.92
+SKU_017,Europe,M06,301,v1.0,0.91
+SKU_017,Asia-Pacific,W01,173,v1.0,0.9
+SKU_017,Asia-Pacific,W02,191,v1.0,0.87
+SKU_017,Asia-Pacific,W03,208,v1.0,0.9
+SKU_017,Asia-Pacific,W04,178,v1.0,0.84
+SKU_017,Asia-Pacific,W05,185,v1.0,0.94
+SKU_017,Asia-Pacific,W06,176,v1.0,0.92
+SKU_017,Asia-Pacific,W07,156,v1.0,0.82
+SKU_017,Asia-Pacific,W08,144,v1.0,0.84
+SKU_017,Asia-Pacific,W09,145,v1.0,0.83
+SKU_017,Asia-Pacific,W10,142,v1.0,0.92
+SKU_017,Asia-Pacific,W11,152,v1.0,0.85
+SKU_017,Asia-Pacific,W12,169,v1.0,0.91
+SKU_017,Asia-Pacific,M04,188,v1.0,0.85
+SKU_017,Asia-Pacific,M05,199,v1.0,0.91
+SKU_017,Asia-Pacific,M06,193,v1.0,0.88
+SKU_017,Latin America,W01,86,v1.0,0.91
+SKU_017,Latin America,W02,88,v1.0,0.9
+SKU_017,Latin America,W03,94,v1.0,0.88
+SKU_017,Latin America,W04,93,v1.0,0.92
+SKU_017,Latin America,W05,96,v1.0,0.83
+SKU_017,Latin America,W06,90,v1.0,0.94
+SKU_017,Latin America,W07,76,v1.0,0.92
+SKU_017,Latin America,W08,75,v1.0,0.84
+SKU_017,Latin America,W09,77,v1.0,0.91
+SKU_017,Latin America,W10,73,v1.0,0.86
+SKU_017,Latin America,W11,72,v1.0,0.91
+SKU_017,Latin America,W12,79,v1.0,0.92
+SKU_017,Latin America,M04,94,v1.0,0.83
+SKU_017,Latin America,M05,98,v1.0,0.93
+SKU_017,Latin America,M06,88,v1.0,0.85
+SKU_018,North America,W01,322,v1.0,0.83
+SKU_018,North America,W02,331,v1.0,0.85
+SKU_018,North America,W03,347,v1.0,0.84
+SKU_018,North America,W04,330,v1.0,0.88
+SKU_018,North America,W05,307,v1.0,0.87
+SKU_018,North America,W06,292,v1.0,0.86
+SKU_018,North America,W07,260,v1.0,0.89
+SKU_018,North America,W08,254,v1.0,0.83
+SKU_018,North America,W09,252,v1.0,0.87
+SKU_018,North America,W10,265,v1.0,0.85
+SKU_018,North America,W11,257,v1.0,0.84
+SKU_018,North America,W12,298,v1.0,0.94
+SKU_018,North America,M04,363,v1.0,0.9
+SKU_018,North America,M05,335,v1.0,0.85
+SKU_018,North America,M06,311,v1.0,0.89
+SKU_018,Europe,W01,283,v1.0,0.85
+SKU_018,Europe,W02,280,v1.0,0.88
+SKU_018,Europe,W03,265,v1.0,0.88
+SKU_018,Europe,W04,301,v1.0,0.85
+SKU_018,Europe,W05,269,v1.0,0.85
+SKU_018,Europe,W06,273,v1.0,0.94
+SKU_018,Europe,W07,252,v1.0,0.94
+SKU_018,Europe,W08,218,v1.0,0.83
+SKU_018,Europe,W09,230,v1.0,0.92
+SKU_018,Europe,W10,214,v1.0,0.88
+SKU_018,Europe,W11,219,v1.0,0.93
+SKU_018,Europe,W12,247,v1.0,0.83
+SKU_018,Europe,M04,287,v1.0,0.83
+SKU_018,Europe,M05,291,v1.0,0.91
+SKU_018,Europe,M06,261,v1.0,0.85
+SKU_018,Asia-Pacific,W01,163,v1.0,0.85
+SKU_018,Asia-Pacific,W02,190,v1.0,0.82
+SKU_018,Asia-Pacific,W03,184,v1.0,0.84
+SKU_018,Asia-Pacific,W04,176,v1.0,0.89
+SKU_018,Asia-Pacific,W05,172,v1.0,0.95
+SKU_018,Asia-Pacific,W06,158,v1.0,0.84
+SKU_018,Asia-Pacific,W07,152,v1.0,0.84
+SKU_018,Asia-Pacific,W08,146,v1.0,0.9
+SKU_018,Asia-Pacific,W09,137,v1.0,0.82
+SKU_018,Asia-Pacific,W10,136,v1.0,0.87
+SKU_018,Asia-Pacific,W11,144,v1.0,0.89
+SKU_018,Asia-Pacific,W12,144,v1.0,0.92
+SKU_018,Asia-Pacific,M04,185,v1.0,0.9
+SKU_018,Asia-Pacific,M05,177,v1.0,0.85
+SKU_018,Asia-Pacific,M06,170,v1.0,0.9
+SKU_018,Latin America,W01,81,v1.0,0.94
+SKU_018,Latin America,W02,88,v1.0,0.94
+SKU_018,Latin America,W03,87,v1.0,0.83
+SKU_018,Latin America,W04,87,v1.0,0.88
+SKU_018,Latin America,W05,78,v1.0,0.87
+SKU_018,Latin America,W06,81,v1.0,0.91
+SKU_018,Latin America,W07,74,v1.0,0.92
+SKU_018,Latin America,W08,65,v1.0,0.86
+SKU_018,Latin America,W09,67,v1.0,0.9
+SKU_018,Latin America,W10,69,v1.0,0.92
+SKU_018,Latin America,W11,74,v1.0,0.91
+SKU_018,Latin America,W12,77,v1.0,0.92
+SKU_018,Latin America,M04,87,v1.0,0.94
+SKU_018,Latin America,M05,87,v1.0,0.87
+SKU_018,Latin America,M06,77,v1.0,0.87
+SKU_019,North America,W01,310,v1.0,0.89
+SKU_019,North America,W02,306,v1.0,0.91
+SKU_019,North America,W03,342,v1.0,0.89
+SKU_019,North America,W04,318,v1.0,0.9
+SKU_019,North America,W05,331,v1.0,0.94
+SKU_019,North America,W06,310,v1.0,0.94
+SKU_019,North America,W07,255,v1.0,0.94
+SKU_019,North America,W08,255,v1.0,0.83
+SKU_019,North America,W09,263,v1.0,0.86
+SKU_019,North America,W10,266,v1.0,0.83
+SKU_019,North America,W11,249,v1.0,0.91
+SKU_019,North America,W12,277,v1.0,0.93
+SKU_019,North America,M04,334,v1.0,0.9
+SKU_019,North America,M05,313,v1.0,0.95
+SKU_019,North America,M06,309,v1.0,0.84
+SKU_019,Europe,W01,255,v1.0,0.88
+SKU_019,Europe,W02,281,v1.0,0.86
+SKU_019,Europe,W03,261,v1.0,0.93
+SKU_019,Europe,W04,265,v1.0,0.94
+SKU_019,Europe,W05,272,v1.0,0.87
+SKU_019,Europe,W06,243,v1.0,0.9
+SKU_019,Europe,W07,224,v1.0,0.9
+SKU_019,Europe,W08,223,v1.0,0.93
+SKU_019,Europe,W09,206,v1.0,0.86
+SKU_019,Europe,W10,196,v1.0,0.92
+SKU_019,Europe,W11,206,v1.0,0.85
+SKU_019,Europe,W12,233,v1.0,0.95
+SKU_019,Europe,M04,292,v1.0,0.83
+SKU_019,Europe,M05,266,v1.0,0.88
+SKU_019,Europe,M06,245,v1.0,0.94
+SKU_019,Asia-Pacific,W01,169,v1.0,0.86
+SKU_019,Asia-Pacific,W02,184,v1.0,0.93
+SKU_019,Asia-Pacific,W03,180,v1.0,0.91
+SKU_019,Asia-Pacific,W04,163,v1.0,0.85
+SKU_019,Asia-Pacific,W05,154,v1.0,0.86
+SKU_019,Asia-Pacific,W06,146,v1.0,0.85
+SKU_019,Asia-Pacific,W07,137,v1.0,0.89
+SKU_019,Asia-Pacific,W08,125,v1.0,0.86
+SKU_019,Asia-Pacific,W09,126,v1.0,0.87
+SKU_019,Asia-Pacific,W10,131,v1.0,0.84
+SKU_019,Asia-Pacific,W11,132,v1.0,0.94
+SKU_019,Asia-Pacific,W12,143,v1.0,0.88
+SKU_019,Asia-Pacific,M04,165,v1.0,0.88
+SKU_019,Asia-Pacific,M05,165,v1.0,0.82
+SKU_019,Asia-Pacific,M06,168,v1.0,0.95
+SKU_019,Latin America,W01,79,v1.0,0.91
+SKU_019,Latin America,W02,85,v1.0,0.86
+SKU_019,Latin America,W03,93,v1.0,0.95
+SKU_019,Latin America,W04,87,v1.0,0.84
+SKU_019,Latin America,W05,84,v1.0,0.94
+SKU_019,Latin America,W06,77,v1.0,0.91
+SKU_019,Latin America,W07,74,v1.0,0.94
+SKU_019,Latin America,W08,63,v1.0,0.89
+SKU_019,Latin America,W09,63,v1.0,0.87
+SKU_019,Latin America,W10,68,v1.0,0.88
+SKU_019,Latin America,W11,63,v1.0,0.83
+SKU_019,Latin America,W12,74,v1.0,0.9
+SKU_019,Latin America,M04,83,v1.0,0.94
+SKU_019,Latin America,M05,82,v1.0,0.82
+SKU_019,Latin America,M06,81,v1.0,0.88
+SKU_020,North America,W01,431,v1.0,0.95
+SKU_020,North America,W02,415,v1.0,0.88
+SKU_020,North America,W03,438,v1.0,0.89
+SKU_020,North America,W04,395,v1.0,0.91
+SKU_020,North America,W05,402,v1.0,0.91
+SKU_020,North America,W06,378,v1.0,0.87
+SKU_020,North America,W07,327,v1.0,0.86
+SKU_020,North America,W08,322,v1.0,0.88
+SKU_020,North America,W09,323,v1.0,0.85
+SKU_020,North America,W10,341,v1.0,0.92
+SKU_020,North America,W11,330,v1.0,0.88
+SKU_020,North America,W12,340,v1.0,0.91
+SKU_020,North America,M04,458,v1.0,0.91
+SKU_020,North America,M05,414,v1.0,0.93
+SKU_020,North America,M06,404,v1.0,0.84
+SKU_020,Europe,W01,327,v1.0,0.95
+SKU_020,Europe,W02,357,v1.0,0.86
+SKU_020,Europe,W03,388,v1.0,0.9
+SKU_020,Europe,W04,351,v1.0,0.82
+SKU_020,Europe,W05,351,v1.0,0.86
+SKU_020,Europe,W06,305,v1.0,0.88
+SKU_020,Europe,W07,302,v1.0,0.94
+SKU_020,Europe,W08,266,v1.0,0.93
+SKU_020,Europe,W09,260,v1.0,0.88
+SKU_020,Europe,W10,284,v1.0,0.86
+SKU_020,Europe,W11,286,v1.0,0.88
+SKU_020,Europe,W12,314,v1.0,0.85
+SKU_020,Europe,M04,379,v1.0,0.84
+SKU_020,Europe,M05,342,v1.0,0.9
+SKU_020,Europe,M06,342,v1.0,0.84
+SKU_020,Asia-Pacific,W01,217,v1.0,0.86
+SKU_020,Asia-Pacific,W02,210,v1.0,0.94
+SKU_020,Asia-Pacific,W03,232,v1.0,0.82
+SKU_020,Asia-Pacific,W04,233,v1.0,0.88
+SKU_020,Asia-Pacific,W05,231,v1.0,0.9
+SKU_020,Asia-Pacific,W06,197,v1.0,0.88
+SKU_020,Asia-Pacific,W07,185,v1.0,0.85
+SKU_020,Asia-Pacific,W08,180,v1.0,0.95
+SKU_020,Asia-Pacific,W09,177,v1.0,0.87
+SKU_020,Asia-Pacific,W10,175,v1.0,0.82
+SKU_020,Asia-Pacific,W11,169,v1.0,0.9
+SKU_020,Asia-Pacific,W12,178,v1.0,0.88
+SKU_020,Asia-Pacific,M04,233,v1.0,0.87
+SKU_020,Asia-Pacific,M05,205,v1.0,0.87
+SKU_020,Asia-Pacific,M06,214,v1.0,0.94
+SKU_020,Latin America,W01,98,v1.0,0.86
+SKU_020,Latin America,W02,113,v1.0,0.83
+SKU_020,Latin America,W03,107,v1.0,0.9
+SKU_020,Latin America,W04,116,v1.0,0.9
+SKU_020,Latin America,W05,101,v1.0,0.86
+SKU_020,Latin America,W06,97,v1.0,0.93
+SKU_020,Latin America,W07,97,v1.0,0.86
+SKU_020,Latin America,W08,90,v1.0,0.87
+SKU_020,Latin America,W09,84,v1.0,0.87
+SKU_020,Latin America,W10,79,v1.0,0.84
+SKU_020,Latin America,W11,85,v1.0,0.92
+SKU_020,Latin America,W12,93,v1.0,0.94
+SKU_020,Latin America,M04,107,v1.0,0.85
+SKU_020,Latin America,M05,110,v1.0,0.93
+SKU_020,Latin America,M06,109,v1.0,0.89
+SKU_021,North America,W01,772,v1.0,0.89
+SKU_021,North America,W02,774,v1.0,0.89
+SKU_021,North America,W03,818,v1.0,0.83
+SKU_021,North America,W04,772,v1.0,0.83
+SKU_021,North America,W05,783,v1.0,0.94
+SKU_021,North America,W06,696,v1.0,0.86
+SKU_021,North America,W07,633,v1.0,0.93
+SKU_021,North America,W08,644,v1.0,0.9
+SKU_021,North America,W09,608,v1.0,0.86
+SKU_021,North America,W10,605,v1.0,0.82
+SKU_021,North America,W11,642,v1.0,0.85
+SKU_021,North America,W12,692,v1.0,0.84
+SKU_021,North America,M04,751,v1.0,0.84
+SKU_021,North America,M05,720,v1.0,0.83
+SKU_021,North America,M06,748,v1.0,0.92
+SKU_021,Europe,W01,575,v1.0,0.92
+SKU_021,Europe,W02,675,v1.0,0.83
+SKU_021,Europe,W03,620,v1.0,0.92
+SKU_021,Europe,W04,655,v1.0,0.83
+SKU_021,Europe,W05,589,v1.0,0.85
+SKU_021,Europe,W06,547,v1.0,0.91
+SKU_021,Europe,W07,567,v1.0,0.92
+SKU_021,Europe,W08,544,v1.0,0.85
+SKU_021,Europe,W09,523,v1.0,0.84
+SKU_021,Europe,W10,481,v1.0,0.83
+SKU_021,Europe,W11,543,v1.0,0.94
+SKU_021,Europe,W12,591,v1.0,0.87
+SKU_021,Europe,M04,625,v1.0,0.89
+SKU_021,Europe,M05,668,v1.0,0.85
+SKU_021,Europe,M06,618,v1.0,0.83
+SKU_021,Asia-Pacific,W01,390,v1.0,0.82
+SKU_021,Asia-Pacific,W02,387,v1.0,0.84
+SKU_021,Asia-Pacific,W03,399,v1.0,0.94
+SKU_021,Asia-Pacific,W04,411,v1.0,0.95
+SKU_021,Asia-Pacific,W05,367,v1.0,0.85
+SKU_021,Asia-Pacific,W06,367,v1.0,0.91
+SKU_021,Asia-Pacific,W07,333,v1.0,0.9
+SKU_021,Asia-Pacific,W08,316,v1.0,0.94
+SKU_021,Asia-Pacific,W09,291,v1.0,0.87
+SKU_021,Asia-Pacific,W10,302,v1.0,0.85
+SKU_021,Asia-Pacific,W11,307,v1.0,0.83
+SKU_021,Asia-Pacific,W12,371,v1.0,0.84
+SKU_021,Asia-Pacific,M04,387,v1.0,0.84
+SKU_021,Asia-Pacific,M05,420,v1.0,0.91
+SKU_021,Asia-Pacific,M06,385,v1.0,0.83
+SKU_021,Latin America,W01,187,v1.0,0.84
+SKU_021,Latin America,W02,195,v1.0,0.9
+SKU_021,Latin America,W03,200,v1.0,0.95
+SKU_021,Latin America,W04,202,v1.0,0.89
+SKU_021,Latin America,W05,189,v1.0,0.93
+SKU_021,Latin America,W06,174,v1.0,0.83
+SKU_021,Latin America,W07,179,v1.0,0.88
+SKU_021,Latin America,W08,164,v1.0,0.84
+SKU_021,Latin America,W09,165,v1.0,0.88
+SKU_021,Latin America,W10,144,v1.0,0.88
+SKU_021,Latin America,W11,165,v1.0,0.83
+SKU_021,Latin America,W12,162,v1.0,0.87
+SKU_021,Latin America,M04,209,v1.0,0.83
+SKU_021,Latin America,M05,215,v1.0,0.95
+SKU_021,Latin America,M06,177,v1.0,0.95
+SKU_022,North America,W01,250,v1.0,0.93
+SKU_022,North America,W02,272,v1.0,0.85
+SKU_022,North America,W03,278,v1.0,0.88
+SKU_022,North America,W04,290,v1.0,0.92
+SKU_022,North America,W05,271,v1.0,0.92
+SKU_022,North America,W06,262,v1.0,0.94
+SKU_022,North America,W07,227,v1.0,0.91
+SKU_022,North America,W08,233,v1.0,0.95
+SKU_022,North America,W09,209,v1.0,0.84
+SKU_022,North America,W10,208,v1.0,0.84
+SKU_022,North America,W11,219,v1.0,0.85
+SKU_022,North America,W12,251,v1.0,0.82
+SKU_022,North America,M04,292,v1.0,0.93
+SKU_022,North America,M05,274,v1.0,0.82
+SKU_022,North America,M06,247,v1.0,0.9
+SKU_022,Europe,W01,215,v1.0,0.86
+SKU_022,Europe,W02,237,v1.0,0.92
+SKU_022,Europe,W03,243,v1.0,0.89
+SKU_022,Europe,W04,234,v1.0,0.88
+SKU_022,Europe,W05,217,v1.0,0.88
+SKU_022,Europe,W06,211,v1.0,0.89
+SKU_022,Europe,W07,205,v1.0,0.89
+SKU_022,Europe,W08,169,v1.0,0.92
+SKU_022,Europe,W09,190,v1.0,0.93
+SKU_022,Europe,W10,166,v1.0,0.88
+SKU_022,Europe,W11,195,v1.0,0.88
+SKU_022,Europe,W12,183,v1.0,0.84
+SKU_022,Europe,M04,243,v1.0,0.92
+SKU_022,Europe,M05,245,v1.0,0.84
+SKU_022,Europe,M06,217,v1.0,0.86
+SKU_022,Asia-Pacific,W01,136,v1.0,0.92
+SKU_022,Asia-Pacific,W02,147,v1.0,0.88
+SKU_022,Asia-Pacific,W03,149,v1.0,0.89
+SKU_022,Asia-Pacific,W04,146,v1.0,0.89
+SKU_022,Asia-Pacific,W05,133,v1.0,0.83
+SKU_022,Asia-Pacific,W06,126,v1.0,0.9
+SKU_022,Asia-Pacific,W07,120,v1.0,0.91
+SKU_022,Asia-Pacific,W08,119,v1.0,0.86
+SKU_022,Asia-Pacific,W09,102,v1.0,0.9
+SKU_022,Asia-Pacific,W10,104,v1.0,0.87
+SKU_022,Asia-Pacific,W11,121,v1.0,0.9
+SKU_022,Asia-Pacific,W12,129,v1.0,0.9
+SKU_022,Asia-Pacific,M04,145,v1.0,0.88
+SKU_022,Asia-Pacific,M05,156,v1.0,0.87
+SKU_022,Asia-Pacific,M06,127,v1.0,0.85
+SKU_022,Latin America,W01,66,v1.0,0.86
+SKU_022,Latin America,W02,67,v1.0,0.91
+SKU_022,Latin America,W03,78,v1.0,0.83
+SKU_022,Latin America,W04,69,v1.0,0.89
+SKU_022,Latin America,W05,65,v1.0,0.91
+SKU_022,Latin America,W06,65,v1.0,0.89
+SKU_022,Latin America,W07,60,v1.0,0.82
+SKU_022,Latin America,W08,56,v1.0,0.82
+SKU_022,Latin America,W09,53,v1.0,0.89
+SKU_022,Latin America,W10,53,v1.0,0.83
+SKU_022,Latin America,W11,57,v1.0,0.91
+SKU_022,Latin America,W12,58,v1.0,0.88
+SKU_022,Latin America,M04,77,v1.0,0.91
+SKU_022,Latin America,M05,68,v1.0,0.86
+SKU_022,Latin America,M06,73,v1.0,0.85
+SKU_023,North America,W01,408,v1.0,0.92
+SKU_023,North America,W02,428,v1.0,0.89
+SKU_023,North America,W03,400,v1.0,0.83
+SKU_023,North America,W04,442,v1.0,0.87
+SKU_023,North America,W05,376,v1.0,0.92
+SKU_023,North America,W06,344,v1.0,0.93
+SKU_023,North America,W07,319,v1.0,0.86
+SKU_023,North America,W08,297,v1.0,0.92
+SKU_023,North America,W09,306,v1.0,0.85
+SKU_023,North America,W10,323,v1.0,0.9
+SKU_023,North America,W11,312,v1.0,0.92
+SKU_023,North America,W12,342,v1.0,0.89
+SKU_023,North America,M04,394,v1.0,0.87
+SKU_023,North America,M05,412,v1.0,0.88
+SKU_023,North America,M06,399,v1.0,0.84
+SKU_023,Europe,W01,300,v1.0,0.91
+SKU_023,Europe,W02,362,v1.0,0.89
+SKU_023,Europe,W03,333,v1.0,0.95
+SKU_023,Europe,W04,358,v1.0,0.88
+SKU_023,Europe,W05,354,v1.0,0.89
+SKU_023,Europe,W06,316,v1.0,0.92
+SKU_023,Europe,W07,284,v1.0,0.89
+SKU_023,Europe,W08,274,v1.0,0.89
+SKU_023,Europe,W09,253,v1.0,0.84
+SKU_023,Europe,W10,245,v1.0,0.91
+SKU_023,Europe,W11,263,v1.0,0.88
+SKU_023,Europe,W12,282,v1.0,0.93
+SKU_023,Europe,M04,324,v1.0,0.85
+SKU_023,Europe,M05,335,v1.0,0.93
+SKU_023,Europe,M06,330,v1.0,0.85
+SKU_023,Asia-Pacific,W01,206,v1.0,0.87
+SKU_023,Asia-Pacific,W02,200,v1.0,0.84
+SKU_023,Asia-Pacific,W03,209,v1.0,0.93
+SKU_023,Asia-Pacific,W04,214,v1.0,0.89
+SKU_023,Asia-Pacific,W05,204,v1.0,0.9
+SKU_023,Asia-Pacific,W06,179,v1.0,0.84
+SKU_023,Asia-Pacific,W07,169,v1.0,0.85
+SKU_023,Asia-Pacific,W08,176,v1.0,0.91
+SKU_023,Asia-Pacific,W09,153,v1.0,0.93
+SKU_023,Asia-Pacific,W10,174,v1.0,0.88
+SKU_023,Asia-Pacific,W11,156,v1.0,0.93
+SKU_023,Asia-Pacific,W12,169,v1.0,0.9
+SKU_023,Asia-Pacific,M04,231,v1.0,0.94
+SKU_023,Asia-Pacific,M05,209,v1.0,0.87
+SKU_023,Asia-Pacific,M06,206,v1.0,0.83
+SKU_023,Latin America,W01,109,v1.0,0.91
+SKU_023,Latin America,W02,100,v1.0,0.83
+SKU_023,Latin America,W03,113,v1.0,0.94
+SKU_023,Latin America,W04,108,v1.0,0.93
+SKU_023,Latin America,W05,110,v1.0,0.94
+SKU_023,Latin America,W06,93,v1.0,0.93
+SKU_023,Latin America,W07,86,v1.0,0.84
+SKU_023,Latin America,W08,88,v1.0,0.86
+SKU_023,Latin America,W09,82,v1.0,0.87
+SKU_023,Latin America,W10,84,v1.0,0.85
+SKU_023,Latin America,W11,83,v1.0,0.84
+SKU_023,Latin America,W12,86,v1.0,0.95
+SKU_023,Latin America,M04,108,v1.0,0.85
+SKU_023,Latin America,M05,107,v1.0,0.88
+SKU_023,Latin America,M06,98,v1.0,0.94
+SKU_024,North America,W01,256,v1.0,0.88
+SKU_024,North America,W02,256,v1.0,0.86
+SKU_024,North America,W03,284,v1.0,0.84
+SKU_024,North America,W04,268,v1.0,0.87
+SKU_024,North America,W05,250,v1.0,0.9
+SKU_024,North America,W06,257,v1.0,0.82
+SKU_024,North America,W07,233,v1.0,0.92
+SKU_024,North America,W08,195,v1.0,0.94
+SKU_024,North America,W09,207,v1.0,0.85
+SKU_024,North America,W10,199,v1.0,0.9
+SKU_024,North America,W11,218,v1.0,0.94
+SKU_024,North America,W12,233,v1.0,0.89
+SKU_024,North America,M04,260,v1.0,0.88
+SKU_024,North America,M05,244,v1.0,0.94
+SKU_024,North America,M06,269,v1.0,0.94
+SKU_024,Europe,W01,207,v1.0,0.94
+SKU_024,Europe,W02,234,v1.0,0.86
+SKU_024,Europe,W03,242,v1.0,0.84
+SKU_024,Europe,W04,224,v1.0,0.86
+SKU_024,Europe,W05,228,v1.0,0.9
+SKU_024,Europe,W06,213,v1.0,0.86
+SKU_024,Europe,W07,176,v1.0,0.92
+SKU_024,Europe,W08,176,v1.0,0.92
+SKU_024,Europe,W09,182,v1.0,0.86
+SKU_024,Europe,W10,168,v1.0,0.94
+SKU_024,Europe,W11,167,v1.0,0.84
+SKU_024,Europe,W12,183,v1.0,0.83
+SKU_024,Europe,M04,226,v1.0,0.91
+SKU_024,Europe,M05,225,v1.0,0.86
+SKU_024,Europe,M06,218,v1.0,0.92
+SKU_024,Asia-Pacific,W01,136,v1.0,0.84
+SKU_024,Asia-Pacific,W02,139,v1.0,0.9
+SKU_024,Asia-Pacific,W03,132,v1.0,0.85
+SKU_024,Asia-Pacific,W04,137,v1.0,0.89
+SKU_024,Asia-Pacific,W05,127,v1.0,0.85
+SKU_024,Asia-Pacific,W06,131,v1.0,0.92
+SKU_024,Asia-Pacific,W07,121,v1.0,0.84
+SKU_024,Asia-Pacific,W08,112,v1.0,0.87
+SKU_024,Asia-Pacific,W09,113,v1.0,0.88
+SKU_024,Asia-Pacific,W10,113,v1.0,0.84
+SKU_024,Asia-Pacific,W11,105,v1.0,0.9
+SKU_024,Asia-Pacific,W12,116,v1.0,0.86
+SKU_024,Asia-Pacific,M04,133,v1.0,0.87
+SKU_024,Asia-Pacific,M05,137,v1.0,0.87
+SKU_024,Asia-Pacific,M06,139,v1.0,0.89
+SKU_024,Latin America,W01,61,v1.0,0.82
+SKU_024,Latin America,W02,70,v1.0,0.9
+SKU_024,Latin America,W03,68,v1.0,0.83
+SKU_024,Latin America,W04,70,v1.0,0.85
+SKU_024,Latin America,W05,71,v1.0,0.83
+SKU_024,Latin America,W06,64,v1.0,0.9
+SKU_024,Latin America,W07,55,v1.0,0.94
+SKU_024,Latin America,W08,52,v1.0,0.89
+SKU_024,Latin America,W09,49,v1.0,0.89
+SKU_024,Latin America,W10,55,v1.0,0.94
+SKU_024,Latin America,W11,58,v1.0,0.88
+SKU_024,Latin America,W12,57,v1.0,0.85
+SKU_024,Latin America,M04,76,v1.0,0.93
+SKU_024,Latin America,M05,67,v1.0,0.92
+SKU_024,Latin America,M06,65,v1.0,0.88
+SKU_025,North America,W01,211,v1.0,0.95
+SKU_025,North America,W02,211,v1.0,0.91
+SKU_025,North America,W03,220,v1.0,0.87
+SKU_025,North America,W04,208,v1.0,0.86
+SKU_025,North America,W05,203,v1.0,0.9
+SKU_025,North America,W06,211,v1.0,0.87
+SKU_025,North America,W07,189,v1.0,0.88
+SKU_025,North America,W08,158,v1.0,0.84
+SKU_025,North America,W09,161,v1.0,0.91
+SKU_025,North America,W10,171,v1.0,0.91
+SKU_025,North America,W11,179,v1.0,0.92
+SKU_025,North America,W12,178,v1.0,0.83
+SKU_025,North America,M04,207,v1.0,0.86
+SKU_025,North America,M05,208,v1.0,0.94
+SKU_025,North America,M06,222,v1.0,0.94
+SKU_025,Europe,W01,188,v1.0,0.9
+SKU_025,Europe,W02,191,v1.0,0.83
+SKU_025,Europe,W03,180,v1.0,0.9
+SKU_025,Europe,W04,179,v1.0,0.87
+SKU_025,Europe,W05,174,v1.0,0.95
+SKU_025,Europe,W06,168,v1.0,0.9
+SKU_025,Europe,W07,148,v1.0,0.89
+SKU_025,Europe,W08,154,v1.0,0.93
+SKU_025,Europe,W09,131,v1.0,0.86
+SKU_025,Europe,W10,140,v1.0,0.84
+SKU_025,Europe,W11,137,v1.0,0.83
+SKU_025,Europe,W12,147,v1.0,0.93
+SKU_025,Europe,M04,197,v1.0,0.92
+SKU_025,Europe,M05,195,v1.0,0.86
+SKU_025,Europe,M06,184,v1.0,0.9
+SKU_025,Asia-Pacific,W01,114,v1.0,0.85
+SKU_025,Asia-Pacific,W02,111,v1.0,0.94
+SKU_025,Asia-Pacific,W03,114,v1.0,0.95
+SKU_025,Asia-Pacific,W04,121,v1.0,0.84
+SKU_025,Asia-Pacific,W05,117,v1.0,0.91
+SKU_025,Asia-Pacific,W06,109,v1.0,0.83
+SKU_025,Asia-Pacific,W07,91,v1.0,0.85
+SKU_025,Asia-Pacific,W08,83,v1.0,0.85
+SKU_025,Asia-Pacific,W09,90,v1.0,0.88
+SKU_025,Asia-Pacific,W10,94,v1.0,0.94
+SKU_025,Asia-Pacific,W11,84,v1.0,0.87
+SKU_025,Asia-Pacific,W12,101,v1.0,0.88
+SKU_025,Asia-Pacific,M04,117,v1.0,0.93
+SKU_025,Asia-Pacific,M05,121,v1.0,0.84
+SKU_025,Asia-Pacific,M06,101,v1.0,0.93
+SKU_025,Latin America,W01,51,v1.0,0.84
+SKU_025,Latin America,W02,57,v1.0,0.86
+SKU_025,Latin America,W03,62,v1.0,0.9
+SKU_025,Latin America,W04,58,v1.0,0.95
+SKU_025,Latin America,W05,55,v1.0,0.89
+SKU_025,Latin America,W06,51,v1.0,0.83
+SKU_025,Latin America,W07,50,v1.0,0.91
+SKU_025,Latin America,W08,48,v1.0,0.82
+SKU_025,Latin America,W09,44,v1.0,0.91
+SKU_025,Latin America,W10,43,v1.0,0.9
+SKU_025,Latin America,W11,48,v1.0,0.93
+SKU_025,Latin America,W12,46,v1.0,0.83
+SKU_025,Latin America,M04,61,v1.0,0.91
+SKU_025,Latin America,M05,56,v1.0,0.94
+SKU_025,Latin America,M06,55,v1.0,0.82
+SKU_026,North America,W01,143,v1.0,0.94
+SKU_026,North America,W02,143,v1.0,0.92
+SKU_026,North America,W03,155,v1.0,0.94
+SKU_026,North America,W04,150,v1.0,0.85
+SKU_026,North America,W05,132,v1.0,0.9
+SKU_026,North America,W06,129,v1.0,0.83
+SKU_026,North America,W07,115,v1.0,0.94
+SKU_026,North America,W08,113,v1.0,0.87
+SKU_026,North America,W09,105,v1.0,0.95
+SKU_026,North America,W10,118,v1.0,0.83
+SKU_026,North America,W11,123,v1.0,0.84
+SKU_026,North America,W12,130,v1.0,0.86
+SKU_026,North America,M04,156,v1.0,0.91
+SKU_026,North America,M05,137,v1.0,0.88
+SKU_026,North America,M06,137,v1.0,0.92
+SKU_026,Europe,W01,114,v1.0,0.91
+SKU_026,Europe,W02,116,v1.0,0.91
+SKU_026,Europe,W03,133,v1.0,0.89
+SKU_026,Europe,W04,124,v1.0,0.94
+SKU_026,Europe,W05,119,v1.0,0.89
+SKU_026,Europe,W06,111,v1.0,0.92
+SKU_026,Europe,W07,109,v1.0,0.9
+SKU_026,Europe,W08,96,v1.0,0.88
+SKU_026,Europe,W09,87,v1.0,0.86
+SKU_026,Europe,W10,93,v1.0,0.85
+SKU_026,Europe,W11,101,v1.0,0.84
+SKU_026,Europe,W12,105,v1.0,0.9
+SKU_026,Europe,M04,126,v1.0,0.86
+SKU_026,Europe,M05,122,v1.0,0.94
+SKU_026,Europe,M06,116,v1.0,0.84
+SKU_026,Asia-Pacific,W01,69,v1.0,0.94
+SKU_026,Asia-Pacific,W02,81,v1.0,0.89
+SKU_026,Asia-Pacific,W03,76,v1.0,0.83
+SKU_026,Asia-Pacific,W04,72,v1.0,0.83
+SKU_026,Asia-Pacific,W05,70,v1.0,0.88
+SKU_026,Asia-Pacific,W06,65,v1.0,0.91
+SKU_026,Asia-Pacific,W07,65,v1.0,0.85
+SKU_026,Asia-Pacific,W08,58,v1.0,0.83
+SKU_026,Asia-Pacific,W09,58,v1.0,0.83
+SKU_026,Asia-Pacific,W10,60,v1.0,0.84
+SKU_026,Asia-Pacific,W11,58,v1.0,0.87
+SKU_026,Asia-Pacific,W12,61,v1.0,0.93
+SKU_026,Asia-Pacific,M04,76,v1.0,0.9
+SKU_026,Asia-Pacific,M05,76,v1.0,0.91
+SKU_026,Asia-Pacific,M06,74,v1.0,0.85
+SKU_026,Latin America,W01,39,v1.0,0.93
+SKU_026,Latin America,W02,36,v1.0,0.84
+SKU_026,Latin America,W03,41,v1.0,0.9
+SKU_026,Latin America,W04,41,v1.0,0.83
+SKU_026,Latin America,W05,37,v1.0,0.82
+SKU_026,Latin America,W06,32,v1.0,0.84
+SKU_026,Latin America,W07,32,v1.0,0.91
+SKU_026,Latin America,W08,32,v1.0,0.95
+SKU_026,Latin America,W09,29,v1.0,0.88
+SKU_026,Latin America,W10,30,v1.0,0.95
+SKU_026,Latin America,W11,30,v1.0,0.91
+SKU_026,Latin America,W12,33,v1.0,0.87
+SKU_026,Latin America,M04,38,v1.0,0.84
+SKU_026,Latin America,M05,35,v1.0,0.83
+SKU_026,Latin America,M06,33,v1.0,0.95
+SKU_027,North America,W01,126,v1.0,0.9
+SKU_027,North America,W02,143,v1.0,0.88
+SKU_027,North America,W03,145,v1.0,0.92
+SKU_027,North America,W04,134,v1.0,0.86
+SKU_027,North America,W05,134,v1.0,0.88
+SKU_027,North America,W06,117,v1.0,0.84
+SKU_027,North America,W07,111,v1.0,0.91
+SKU_027,North America,W08,118,v1.0,0.88
+SKU_027,North America,W09,112,v1.0,0.9
+SKU_027,North America,W10,101,v1.0,0.89
+SKU_027,North America,W11,117,v1.0,0.83
+SKU_027,North America,W12,109,v1.0,0.9
+SKU_027,North America,M04,147,v1.0,0.95
+SKU_027,North America,M05,146,v1.0,0.92
+SKU_027,North America,M06,133,v1.0,0.89
+SKU_027,Europe,W01,108,v1.0,0.88
+SKU_027,Europe,W02,117,v1.0,0.9
+SKU_027,Europe,W03,122,v1.0,0.91
+SKU_027,Europe,W04,124,v1.0,0.88
+SKU_027,Europe,W05,117,v1.0,0.89
+SKU_027,Europe,W06,105,v1.0,0.86
+SKU_027,Europe,W07,92,v1.0,0.94
+SKU_027,Europe,W08,91,v1.0,0.88
+SKU_027,Europe,W09,89,v1.0,0.94
+SKU_027,Europe,W10,87,v1.0,0.91
+SKU_027,Europe,W11,86,v1.0,0.86
+SKU_027,Europe,W12,95,v1.0,0.86
+SKU_027,Europe,M04,115,v1.0,0.85
+SKU_027,Europe,M05,124,v1.0,0.86
+SKU_027,Europe,M06,112,v1.0,0.93
+SKU_027,Asia-Pacific,W01,71,v1.0,0.84
+SKU_027,Asia-Pacific,W02,71,v1.0,0.91
+SKU_027,Asia-Pacific,W03,80,v1.0,0.93
+SKU_027,Asia-Pacific,W04,76,v1.0,0.92
+SKU_027,Asia-Pacific,W05,74,v1.0,0.92
+SKU_027,Asia-Pacific,W06,70,v1.0,0.9
+SKU_027,Asia-Pacific,W07,59,v1.0,0.92
+SKU_027,Asia-Pacific,W08,59,v1.0,0.84
+SKU_027,Asia-Pacific,W09,53,v1.0,0.9
+SKU_027,Asia-Pacific,W10,52,v1.0,0.87
+SKU_027,Asia-Pacific,W11,63,v1.0,0.86
+SKU_027,Asia-Pacific,W12,59,v1.0,0.83
+SKU_027,Asia-Pacific,M04,69,v1.0,0.93
+SKU_027,Asia-Pacific,M05,71,v1.0,0.84
+SKU_027,Asia-Pacific,M06,73,v1.0,0.94
+SKU_027,Latin America,W01,32,v1.0,0.83
+SKU_027,Latin America,W02,36,v1.0,0.9
+SKU_027,Latin America,W03,35,v1.0,0.85
+SKU_027,Latin America,W04,35,v1.0,0.86
+SKU_027,Latin America,W05,34,v1.0,0.83
+SKU_027,Latin America,W06,35,v1.0,0.85
+SKU_027,Latin America,W07,29,v1.0,0.91
+SKU_027,Latin America,W08,29,v1.0,0.91
+SKU_027,Latin America,W09,28,v1.0,0.94
+SKU_027,Latin America,W10,27,v1.0,0.88
+SKU_027,Latin America,W11,30,v1.0,0.83
+SKU_027,Latin America,W12,29,v1.0,0.9
+SKU_027,Latin America,M04,39,v1.0,0.94
+SKU_027,Latin America,M05,38,v1.0,0.83
+SKU_027,Latin America,M06,32,v1.0,0.9
+SKU_028,North America,W01,221,v1.0,0.84
+SKU_028,North America,W02,211,v1.0,0.88
+SKU_028,North America,W03,223,v1.0,0.92
+SKU_028,North America,W04,206,v1.0,0.9
+SKU_028,North America,W05,205,v1.0,0.84
+SKU_028,North America,W06,208,v1.0,0.88
+SKU_028,North America,W07,181,v1.0,0.92
+SKU_028,North America,W08,164,v1.0,0.93
+SKU_028,North America,W09,161,v1.0,0.89
+SKU_028,North America,W10,154,v1.0,0.87
+SKU_028,North America,W11,180,v1.0,0.87
+SKU_028,North America,W12,190,v1.0,0.84
+SKU_028,North America,M04,231,v1.0,0.87
+SKU_028,North America,M05,207,v1.0,0.92
+SKU_028,North America,M06,202,v1.0,0.87
+SKU_028,Europe,W01,173,v1.0,0.93
+SKU_028,Europe,W02,192,v1.0,0.87
+SKU_028,Europe,W03,173,v1.0,0.84
+SKU_028,Europe,W04,170,v1.0,0.92
+SKU_028,Europe,W05,190,v1.0,0.83
+SKU_028,Europe,W06,161,v1.0,0.95
+SKU_028,Europe,W07,146,v1.0,0.83
+SKU_028,Europe,W08,150,v1.0,0.91
+SKU_028,Europe,W09,142,v1.0,0.94
+SKU_028,Europe,W10,129,v1.0,0.9
+SKU_028,Europe,W11,150,v1.0,0.91
+SKU_028,Europe,W12,156,v1.0,0.86
+SKU_028,Europe,M04,184,v1.0,0.91
+SKU_028,Europe,M05,184,v1.0,0.86
+SKU_028,Europe,M06,180,v1.0,0.94
+SKU_028,Asia-Pacific,W01,100,v1.0,0.86
+SKU_028,Asia-Pacific,W02,115,v1.0,0.94
+SKU_028,Asia-Pacific,W03,121,v1.0,0.88
+SKU_028,Asia-Pacific,W04,110,v1.0,0.89
+SKU_028,Asia-Pacific,W05,116,v1.0,0.9
+SKU_028,Asia-Pacific,W06,107,v1.0,0.94
+SKU_028,Asia-Pacific,W07,100,v1.0,0.87
+SKU_028,Asia-Pacific,W08,86,v1.0,0.86
+SKU_028,Asia-Pacific,W09,80,v1.0,0.86
+SKU_028,Asia-Pacific,W10,90,v1.0,0.92
+SKU_028,Asia-Pacific,W11,85,v1.0,0.95
+SKU_028,Asia-Pacific,W12,94,v1.0,0.83
+SKU_028,Asia-Pacific,M04,118,v1.0,0.89
+SKU_028,Asia-Pacific,M05,118,v1.0,0.84
+SKU_028,Asia-Pacific,M06,100,v1.0,0.92
+SKU_028,Latin America,W01,55,v1.0,0.85
+SKU_028,Latin America,W02,59,v1.0,0.91
+SKU_028,Latin America,W03,63,v1.0,0.83
+SKU_028,Latin America,W04,53,v1.0,0.87
+SKU_028,Latin America,W05,56,v1.0,0.87
+SKU_028,Latin America,W06,48,v1.0,0.9
+SKU_028,Latin America,W07,45,v1.0,0.86
+SKU_028,Latin America,W08,46,v1.0,0.88
+SKU_028,Latin America,W09,46,v1.0,0.92
+SKU_028,Latin America,W10,47,v1.0,0.89
+SKU_028,Latin America,W11,48,v1.0,0.9
+SKU_028,Latin America,W12,49,v1.0,0.9
+SKU_028,Latin America,M04,57,v1.0,0.86
+SKU_028,Latin America,M05,59,v1.0,0.91
+SKU_028,Latin America,M06,55,v1.0,0.91
+SKU_029,North America,W01,351,v1.0,0.83
+SKU_029,North America,W02,357,v1.0,0.85
+SKU_029,North America,W03,379,v1.0,0.88
+SKU_029,North America,W04,338,v1.0,0.88
+SKU_029,North America,W05,339,v1.0,0.83
+SKU_029,North America,W06,318,v1.0,0.84
+SKU_029,North America,W07,285,v1.0,0.83
+SKU_029,North America,W08,288,v1.0,0.87
+SKU_029,North America,W09,272,v1.0,0.92
+SKU_029,North America,W10,286,v1.0,0.9
+SKU_029,North America,W11,288,v1.0,0.95
+SKU_029,North America,W12,312,v1.0,0.94
+SKU_029,North America,M04,376,v1.0,0.87
+SKU_029,North America,M05,334,v1.0,0.89
+SKU_029,North America,M06,334,v1.0,0.88
+SKU_029,Europe,W01,306,v1.0,0.89
+SKU_029,Europe,W02,301,v1.0,0.91
+SKU_029,Europe,W03,303,v1.0,0.82
+SKU_029,Europe,W04,285,v1.0,0.89
+SKU_029,Europe,W05,309,v1.0,0.84
+SKU_029,Europe,W06,287,v1.0,0.83
+SKU_029,Europe,W07,246,v1.0,0.86
+SKU_029,Europe,W08,236,v1.0,0.84
+SKU_029,Europe,W09,220,v1.0,0.87
+SKU_029,Europe,W10,220,v1.0,0.82
+SKU_029,Europe,W11,224,v1.0,0.92
+SKU_029,Europe,W12,251,v1.0,0.94
+SKU_029,Europe,M04,296,v1.0,0.86
+SKU_029,Europe,M05,283,v1.0,0.92
+SKU_029,Europe,M06,260,v1.0,0.89
+SKU_029,Asia-Pacific,W01,166,v1.0,0.83
+SKU_029,Asia-Pacific,W02,186,v1.0,0.86
+SKU_029,Asia-Pacific,W03,189,v1.0,0.86
+SKU_029,Asia-Pacific,W04,185,v1.0,0.93
+SKU_029,Asia-Pacific,W05,191,v1.0,0.84
+SKU_029,Asia-Pacific,W06,160,v1.0,0.9
+SKU_029,Asia-Pacific,W07,164,v1.0,0.91
+SKU_029,Asia-Pacific,W08,139,v1.0,0.91
+SKU_029,Asia-Pacific,W09,132,v1.0,0.9
+SKU_029,Asia-Pacific,W10,145,v1.0,0.87
+SKU_029,Asia-Pacific,W11,158,v1.0,0.86
+SKU_029,Asia-Pacific,W12,147,v1.0,0.91
+SKU_029,Asia-Pacific,M04,189,v1.0,0.86
+SKU_029,Asia-Pacific,M05,174,v1.0,0.84
+SKU_029,Asia-Pacific,M06,163,v1.0,0.9
+SKU_029,Latin America,W01,93,v1.0,0.86
+SKU_029,Latin America,W02,95,v1.0,0.9
+SKU_029,Latin America,W03,89,v1.0,0.94
+SKU_029,Latin America,W04,95,v1.0,0.92
+SKU_029,Latin America,W05,97,v1.0,0.89
+SKU_029,Latin America,W06,88,v1.0,0.89
+SKU_029,Latin America,W07,72,v1.0,0.91
+SKU_029,Latin America,W08,74,v1.0,0.95
+SKU_029,Latin America,W09,68,v1.0,0.85
+SKU_029,Latin America,W10,74,v1.0,0.93
+SKU_029,Latin America,W11,75,v1.0,0.83
+SKU_029,Latin America,W12,80,v1.0,0.86
+SKU_029,Latin America,M04,96,v1.0,0.88
+SKU_029,Latin America,M05,99,v1.0,0.86
+SKU_029,Latin America,M06,83,v1.0,0.82
+SKU_030,North America,W01,332,v1.0,0.85
+SKU_030,North America,W02,337,v1.0,0.83
+SKU_030,North America,W03,347,v1.0,0.84
+SKU_030,North America,W04,348,v1.0,0.83
+SKU_030,North America,W05,337,v1.0,0.87
+SKU_030,North America,W06,308,v1.0,0.9
+SKU_030,North America,W07,293,v1.0,0.82
+SKU_030,North America,W08,262,v1.0,0.87
+SKU_030,North America,W09,264,v1.0,0.87
+SKU_030,North America,W10,265,v1.0,0.87
+SKU_030,North America,W11,300,v1.0,0.84
+SKU_030,North America,W12,291,v1.0,0.92
+SKU_030,North America,M04,371,v1.0,0.88
+SKU_030,North America,M05,371,v1.0,0.87
+SKU_030,North America,M06,318,v1.0,0.83
+SKU_030,Europe,W01,286,v1.0,0.87
+SKU_030,Europe,W02,301,v1.0,0.87
+SKU_030,Europe,W03,295,v1.0,0.94
+SKU_030,Europe,W04,294,v1.0,0.95
+SKU_030,Europe,W05,301,v1.0,0.85
+SKU_030,Europe,W06,276,v1.0,0.92
+SKU_030,Europe,W07,246,v1.0,0.87
+SKU_030,Europe,W08,222,v1.0,0.9
+SKU_030,Europe,W09,218,v1.0,0.95
+SKU_030,Europe,W10,225,v1.0,0.95
+SKU_030,Europe,W11,251,v1.0,0.89
+SKU_030,Europe,W12,254,v1.0,0.94
+SKU_030,Europe,M04,306,v1.0,0.82
+SKU_030,Europe,M05,299,v1.0,0.93
+SKU_030,Europe,M06,275,v1.0,0.95
+SKU_030,Asia-Pacific,W01,165,v1.0,0.94
+SKU_030,Asia-Pacific,W02,188,v1.0,0.9
+SKU_030,Asia-Pacific,W03,203,v1.0,0.87
+SKU_030,Asia-Pacific,W04,186,v1.0,0.9
+SKU_030,Asia-Pacific,W05,185,v1.0,0.89
+SKU_030,Asia-Pacific,W06,159,v1.0,0.92
+SKU_030,Asia-Pacific,W07,160,v1.0,0.86
+SKU_030,Asia-Pacific,W08,146,v1.0,0.84
+SKU_030,Asia-Pacific,W09,135,v1.0,0.89
+SKU_030,Asia-Pacific,W10,138,v1.0,0.88
+SKU_030,Asia-Pacific,W11,152,v1.0,0.94
+SKU_030,Asia-Pacific,W12,156,v1.0,0.91
+SKU_030,Asia-Pacific,M04,188,v1.0,0.85
+SKU_030,Asia-Pacific,M05,195,v1.0,0.88
+SKU_030,Asia-Pacific,M06,171,v1.0,0.95
+SKU_030,Latin America,W01,87,v1.0,0.88
+SKU_030,Latin America,W02,96,v1.0,0.82
+SKU_030,Latin America,W03,99,v1.0,0.9
+SKU_030,Latin America,W04,87,v1.0,0.88
+SKU_030,Latin America,W05,97,v1.0,0.91
+SKU_030,Latin America,W06,84,v1.0,0.94
+SKU_030,Latin America,W07,82,v1.0,0.92
+SKU_030,Latin America,W08,74,v1.0,0.92
+SKU_030,Latin America,W09,73,v1.0,0.83
+SKU_030,Latin America,W10,66,v1.0,0.93
+SKU_030,Latin America,W11,77,v1.0,0.91
+SKU_030,Latin America,W12,78,v1.0,0.93
+SKU_030,Latin America,M04,101,v1.0,0.87
+SKU_030,Latin America,M05,89,v1.0,0.92
+SKU_030,Latin America,M06,92,v1.0,0.82
+SKU_031,North America,W01,308,v1.0,0.85
+SKU_031,North America,W02,304,v1.0,0.92
+SKU_031,North America,W03,351,v1.0,0.91
+SKU_031,North America,W04,344,v1.0,0.84
+SKU_031,North America,W05,336,v1.0,0.9
+SKU_031,North America,W06,314,v1.0,0.85
+SKU_031,North America,W07,299,v1.0,0.95
+SKU_031,North America,W08,241,v1.0,0.88
+SKU_031,North America,W09,258,v1.0,0.9
+SKU_031,North America,W10,231,v1.0,0.95
+SKU_031,North America,W11,268,v1.0,0.83
+SKU_031,North America,W12,271,v1.0,0.89
+SKU_031,North America,M04,319,v1.0,0.85
+SKU_031,North America,M05,341,v1.0,0.91
+SKU_031,North America,M06,317,v1.0,0.84
+SKU_031,Europe,W01,268,v1.0,0.92
+SKU_031,Europe,W02,261,v1.0,0.94
+SKU_031,Europe,W03,300,v1.0,0.93
+SKU_031,Europe,W04,291,v1.0,0.86
+SKU_031,Europe,W05,284,v1.0,0.82
+SKU_031,Europe,W06,271,v1.0,0.91
+SKU_031,Europe,W07,238,v1.0,0.91
+SKU_031,Europe,W08,232,v1.0,0.82
+SKU_031,Europe,W09,208,v1.0,0.91
+SKU_031,Europe,W10,216,v1.0,0.93
+SKU_031,Europe,W11,214,v1.0,0.93
+SKU_031,Europe,W12,233,v1.0,0.84
+SKU_031,Europe,M04,284,v1.0,0.88
+SKU_031,Europe,M05,277,v1.0,0.83
+SKU_031,Europe,M06,271,v1.0,0.83
+SKU_031,Asia-Pacific,W01,176,v1.0,0.89
+SKU_031,Asia-Pacific,W02,168,v1.0,0.87
+SKU_031,Asia-Pacific,W03,173,v1.0,0.93
+SKU_031,Asia-Pacific,W04,184,v1.0,0.95
+SKU_031,Asia-Pacific,W05,161,v1.0,0.91
+SKU_031,Asia-Pacific,W06,169,v1.0,0.94
+SKU_031,Asia-Pacific,W07,139,v1.0,0.86
+SKU_031,Asia-Pacific,W08,127,v1.0,0.9
+SKU_031,Asia-Pacific,W09,121,v1.0,0.88
+SKU_031,Asia-Pacific,W10,122,v1.0,0.92
+SKU_031,Asia-Pacific,W11,147,v1.0,0.93
+SKU_031,Asia-Pacific,W12,142,v1.0,0.88
+SKU_031,Asia-Pacific,M04,190,v1.0,0.93
+SKU_031,Asia-Pacific,M05,182,v1.0,0.89
+SKU_031,Asia-Pacific,M06,157,v1.0,0.83
+SKU_031,Latin America,W01,84,v1.0,0.88
+SKU_031,Latin America,W02,81,v1.0,0.88
+SKU_031,Latin America,W03,83,v1.0,0.95
+SKU_031,Latin America,W04,93,v1.0,0.87
+SKU_031,Latin America,W05,89,v1.0,0.91
+SKU_031,Latin America,W06,82,v1.0,0.83
+SKU_031,Latin America,W07,76,v1.0,0.83
+SKU_031,Latin America,W08,69,v1.0,0.88
+SKU_031,Latin America,W09,61,v1.0,0.83
+SKU_031,Latin America,W10,61,v1.0,0.93
+SKU_031,Latin America,W11,68,v1.0,0.9
+SKU_031,Latin America,W12,73,v1.0,0.93
+SKU_031,Latin America,M04,92,v1.0,0.9
+SKU_031,Latin America,M05,85,v1.0,0.88
+SKU_031,Latin America,M06,81,v1.0,0.9
+SKU_032,North America,W01,159,v1.0,0.94
+SKU_032,North America,W02,180,v1.0,0.88
+SKU_032,North America,W03,171,v1.0,0.85
+SKU_032,North America,W04,162,v1.0,0.9
+SKU_032,North America,W05,155,v1.0,0.92
+SKU_032,North America,W06,148,v1.0,0.89
+SKU_032,North America,W07,148,v1.0,0.85
+SKU_032,North America,W08,134,v1.0,0.91
+SKU_032,North America,W09,129,v1.0,0.85
+SKU_032,North America,W10,137,v1.0,0.83
+SKU_032,North America,W11,132,v1.0,0.88
+SKU_032,North America,W12,157,v1.0,0.92
+SKU_032,North America,M04,170,v1.0,0.94
+SKU_032,North America,M05,179,v1.0,0.84
+SKU_032,North America,M06,157,v1.0,0.86
+SKU_032,Europe,W01,135,v1.0,0.82
+SKU_032,Europe,W02,147,v1.0,0.91
+SKU_032,Europe,W03,137,v1.0,0.89
+SKU_032,Europe,W04,154,v1.0,0.93
+SKU_032,Europe,W05,138,v1.0,0.85
+SKU_032,Europe,W06,125,v1.0,0.94
+SKU_032,Europe,W07,127,v1.0,0.86
+SKU_032,Europe,W08,117,v1.0,0.91
+SKU_032,Europe,W09,118,v1.0,0.9
+SKU_032,Europe,W10,107,v1.0,0.9
+SKU_032,Europe,W11,123,v1.0,0.9
+SKU_032,Europe,W12,121,v1.0,0.84
+SKU_032,Europe,M04,147,v1.0,0.92
+SKU_032,Europe,M05,133,v1.0,0.85
+SKU_032,Europe,M06,126,v1.0,0.85
+SKU_032,Asia-Pacific,W01,82,v1.0,0.9
+SKU_032,Asia-Pacific,W02,86,v1.0,0.92
+SKU_032,Asia-Pacific,W03,99,v1.0,0.86
+SKU_032,Asia-Pacific,W04,95,v1.0,0.85
+SKU_032,Asia-Pacific,W05,83,v1.0,0.95
+SKU_032,Asia-Pacific,W06,80,v1.0,0.83
+SKU_032,Asia-Pacific,W07,70,v1.0,0.83
+SKU_032,Asia-Pacific,W08,69,v1.0,0.85
+SKU_032,Asia-Pacific,W09,69,v1.0,0.92
+SKU_032,Asia-Pacific,W10,63,v1.0,0.82
+SKU_032,Asia-Pacific,W11,68,v1.0,0.84
+SKU_032,Asia-Pacific,W12,81,v1.0,0.91
+SKU_032,Asia-Pacific,M04,90,v1.0,0.89
+SKU_032,Asia-Pacific,M05,85,v1.0,0.82
+SKU_032,Asia-Pacific,M06,90,v1.0,0.94
+SKU_032,Latin America,W01,39,v1.0,0.91
+SKU_032,Latin America,W02,44,v1.0,0.92
+SKU_032,Latin America,W03,43,v1.0,0.94
+SKU_032,Latin America,W04,44,v1.0,0.85
+SKU_032,Latin America,W05,46,v1.0,0.91
+SKU_032,Latin America,W06,44,v1.0,0.95
+SKU_032,Latin America,W07,41,v1.0,0.93
+SKU_032,Latin America,W08,37,v1.0,0.83
+SKU_032,Latin America,W09,32,v1.0,0.94
+SKU_032,Latin America,W10,36,v1.0,0.84
+SKU_032,Latin America,W11,35,v1.0,0.87
+SKU_032,Latin America,W12,39,v1.0,0.95
+SKU_032,Latin America,M04,44,v1.0,0.83
+SKU_032,Latin America,M05,45,v1.0,0.84
+SKU_032,Latin America,M06,43,v1.0,0.92
+SKU_033,North America,W01,248,v1.0,0.9
+SKU_033,North America,W02,262,v1.0,0.84
+SKU_033,North America,W03,277,v1.0,0.9
+SKU_033,North America,W04,273,v1.0,0.91
+SKU_033,North America,W05,274,v1.0,0.92
+SKU_033,North America,W06,250,v1.0,0.84
+SKU_033,North America,W07,224,v1.0,0.93
+SKU_033,North America,W08,222,v1.0,0.87
+SKU_033,North America,W09,206,v1.0,0.84
+SKU_033,North America,W10,213,v1.0,0.89
+SKU_033,North America,W11,215,v1.0,0.94
+SKU_033,North America,W12,230,v1.0,0.9
+SKU_033,North America,M04,283,v1.0,0.92
+SKU_033,North America,M05,276,v1.0,0.85
+SKU_033,North America,M06,272,v1.0,0.88
+SKU_033,Europe,W01,208,v1.0,0.85
+SKU_033,Europe,W02,226,v1.0,0.87
+SKU_033,Europe,W03,220,v1.0,0.93
+SKU_033,Europe,W04,221,v1.0,0.83
+SKU_033,Europe,W05,230,v1.0,0.86
+SKU_033,Europe,W06,208,v1.0,0.85
+SKU_033,Europe,W07,178,v1.0,0.89
+SKU_033,Europe,W08,175,v1.0,0.88
+SKU_033,Europe,W09,171,v1.0,0.87
+SKU_033,Europe,W10,173,v1.0,0.86
+SKU_033,Europe,W11,167,v1.0,0.88
+SKU_033,Europe,W12,187,v1.0,0.83
+SKU_033,Europe,M04,248,v1.0,0.86
+SKU_033,Europe,M05,227,v1.0,0.89
+SKU_033,Europe,M06,201,v1.0,0.86
+SKU_033,Asia-Pacific,W01,130,v1.0,0.84
+SKU_033,Asia-Pacific,W02,139,v1.0,0.89
+SKU_033,Asia-Pacific,W03,142,v1.0,0.91
+SKU_033,Asia-Pacific,W04,138,v1.0,0.92
+SKU_033,Asia-Pacific,W05,144,v1.0,0.93
+SKU_033,Asia-Pacific,W06,123,v1.0,0.9
+SKU_033,Asia-Pacific,W07,113,v1.0,0.93
+SKU_033,Asia-Pacific,W08,116,v1.0,0.89
+SKU_033,Asia-Pacific,W09,104,v1.0,0.92
+SKU_033,Asia-Pacific,W10,104,v1.0,0.87
+SKU_033,Asia-Pacific,W11,122,v1.0,0.94
+SKU_033,Asia-Pacific,W12,127,v1.0,0.92
+SKU_033,Asia-Pacific,M04,134,v1.0,0.91
+SKU_033,Asia-Pacific,M05,153,v1.0,0.94
+SKU_033,Asia-Pacific,M06,142,v1.0,0.85
+SKU_033,Latin America,W01,70,v1.0,0.85
+SKU_033,Latin America,W02,68,v1.0,0.9
+SKU_033,Latin America,W03,73,v1.0,0.88
+SKU_033,Latin America,W04,75,v1.0,0.86
+SKU_033,Latin America,W05,64,v1.0,0.93
+SKU_033,Latin America,W06,64,v1.0,0.94
+SKU_033,Latin America,W07,59,v1.0,0.88
+SKU_033,Latin America,W08,59,v1.0,0.82
+SKU_033,Latin America,W09,51,v1.0,0.93
+SKU_033,Latin America,W10,52,v1.0,0.92
+SKU_033,Latin America,W11,56,v1.0,0.91
+SKU_033,Latin America,W12,59,v1.0,0.85
+SKU_033,Latin America,M04,72,v1.0,0.92
+SKU_033,Latin America,M05,74,v1.0,0.91
+SKU_033,Latin America,M06,65,v1.0,0.9
+SKU_034,North America,W01,375,v1.0,0.94
+SKU_034,North America,W02,356,v1.0,0.94
+SKU_034,North America,W03,374,v1.0,0.9
+SKU_034,North America,W04,386,v1.0,0.9
+SKU_034,North America,W05,386,v1.0,0.95
+SKU_034,North America,W06,325,v1.0,0.87
+SKU_034,North America,W07,318,v1.0,0.84
+SKU_034,North America,W08,278,v1.0,0.89
+SKU_034,North America,W09,283,v1.0,0.94
+SKU_034,North America,W10,267,v1.0,0.83
+SKU_034,North America,W11,301,v1.0,0.82
+SKU_034,North America,W12,330,v1.0,0.88
+SKU_034,North America,M04,365,v1.0,0.83
+SKU_034,North America,M05,402,v1.0,0.86
+SKU_034,North America,M06,340,v1.0,0.91
+SKU_034,Europe,W01,281,v1.0,0.83
+SKU_034,Europe,W02,318,v1.0,0.84
+SKU_034,Europe,W03,342,v1.0,0.87
+SKU_034,Europe,W04,302,v1.0,0.83
+SKU_034,Europe,W05,309,v1.0,0.88
+SKU_034,Europe,W06,268,v1.0,0.94
+SKU_034,Europe,W07,282,v1.0,0.84
+SKU_034,Europe,W08,238,v1.0,0.88
+SKU_034,Europe,W09,248,v1.0,0.88
+SKU_034,Europe,W10,245,v1.0,0.94
+SKU_034,Europe,W11,255,v1.0,0.89
+SKU_034,Europe,W12,278,v1.0,0.86
+SKU_034,Europe,M04,298,v1.0,0.84
+SKU_034,Europe,M05,293,v1.0,0.87
+SKU_034,Europe,M06,314,v1.0,0.89
+SKU_034,Asia-Pacific,W01,201,v1.0,0.93
+SKU_034,Asia-Pacific,W02,197,v1.0,0.89
+SKU_034,Asia-Pacific,W03,210,v1.0,0.86
+SKU_034,Asia-Pacific,W04,212,v1.0,0.88
+SKU_034,Asia-Pacific,W05,198,v1.0,0.91
+SKU_034,Asia-Pacific,W06,174,v1.0,0.9
+SKU_034,Asia-Pacific,W07,175,v1.0,0.84
+SKU_034,Asia-Pacific,W08,149,v1.0,0.94
+SKU_034,Asia-Pacific,W09,155,v1.0,0.88
+SKU_034,Asia-Pacific,W10,160,v1.0,0.84
+SKU_034,Asia-Pacific,W11,159,v1.0,0.87
+SKU_034,Asia-Pacific,W12,180,v1.0,0.85
+SKU_034,Asia-Pacific,M04,214,v1.0,0.86
+SKU_034,Asia-Pacific,M05,201,v1.0,0.86
+SKU_034,Asia-Pacific,M06,199,v1.0,0.91
+SKU_034,Latin America,W01,97,v1.0,0.85
+SKU_034,Latin America,W02,99,v1.0,0.95
+SKU_034,Latin America,W03,102,v1.0,0.95
+SKU_034,Latin America,W04,93,v1.0,0.83
+SKU_034,Latin America,W05,100,v1.0,0.86
+SKU_034,Latin America,W06,89,v1.0,0.85
+SKU_034,Latin America,W07,83,v1.0,0.88
+SKU_034,Latin America,W08,72,v1.0,0.91
+SKU_034,Latin America,W09,78,v1.0,0.87
+SKU_034,Latin America,W10,78,v1.0,0.93
+SKU_034,Latin America,W11,77,v1.0,0.82
+SKU_034,Latin America,W12,79,v1.0,0.94
+SKU_034,Latin America,M04,98,v1.0,0.92
+SKU_034,Latin America,M05,98,v1.0,0.83
+SKU_034,Latin America,M06,94,v1.0,0.85
+SKU_035,North America,W01,287,v1.0,0.93
+SKU_035,North America,W02,337,v1.0,0.84
+SKU_035,North America,W03,301,v1.0,0.83
+SKU_035,North America,W04,312,v1.0,0.89
+SKU_035,North America,W05,304,v1.0,0.83
+SKU_035,North America,W06,302,v1.0,0.91
+SKU_035,North America,W07,254,v1.0,0.87
+SKU_035,North America,W08,240,v1.0,0.82
+SKU_035,North America,W09,249,v1.0,0.85
+SKU_035,North America,W10,251,v1.0,0.93
+SKU_035,North America,W11,266,v1.0,0.9
+SKU_035,North America,W12,281,v1.0,0.94
+SKU_035,North America,M04,320,v1.0,0.86
+SKU_035,North America,M05,295,v1.0,0.82
+SKU_035,North America,M06,314,v1.0,0.92
+SKU_035,Europe,W01,274,v1.0,0.87
+SKU_035,Europe,W02,258,v1.0,0.83
+SKU_035,Europe,W03,271,v1.0,0.95
+SKU_035,Europe,W04,264,v1.0,0.84
+SKU_035,Europe,W05,267,v1.0,0.85
+SKU_035,Europe,W06,259,v1.0,0.92
+SKU_035,Europe,W07,238,v1.0,0.84
+SKU_035,Europe,W08,200,v1.0,0.87
+SKU_035,Europe,W09,191,v1.0,0.86
+SKU_035,Europe,W10,206,v1.0,0.84
+SKU_035,Europe,W11,203,v1.0,0.89
+SKU_035,Europe,W12,245,v1.0,0.84
+SKU_035,Europe,M04,262,v1.0,0.87
+SKU_035,Europe,M05,254,v1.0,0.87
+SKU_035,Europe,M06,246,v1.0,0.87
+SKU_035,Asia-Pacific,W01,159,v1.0,0.83
+SKU_035,Asia-Pacific,W02,176,v1.0,0.9
+SKU_035,Asia-Pacific,W03,168,v1.0,0.83
+SKU_035,Asia-Pacific,W04,162,v1.0,0.86
+SKU_035,Asia-Pacific,W05,165,v1.0,0.95
+SKU_035,Asia-Pacific,W06,143,v1.0,0.89
+SKU_035,Asia-Pacific,W07,152,v1.0,0.93
+SKU_035,Asia-Pacific,W08,125,v1.0,0.94
+SKU_035,Asia-Pacific,W09,129,v1.0,0.95
+SKU_035,Asia-Pacific,W10,132,v1.0,0.91
+SKU_035,Asia-Pacific,W11,143,v1.0,0.91
+SKU_035,Asia-Pacific,W12,139,v1.0,0.9
+SKU_035,Asia-Pacific,M04,182,v1.0,0.86
+SKU_035,Asia-Pacific,M05,176,v1.0,0.88
+SKU_035,Asia-Pacific,M06,154,v1.0,0.9
+SKU_035,Latin America,W01,81,v1.0,0.87
+SKU_035,Latin America,W02,86,v1.0,0.85
+SKU_035,Latin America,W03,87,v1.0,0.95
+SKU_035,Latin America,W04,81,v1.0,0.9
+SKU_035,Latin America,W05,86,v1.0,0.86
+SKU_035,Latin America,W06,79,v1.0,0.92
+SKU_035,Latin America,W07,72,v1.0,0.83
+SKU_035,Latin America,W08,64,v1.0,0.86
+SKU_035,Latin America,W09,60,v1.0,0.85
+SKU_035,Latin America,W10,59,v1.0,0.94
+SKU_035,Latin America,W11,67,v1.0,0.94
+SKU_035,Latin America,W12,74,v1.0,0.86
+SKU_035,Latin America,M04,82,v1.0,0.9
+SKU_035,Latin America,M05,87,v1.0,0.89
+SKU_035,Latin America,M06,85,v1.0,0.9
+SKU_036,North America,W01,252,v1.0,0.85
+SKU_036,North America,W02,264,v1.0,0.86
+SKU_036,North America,W03,247,v1.0,0.83
+SKU_036,North America,W04,274,v1.0,0.95
+SKU_036,North America,W05,258,v1.0,0.91
+SKU_036,North America,W06,220,v1.0,0.93
+SKU_036,North America,W07,214,v1.0,0.84
+SKU_036,North America,W08,204,v1.0,0.83
+SKU_036,North America,W09,192,v1.0,0.94
+SKU_036,North America,W10,179,v1.0,0.95
+SKU_036,North America,W11,216,v1.0,0.84
+SKU_036,North America,W12,205,v1.0,0.89
+SKU_036,North America,M04,271,v1.0,0.85
+SKU_036,North America,M05,253,v1.0,0.88
+SKU_036,North America,M06,238,v1.0,0.84
+SKU_036,Europe,W01,194,v1.0,0.88
+SKU_036,Europe,W02,218,v1.0,0.86
+SKU_036,Europe,W03,221,v1.0,0.95
+SKU_036,Europe,W04,206,v1.0,0.93
+SKU_036,Europe,W05,206,v1.0,0.94
+SKU_036,Europe,W06,190,v1.0,0.87
+SKU_036,Europe,W07,179,v1.0,0.87
+SKU_036,Europe,W08,171,v1.0,0.88
+SKU_036,Europe,W09,153,v1.0,0.94
+SKU_036,Europe,W10,162,v1.0,0.92
+SKU_036,Europe,W11,168,v1.0,0.83
+SKU_036,Europe,W12,194,v1.0,0.86
+SKU_036,Europe,M04,219,v1.0,0.89
+SKU_036,Europe,M05,202,v1.0,0.87
+SKU_036,Europe,M06,195,v1.0,0.86
+SKU_036,Asia-Pacific,W01,128,v1.0,0.88
+SKU_036,Asia-Pacific,W02,130,v1.0,0.91
+SKU_036,Asia-Pacific,W03,130,v1.0,0.94
+SKU_036,Asia-Pacific,W04,124,v1.0,0.93
+SKU_036,Asia-Pacific,W05,134,v1.0,0.87
+SKU_036,Asia-Pacific,W06,119,v1.0,0.87
+SKU_036,Asia-Pacific,W07,110,v1.0,0.92
+SKU_036,Asia-Pacific,W08,103,v1.0,0.86
+SKU_036,Asia-Pacific,W09,109,v1.0,0.83
+SKU_036,Asia-Pacific,W10,108,v1.0,0.95
+SKU_036,Asia-Pacific,W11,100,v1.0,0.94
+SKU_036,Asia-Pacific,W12,107,v1.0,0.92
+SKU_036,Asia-Pacific,M04,146,v1.0,0.92
+SKU_036,Asia-Pacific,M05,138,v1.0,0.87
+SKU_036,Asia-Pacific,M06,130,v1.0,0.9
+SKU_036,Latin America,W01,62,v1.0,0.83
+SKU_036,Latin America,W02,65,v1.0,0.88
+SKU_036,Latin America,W03,65,v1.0,0.88
+SKU_036,Latin America,W04,72,v1.0,0.87
+SKU_036,Latin America,W05,66,v1.0,0.82
+SKU_036,Latin America,W06,62,v1.0,0.84
+SKU_036,Latin America,W07,57,v1.0,0.94
+SKU_036,Latin America,W08,49,v1.0,0.85
+SKU_036,Latin America,W09,51,v1.0,0.91
+SKU_036,Latin America,W10,48,v1.0,0.84
+SKU_036,Latin America,W11,49,v1.0,0.91
+SKU_036,Latin America,W12,55,v1.0,0.91
+SKU_036,Latin America,M04,73,v1.0,0.83
+SKU_036,Latin America,M05,70,v1.0,0.93
+SKU_036,Latin America,M06,59,v1.0,0.88
+SKU_037,North America,W01,86,v1.0,0.95
+SKU_037,North America,W02,96,v1.0,0.87
+SKU_037,North America,W03,93,v1.0,0.87
+SKU_037,North America,W04,100,v1.0,0.91
+SKU_037,North America,W05,85,v1.0,0.9
+SKU_037,North America,W06,89,v1.0,0.86
+SKU_037,North America,W07,74,v1.0,0.92
+SKU_037,North America,W08,79,v1.0,0.87
+SKU_037,North America,W09,69,v1.0,0.95
+SKU_037,North America,W10,75,v1.0,0.82
+SKU_037,North America,W11,69,v1.0,0.91
+SKU_037,North America,W12,80,v1.0,0.91
+SKU_037,North America,M04,99,v1.0,0.84
+SKU_037,North America,M05,91,v1.0,0.91
+SKU_037,North America,M06,84,v1.0,0.84
+SKU_037,Europe,W01,80,v1.0,0.88
+SKU_037,Europe,W02,83,v1.0,0.84
+SKU_037,Europe,W03,75,v1.0,0.84
+SKU_037,Europe,W04,83,v1.0,0.85
+SKU_037,Europe,W05,81,v1.0,0.87
+SKU_037,Europe,W06,73,v1.0,0.9
+SKU_037,Europe,W07,70,v1.0,0.84
+SKU_037,Europe,W08,60,v1.0,0.87
+SKU_037,Europe,W09,57,v1.0,0.86
+SKU_037,Europe,W10,61,v1.0,0.88
+SKU_037,Europe,W11,64,v1.0,0.83
+SKU_037,Europe,W12,62,v1.0,0.92
+SKU_037,Europe,M04,74,v1.0,0.9
+SKU_037,Europe,M05,84,v1.0,0.83
+SKU_037,Europe,M06,75,v1.0,0.82
+SKU_037,Asia-Pacific,W01,47,v1.0,0.95
+SKU_037,Asia-Pacific,W02,51,v1.0,0.94
+SKU_037,Asia-Pacific,W03,50,v1.0,0.86
+SKU_037,Asia-Pacific,W04,49,v1.0,0.87
+SKU_037,Asia-Pacific,W05,50,v1.0,0.95
+SKU_037,Asia-Pacific,W06,47,v1.0,0.94
+SKU_037,Asia-Pacific,W07,42,v1.0,0.87
+SKU_037,Asia-Pacific,W08,36,v1.0,0.87
+SKU_037,Asia-Pacific,W09,36,v1.0,0.83
+SKU_037,Asia-Pacific,W10,37,v1.0,0.91
+SKU_037,Asia-Pacific,W11,40,v1.0,0.94
+SKU_037,Asia-Pacific,W12,39,v1.0,0.9
+SKU_037,Asia-Pacific,M04,53,v1.0,0.86
+SKU_037,Asia-Pacific,M05,50,v1.0,0.93
+SKU_037,Asia-Pacific,M06,45,v1.0,0.9
+SKU_037,Latin America,W01,24,v1.0,0.88
+SKU_037,Latin America,W02,24,v1.0,0.84
+SKU_037,Latin America,W03,27,v1.0,0.94
+SKU_037,Latin America,W04,26,v1.0,0.82
+SKU_037,Latin America,W05,23,v1.0,0.83
+SKU_037,Latin America,W06,23,v1.0,0.86
+SKU_037,Latin America,W07,20,v1.0,0.9
+SKU_037,Latin America,W08,19,v1.0,0.9
+SKU_037,Latin America,W09,17,v1.0,0.88
+SKU_037,Latin America,W10,20,v1.0,0.94
+SKU_037,Latin America,W11,21,v1.0,0.93
+SKU_037,Latin America,W12,22,v1.0,0.92
+SKU_037,Latin America,M04,24,v1.0,0.85
+SKU_037,Latin America,M05,23,v1.0,0.89
+SKU_037,Latin America,M06,23,v1.0,0.93
+SKU_038,North America,W01,307,v1.0,0.88
+SKU_038,North America,W02,326,v1.0,0.93
+SKU_038,North America,W03,384,v1.0,0.95
+SKU_038,North America,W04,350,v1.0,0.94
+SKU_038,North America,W05,362,v1.0,0.88
+SKU_038,North America,W06,318,v1.0,0.85
+SKU_038,North America,W07,278,v1.0,0.94
+SKU_038,North America,W08,283,v1.0,0.83
+SKU_038,North America,W09,285,v1.0,0.82
+SKU_038,North America,W10,283,v1.0,0.86
+SKU_038,North America,W11,272,v1.0,0.86
+SKU_038,North America,W12,307,v1.0,0.91
+SKU_038,North America,M04,381,v1.0,0.91
+SKU_038,North America,M05,356,v1.0,0.94
+SKU_038,North America,M06,336,v1.0,0.88
+SKU_038,Europe,W01,293,v1.0,0.86
+SKU_038,Europe,W02,281,v1.0,0.89
+SKU_038,Europe,W03,320,v1.0,0.83
+SKU_038,Europe,W04,289,v1.0,0.94
+SKU_038,Europe,W05,295,v1.0,0.91
+SKU_038,Europe,W06,273,v1.0,0.92
+SKU_038,Europe,W07,265,v1.0,0.88
+SKU_038,Europe,W08,221,v1.0,0.85
+SKU_038,Europe,W09,215,v1.0,0.83
+SKU_038,Europe,W10,217,v1.0,0.9
+SKU_038,Europe,W11,221,v1.0,0.94
+SKU_038,Europe,W12,253,v1.0,0.84
+SKU_038,Europe,M04,290,v1.0,0.87
+SKU_038,Europe,M05,303,v1.0,0.86
+SKU_038,Europe,M06,281,v1.0,0.84
+SKU_038,Asia-Pacific,W01,171,v1.0,0.88
+SKU_038,Asia-Pacific,W02,191,v1.0,0.92
+SKU_038,Asia-Pacific,W03,200,v1.0,0.84
+SKU_038,Asia-Pacific,W04,190,v1.0,0.9
+SKU_038,Asia-Pacific,W05,166,v1.0,0.82
+SKU_038,Asia-Pacific,W06,176,v1.0,0.86
+SKU_038,Asia-Pacific,W07,162,v1.0,0.86
+SKU_038,Asia-Pacific,W08,138,v1.0,0.91
+SKU_038,Asia-Pacific,W09,131,v1.0,0.86
+SKU_038,Asia-Pacific,W10,145,v1.0,0.93
+SKU_038,Asia-Pacific,W11,153,v1.0,0.82
+SKU_038,Asia-Pacific,W12,151,v1.0,0.89
+SKU_038,Asia-Pacific,M04,193,v1.0,0.86
+SKU_038,Asia-Pacific,M05,192,v1.0,0.89
+SKU_038,Asia-Pacific,M06,176,v1.0,0.85
+SKU_038,Latin America,W01,84,v1.0,0.95
+SKU_038,Latin America,W02,85,v1.0,0.93
+SKU_038,Latin America,W03,88,v1.0,0.91
+SKU_038,Latin America,W04,97,v1.0,0.94
+SKU_038,Latin America,W05,85,v1.0,0.92
+SKU_038,Latin America,W06,88,v1.0,0.92
+SKU_038,Latin America,W07,81,v1.0,0.91
+SKU_038,Latin America,W08,70,v1.0,0.93
+SKU_038,Latin America,W09,74,v1.0,0.84
+SKU_038,Latin America,W10,64,v1.0,0.87
+SKU_038,Latin America,W11,72,v1.0,0.88
+SKU_038,Latin America,W12,76,v1.0,0.87
+SKU_038,Latin America,M04,87,v1.0,0.91
+SKU_038,Latin America,M05,88,v1.0,0.94
+SKU_038,Latin America,M06,89,v1.0,0.89
+SKU_039,North America,W01,152,v1.0,0.92
+SKU_039,North America,W02,172,v1.0,0.92
+SKU_039,North America,W03,184,v1.0,0.91
+SKU_039,North America,W04,171,v1.0,0.84
+SKU_039,North America,W05,155,v1.0,0.91
+SKU_039,North America,W06,149,v1.0,0.84
+SKU_039,North America,W07,137,v1.0,0.92
+SKU_039,North America,W08,139,v1.0,0.82
+SKU_039,North America,W09,134,v1.0,0.89
+SKU_039,North America,W10,133,v1.0,0.95
+SKU_039,North America,W11,127,v1.0,0.94
+SKU_039,North America,W12,143,v1.0,0.93
+SKU_039,North America,M04,185,v1.0,0.83
+SKU_039,North America,M05,182,v1.0,0.84
+SKU_039,North America,M06,149,v1.0,0.95
+SKU_039,Europe,W01,140,v1.0,0.9
+SKU_039,Europe,W02,154,v1.0,0.9
+SKU_039,Europe,W03,144,v1.0,0.82
+SKU_039,Europe,W04,139,v1.0,0.88
+SKU_039,Europe,W05,143,v1.0,0.94
+SKU_039,Europe,W06,133,v1.0,0.87
+SKU_039,Europe,W07,124,v1.0,0.92
+SKU_039,Europe,W08,116,v1.0,0.92
+SKU_039,Europe,W09,115,v1.0,0.9
+SKU_039,Europe,W10,105,v1.0,0.9
+SKU_039,Europe,W11,111,v1.0,0.84
+SKU_039,Europe,W12,114,v1.0,0.88
+SKU_039,Europe,M04,150,v1.0,0.89
+SKU_039,Europe,M05,132,v1.0,0.89
+SKU_039,Europe,M06,137,v1.0,0.86
+SKU_039,Asia-Pacific,W01,88,v1.0,0.92
+SKU_039,Asia-Pacific,W02,85,v1.0,0.88
+SKU_039,Asia-Pacific,W03,93,v1.0,0.88
+SKU_039,Asia-Pacific,W04,91,v1.0,0.83
+SKU_039,Asia-Pacific,W05,80,v1.0,0.94
+SKU_039,Asia-Pacific,W06,85,v1.0,0.84
+SKU_039,Asia-Pacific,W07,79,v1.0,0.82
+SKU_039,Asia-Pacific,W08,71,v1.0,0.89
+SKU_039,Asia-Pacific,W09,71,v1.0,0.88
+SKU_039,Asia-Pacific,W10,68,v1.0,0.9
+SKU_039,Asia-Pacific,W11,73,v1.0,0.92
+SKU_039,Asia-Pacific,W12,71,v1.0,0.92
+SKU_039,Asia-Pacific,M04,98,v1.0,0.94
+SKU_039,Asia-Pacific,M05,84,v1.0,0.9
+SKU_039,Asia-Pacific,M06,80,v1.0,0.89
+SKU_039,Latin America,W01,44,v1.0,0.84
+SKU_039,Latin America,W02,42,v1.0,0.85
+SKU_039,Latin America,W03,43,v1.0,0.89
+SKU_039,Latin America,W04,47,v1.0,0.82
+SKU_039,Latin America,W05,46,v1.0,0.89
+SKU_039,Latin America,W06,39,v1.0,0.89
+SKU_039,Latin America,W07,37,v1.0,0.94
+SKU_039,Latin America,W08,32,v1.0,0.86
+SKU_039,Latin America,W09,36,v1.0,0.89
+SKU_039,Latin America,W10,35,v1.0,0.91
+SKU_039,Latin America,W11,35,v1.0,0.9
+SKU_039,Latin America,W12,39,v1.0,0.89
+SKU_039,Latin America,M04,49,v1.0,0.87
+SKU_039,Latin America,M05,44,v1.0,0.85
+SKU_039,Latin America,M06,39,v1.0,0.93
+SKU_040,North America,W01,204,v1.0,0.84
+SKU_040,North America,W02,245,v1.0,0.85
+SKU_040,North America,W03,222,v1.0,0.89
+SKU_040,North America,W04,237,v1.0,0.86
+SKU_040,North America,W05,232,v1.0,0.87
+SKU_040,North America,W06,211,v1.0,0.85
+SKU_040,North America,W07,199,v1.0,0.84
+SKU_040,North America,W08,181,v1.0,0.94
+SKU_040,North America,W09,180,v1.0,0.94
+SKU_040,North America,W10,166,v1.0,0.85
+SKU_040,North America,W11,187,v1.0,0.86
+SKU_040,North America,W12,201,v1.0,0.9
+SKU_040,North America,M04,244,v1.0,0.89
+SKU_040,North America,M05,236,v1.0,0.89
+SKU_040,North America,M06,206,v1.0,0.93
+SKU_040,Europe,W01,180,v1.0,0.92
+SKU_040,Europe,W02,191,v1.0,0.95
+SKU_040,Europe,W03,191,v1.0,0.86
+SKU_040,Europe,W04,198,v1.0,0.91
+SKU_040,Europe,W05,186,v1.0,0.86
+SKU_040,Europe,W06,165,v1.0,0.94
+SKU_040,Europe,W07,171,v1.0,0.84
+SKU_040,Europe,W08,161,v1.0,0.86
+SKU_040,Europe,W09,138,v1.0,0.95
+SKU_040,Europe,W10,141,v1.0,0.94
+SKU_040,Europe,W11,162,v1.0,0.84
+SKU_040,Europe,W12,166,v1.0,0.93
+SKU_040,Europe,M04,202,v1.0,0.92
+SKU_040,Europe,M05,181,v1.0,0.87
+SKU_040,Europe,M06,186,v1.0,0.86
+SKU_040,Asia-Pacific,W01,111,v1.0,0.83
+SKU_040,Asia-Pacific,W02,113,v1.0,0.86
+SKU_040,Asia-Pacific,W03,129,v1.0,0.84
+SKU_040,Asia-Pacific,W04,129,v1.0,0.91
+SKU_040,Asia-Pacific,W05,123,v1.0,0.89
+SKU_040,Asia-Pacific,W06,117,v1.0,0.87
+SKU_040,Asia-Pacific,W07,104,v1.0,0.85
+SKU_040,Asia-Pacific,W08,98,v1.0,0.91
+SKU_040,Asia-Pacific,W09,94,v1.0,0.84
+SKU_040,Asia-Pacific,W10,93,v1.0,0.85
+SKU_040,Asia-Pacific,W11,103,v1.0,0.9
+SKU_040,Asia-Pacific,W12,101,v1.0,0.92
+SKU_040,Asia-Pacific,M04,128,v1.0,0.87
+SKU_040,Asia-Pacific,M05,120,v1.0,0.88
+SKU_040,Asia-Pacific,M06,112,v1.0,0.88
+SKU_040,Latin America,W01,56,v1.0,0.94
+SKU_040,Latin America,W02,61,v1.0,0.91
+SKU_040,Latin America,W03,66,v1.0,0.85
+SKU_040,Latin America,W04,62,v1.0,0.83
+SKU_040,Latin America,W05,57,v1.0,0.92
+SKU_040,Latin America,W06,58,v1.0,0.9
+SKU_040,Latin America,W07,47,v1.0,0.85
+SKU_040,Latin America,W08,44,v1.0,0.89
+SKU_040,Latin America,W09,43,v1.0,0.86
+SKU_040,Latin America,W10,49,v1.0,0.93
+SKU_040,Latin America,W11,44,v1.0,0.94
+SKU_040,Latin America,W12,53,v1.0,0.94
+SKU_040,Latin America,M04,58,v1.0,0.88
+SKU_040,Latin America,M05,62,v1.0,0.91
+SKU_040,Latin America,M06,57,v1.0,0.84
+SKU_041,North America,W01,130,v1.0,0.94
+SKU_041,North America,W02,139,v1.0,0.91
+SKU_041,North America,W03,141,v1.0,0.92
+SKU_041,North America,W04,130,v1.0,0.92
+SKU_041,North America,W05,139,v1.0,0.93
+SKU_041,North America,W06,129,v1.0,0.89
+SKU_041,North America,W07,115,v1.0,0.9
+SKU_041,North America,W08,113,v1.0,0.91
+SKU_041,North America,W09,108,v1.0,0.89
+SKU_041,North America,W10,97,v1.0,0.83
+SKU_041,North America,W11,112,v1.0,0.89
+SKU_041,North America,W12,122,v1.0,0.87
+SKU_041,North America,M04,134,v1.0,0.87
+SKU_041,North America,M05,125,v1.0,0.94
+SKU_041,North America,M06,121,v1.0,0.89
+SKU_041,Europe,W01,112,v1.0,0.84
+SKU_041,Europe,W02,109,v1.0,0.86
+SKU_041,Europe,W03,110,v1.0,0.92
+SKU_041,Europe,W04,115,v1.0,0.85
+SKU_041,Europe,W05,106,v1.0,0.94
+SKU_041,Europe,W06,104,v1.0,0.93
+SKU_041,Europe,W07,88,v1.0,0.88
+SKU_041,Europe,W08,90,v1.0,0.88
+SKU_041,Europe,W09,83,v1.0,0.9
+SKU_041,Europe,W10,83,v1.0,0.87
+SKU_041,Europe,W11,82,v1.0,0.94
+SKU_041,Europe,W12,91,v1.0,0.87
+SKU_041,Europe,M04,108,v1.0,0.88
+SKU_041,Europe,M05,105,v1.0,0.89
+SKU_041,Europe,M06,100,v1.0,0.84
+SKU_041,Asia-Pacific,W01,67,v1.0,0.84
+SKU_041,Asia-Pacific,W02,72,v1.0,0.85
+SKU_041,Asia-Pacific,W03,70,v1.0,0.86
+SKU_041,Asia-Pacific,W04,70,v1.0,0.84
+SKU_041,Asia-Pacific,W05,71,v1.0,0.83
+SKU_041,Asia-Pacific,W06,63,v1.0,0.93
+SKU_041,Asia-Pacific,W07,56,v1.0,0.87
+SKU_041,Asia-Pacific,W08,55,v1.0,0.87
+SKU_041,Asia-Pacific,W09,56,v1.0,0.85
+SKU_041,Asia-Pacific,W10,51,v1.0,0.83
+SKU_041,Asia-Pacific,W11,55,v1.0,0.92
+SKU_041,Asia-Pacific,W12,64,v1.0,0.84
+SKU_041,Asia-Pacific,M04,68,v1.0,0.88
+SKU_041,Asia-Pacific,M05,72,v1.0,0.85
+SKU_041,Asia-Pacific,M06,65,v1.0,0.89
+SKU_041,Latin America,W01,35,v1.0,0.91
+SKU_041,Latin America,W02,34,v1.0,0.92
+SKU_041,Latin America,W03,38,v1.0,0.89
+SKU_041,Latin America,W04,38,v1.0,0.93
+SKU_041,Latin America,W05,33,v1.0,0.83
+SKU_041,Latin America,W06,30,v1.0,0.82
+SKU_041,Latin America,W07,28,v1.0,0.89
+SKU_041,Latin America,W08,29,v1.0,0.85
+SKU_041,Latin America,W09,27,v1.0,0.86
+SKU_041,Latin America,W10,28,v1.0,0.92
+SKU_041,Latin America,W11,27,v1.0,0.86
+SKU_041,Latin America,W12,30,v1.0,0.92
+SKU_041,Latin America,M04,34,v1.0,0.84
+SKU_041,Latin America,M05,35,v1.0,0.85
+SKU_041,Latin America,M06,34,v1.0,0.93
+SKU_042,North America,W01,397,v1.0,0.93
+SKU_042,North America,W02,414,v1.0,0.91
+SKU_042,North America,W03,466,v1.0,0.91
+SKU_042,North America,W04,439,v1.0,0.84
+SKU_042,North America,W05,454,v1.0,0.9
+SKU_042,North America,W06,403,v1.0,0.85
+SKU_042,North America,W07,344,v1.0,0.82
+SKU_042,North America,W08,369,v1.0,0.94
+SKU_042,North America,W09,325,v1.0,0.9
+SKU_042,North America,W10,309,v1.0,0.83
+SKU_042,North America,W11,340,v1.0,0.86
+SKU_042,North America,W12,378,v1.0,0.85
+SKU_042,North America,M04,432,v1.0,0.88
+SKU_042,North America,M05,433,v1.0,0.9
+SKU_042,North America,M06,397,v1.0,0.86
+SKU_042,Europe,W01,336,v1.0,0.87
+SKU_042,Europe,W02,361,v1.0,0.86
+SKU_042,Europe,W03,347,v1.0,0.83
+SKU_042,Europe,W04,343,v1.0,0.92
+SKU_042,Europe,W05,338,v1.0,0.88
+SKU_042,Europe,W06,354,v1.0,0.83
+SKU_042,Europe,W07,292,v1.0,0.94
+SKU_042,Europe,W08,282,v1.0,0.86
+SKU_042,Europe,W09,259,v1.0,0.82
+SKU_042,Europe,W10,280,v1.0,0.93
+SKU_042,Europe,W11,283,v1.0,0.92
+SKU_042,Europe,W12,304,v1.0,0.92
+SKU_042,Europe,M04,375,v1.0,0.87
+SKU_042,Europe,M05,373,v1.0,0.85
+SKU_042,Europe,M06,339,v1.0,0.94
+SKU_042,Asia-Pacific,W01,205,v1.0,0.92
+SKU_042,Asia-Pacific,W02,215,v1.0,0.9
+SKU_042,Asia-Pacific,W03,249,v1.0,0.91
+SKU_042,Asia-Pacific,W04,219,v1.0,0.91
+SKU_042,Asia-Pacific,W05,236,v1.0,0.83
+SKU_042,Asia-Pacific,W06,209,v1.0,0.86
+SKU_042,Asia-Pacific,W07,199,v1.0,0.95
+SKU_042,Asia-Pacific,W08,171,v1.0,0.91
+SKU_042,Asia-Pacific,W09,160,v1.0,0.84
+SKU_042,Asia-Pacific,W10,175,v1.0,0.85
+SKU_042,Asia-Pacific,W11,192,v1.0,0.93
+SKU_042,Asia-Pacific,W12,207,v1.0,0.95
+SKU_042,Asia-Pacific,M04,248,v1.0,0.88
+SKU_042,Asia-Pacific,M05,235,v1.0,0.94
+SKU_042,Asia-Pacific,M06,201,v1.0,0.87
+SKU_042,Latin America,W01,116,v1.0,0.89
+SKU_042,Latin America,W02,105,v1.0,0.9
+SKU_042,Latin America,W03,120,v1.0,0.84
+SKU_042,Latin America,W04,107,v1.0,0.89
+SKU_042,Latin America,W05,116,v1.0,0.91
+SKU_042,Latin America,W06,107,v1.0,0.87
+SKU_042,Latin America,W07,99,v1.0,0.93
+SKU_042,Latin America,W08,96,v1.0,0.84
+SKU_042,Latin America,W09,90,v1.0,0.87
+SKU_042,Latin America,W10,90,v1.0,0.87
+SKU_042,Latin America,W11,87,v1.0,0.84
+SKU_042,Latin America,W12,92,v1.0,0.85
+SKU_042,Latin America,M04,120,v1.0,0.93
+SKU_042,Latin America,M05,119,v1.0,0.88
+SKU_042,Latin America,M06,111,v1.0,0.89
+SKU_043,North America,W01,262,v1.0,0.86
+SKU_043,North America,W02,251,v1.0,0.84
+SKU_043,North America,W03,254,v1.0,0.89
+SKU_043,North America,W04,254,v1.0,0.9
+SKU_043,North America,W05,270,v1.0,0.86
+SKU_043,North America,W06,222,v1.0,0.93
+SKU_043,North America,W07,203,v1.0,0.95
+SKU_043,North America,W08,221,v1.0,0.85
+SKU_043,North America,W09,185,v1.0,0.9
+SKU_043,North America,W10,202,v1.0,0.95
+SKU_043,North America,W11,201,v1.0,0.94
+SKU_043,North America,W12,235,v1.0,0.85
+SKU_043,North America,M04,250,v1.0,0.94
+SKU_043,North America,M05,251,v1.0,0.95
+SKU_043,North America,M06,251,v1.0,0.82
+SKU_043,Europe,W01,204,v1.0,0.91
+SKU_043,Europe,W02,212,v1.0,0.85
+SKU_043,Europe,W03,207,v1.0,0.91
+SKU_043,Europe,W04,234,v1.0,0.94
+SKU_043,Europe,W05,215,v1.0,0.91
+SKU_043,Europe,W06,205,v1.0,0.94
+SKU_043,Europe,W07,177,v1.0,0.9
+SKU_043,Europe,W08,175,v1.0,0.85
+SKU_043,Europe,W09,165,v1.0,0.86
+SKU_043,Europe,W10,159,v1.0,0.9
+SKU_043,Europe,W11,184,v1.0,0.87
+SKU_043,Europe,W12,185,v1.0,0.91
+SKU_043,Europe,M04,221,v1.0,0.84
+SKU_043,Europe,M05,217,v1.0,0.88
+SKU_043,Europe,M06,205,v1.0,0.93
+SKU_043,Asia-Pacific,W01,123,v1.0,0.89
+SKU_043,Asia-Pacific,W02,147,v1.0,0.84
+SKU_043,Asia-Pacific,W03,135,v1.0,0.86
+SKU_043,Asia-Pacific,W04,147,v1.0,0.93
+SKU_043,Asia-Pacific,W05,136,v1.0,0.84
+SKU_043,Asia-Pacific,W06,117,v1.0,0.88
+SKU_043,Asia-Pacific,W07,114,v1.0,0.9
+SKU_043,Asia-Pacific,W08,106,v1.0,0.91
+SKU_043,Asia-Pacific,W09,98,v1.0,0.92
+SKU_043,Asia-Pacific,W10,96,v1.0,0.83
+SKU_043,Asia-Pacific,W11,107,v1.0,0.83
+SKU_043,Asia-Pacific,W12,107,v1.0,0.93
+SKU_043,Asia-Pacific,M04,149,v1.0,0.84
+SKU_043,Asia-Pacific,M05,142,v1.0,0.85
+SKU_043,Asia-Pacific,M06,138,v1.0,0.9
+SKU_043,Latin America,W01,68,v1.0,0.82
+SKU_043,Latin America,W02,71,v1.0,0.89
+SKU_043,Latin America,W03,73,v1.0,0.93
+SKU_043,Latin America,W04,64,v1.0,0.84
+SKU_043,Latin America,W05,69,v1.0,0.94
+SKU_043,Latin America,W06,65,v1.0,0.86
+SKU_043,Latin America,W07,57,v1.0,0.85
+SKU_043,Latin America,W08,54,v1.0,0.85
+SKU_043,Latin America,W09,52,v1.0,0.82
+SKU_043,Latin America,W10,48,v1.0,0.89
+SKU_043,Latin America,W11,51,v1.0,0.94
+SKU_043,Latin America,W12,57,v1.0,0.82
+SKU_043,Latin America,M04,66,v1.0,0.85
+SKU_043,Latin America,M05,67,v1.0,0.87
+SKU_043,Latin America,M06,62,v1.0,0.94
+SKU_044,North America,W01,399,v1.0,0.93
+SKU_044,North America,W02,450,v1.0,0.83
+SKU_044,North America,W03,413,v1.0,0.83
+SKU_044,North America,W04,404,v1.0,0.94
+SKU_044,North America,W05,404,v1.0,0.9
+SKU_044,North America,W06,364,v1.0,0.94
+SKU_044,North America,W07,384,v1.0,0.94
+SKU_044,North America,W08,342,v1.0,0.84
+SKU_044,North America,W09,325,v1.0,0.9
+SKU_044,North America,W10,334,v1.0,0.84
+SKU_044,North America,W11,348,v1.0,0.86
+SKU_044,North America,W12,382,v1.0,0.87
+SKU_044,North America,M04,408,v1.0,0.94
+SKU_044,North America,M05,436,v1.0,0.94
+SKU_044,North America,M06,423,v1.0,0.91
+SKU_044,Europe,W01,319,v1.0,0.82
+SKU_044,Europe,W02,385,v1.0,0.84
+SKU_044,Europe,W03,377,v1.0,0.86
+SKU_044,Europe,W04,357,v1.0,0.91
+SKU_044,Europe,W05,364,v1.0,0.88
+SKU_044,Europe,W06,304,v1.0,0.9
+SKU_044,Europe,W07,325,v1.0,0.86
+SKU_044,Europe,W08,265,v1.0,0.95
+SKU_044,Europe,W09,259,v1.0,0.87
+SKU_044,Europe,W10,266,v1.0,0.88
+SKU_044,Europe,W11,294,v1.0,0.87
+SKU_044,Europe,W12,320,v1.0,0.86
+SKU_044,Europe,M04,385,v1.0,0.91
+SKU_044,Europe,M05,343,v1.0,0.87
+SKU_044,Europe,M06,339,v1.0,0.89
+SKU_044,Asia-Pacific,W01,215,v1.0,0.93
+SKU_044,Asia-Pacific,W02,221,v1.0,0.9
+SKU_044,Asia-Pacific,W03,227,v1.0,0.9
+SKU_044,Asia-Pacific,W04,234,v1.0,0.92
+SKU_044,Asia-Pacific,W05,225,v1.0,0.85
+SKU_044,Asia-Pacific,W06,187,v1.0,0.95
+SKU_044,Asia-Pacific,W07,174,v1.0,0.89
+SKU_044,Asia-Pacific,W08,190,v1.0,0.94
+SKU_044,Asia-Pacific,W09,158,v1.0,0.87
+SKU_044,Asia-Pacific,W10,180,v1.0,0.93
+SKU_044,Asia-Pacific,W11,187,v1.0,0.86
+SKU_044,Asia-Pacific,W12,180,v1.0,0.93
+SKU_044,Asia-Pacific,M04,247,v1.0,0.94
+SKU_044,Asia-Pacific,M05,214,v1.0,0.93
+SKU_044,Asia-Pacific,M06,197,v1.0,0.84
+SKU_044,Latin America,W01,115,v1.0,0.91
+SKU_044,Latin America,W02,110,v1.0,0.82
+SKU_044,Latin America,W03,123,v1.0,0.87
+SKU_044,Latin America,W04,117,v1.0,0.91
+SKU_044,Latin America,W05,101,v1.0,0.93
+SKU_044,Latin America,W06,108,v1.0,0.82
+SKU_044,Latin America,W07,92,v1.0,0.83
+SKU_044,Latin America,W08,82,v1.0,0.89
+SKU_044,Latin America,W09,89,v1.0,0.84
+SKU_044,Latin America,W10,81,v1.0,0.92
+SKU_044,Latin America,W11,92,v1.0,0.91
+SKU_044,Latin America,W12,92,v1.0,0.87
+SKU_044,Latin America,M04,111,v1.0,0.92
+SKU_044,Latin America,M05,115,v1.0,0.86
+SKU_044,Latin America,M06,100,v1.0,0.93
+SKU_045,North America,W01,137,v1.0,0.84
+SKU_045,North America,W02,134,v1.0,0.87
+SKU_045,North America,W03,143,v1.0,0.94
+SKU_045,North America,W04,142,v1.0,0.91
+SKU_045,North America,W05,132,v1.0,0.89
+SKU_045,North America,W06,124,v1.0,0.85
+SKU_045,North America,W07,127,v1.0,0.86
+SKU_045,North America,W08,104,v1.0,0.87
+SKU_045,North America,W09,115,v1.0,0.92
+SKU_045,North America,W10,106,v1.0,0.83
+SKU_045,North America,W11,110,v1.0,0.93
+SKU_045,North America,W12,130,v1.0,0.9
+SKU_045,North America,M04,135,v1.0,0.91
+SKU_045,North America,M05,140,v1.0,0.9
+SKU_045,North America,M06,131,v1.0,0.87
+SKU_045,Europe,W01,105,v1.0,0.87
+SKU_045,Europe,W02,118,v1.0,0.86
+SKU_045,Europe,W03,114,v1.0,0.87
+SKU_045,Europe,W04,126,v1.0,0.86
+SKU_045,Europe,W05,110,v1.0,0.84
+SKU_045,Europe,W06,101,v1.0,0.85
+SKU_045,Europe,W07,92,v1.0,0.94
+SKU_045,Europe,W08,89,v1.0,0.85
+SKU_045,Europe,W09,96,v1.0,0.85
+SKU_045,Europe,W10,84,v1.0,0.89
+SKU_045,Europe,W11,88,v1.0,0.95
+SKU_045,Europe,W12,101,v1.0,0.83
+SKU_045,Europe,M04,114,v1.0,0.86
+SKU_045,Europe,M05,128,v1.0,0.92
+SKU_045,Europe,M06,121,v1.0,0.89
+SKU_045,Asia-Pacific,W01,69,v1.0,0.87
+SKU_045,Asia-Pacific,W02,73,v1.0,0.84
+SKU_045,Asia-Pacific,W03,78,v1.0,0.86
+SKU_045,Asia-Pacific,W04,80,v1.0,0.89
+SKU_045,Asia-Pacific,W05,72,v1.0,0.92
+SKU_045,Asia-Pacific,W06,62,v1.0,0.92
+SKU_045,Asia-Pacific,W07,62,v1.0,0.93
+SKU_045,Asia-Pacific,W08,54,v1.0,0.84
+SKU_045,Asia-Pacific,W09,58,v1.0,0.83
+SKU_045,Asia-Pacific,W10,57,v1.0,0.94
+SKU_045,Asia-Pacific,W11,56,v1.0,0.85
+SKU_045,Asia-Pacific,W12,65,v1.0,0.84
+SKU_045,Asia-Pacific,M04,78,v1.0,0.95
+SKU_045,Asia-Pacific,M05,74,v1.0,0.95
+SKU_045,Asia-Pacific,M06,71,v1.0,0.89
+SKU_045,Latin America,W01,37,v1.0,0.88
+SKU_045,Latin America,W02,35,v1.0,0.86
+SKU_045,Latin America,W03,38,v1.0,0.94
+SKU_045,Latin America,W04,34,v1.0,0.91
+SKU_045,Latin America,W05,37,v1.0,0.85
+SKU_045,Latin America,W06,36,v1.0,0.9
+SKU_045,Latin America,W07,33,v1.0,0.89
+SKU_045,Latin America,W08,31,v1.0,0.83
+SKU_045,Latin America,W09,26,v1.0,0.92
+SKU_045,Latin America,W10,27,v1.0,0.93
+SKU_045,Latin America,W11,31,v1.0,0.94
+SKU_045,Latin America,W12,31,v1.0,0.88
+SKU_045,Latin America,M04,36,v1.0,0.86
+SKU_045,Latin America,M05,34,v1.0,0.89
+SKU_045,Latin America,M06,34,v1.0,0.83
+SKU_046,North America,W01,436,v1.0,0.85
+SKU_046,North America,W02,437,v1.0,0.85
+SKU_046,North America,W03,475,v1.0,0.9
+SKU_046,North America,W04,417,v1.0,0.84
+SKU_046,North America,W05,429,v1.0,0.83
+SKU_046,North America,W06,421,v1.0,0.87
+SKU_046,North America,W07,390,v1.0,0.94
+SKU_046,North America,W08,325,v1.0,0.87
+SKU_046,North America,W09,351,v1.0,0.94
+SKU_046,North America,W10,327,v1.0,0.91
+SKU_046,North America,W11,349,v1.0,0.85
+SKU_046,North America,W12,396,v1.0,0.91
+SKU_046,North America,M04,456,v1.0,0.9
+SKU_046,North America,M05,453,v1.0,0.85
+SKU_046,North America,M06,435,v1.0,0.82
+SKU_046,Europe,W01,372,v1.0,0.86
+SKU_046,Europe,W02,349,v1.0,0.87
+SKU_046,Europe,W03,351,v1.0,0.87
+SKU_046,Europe,W04,371,v1.0,0.83
+SKU_046,Europe,W05,356,v1.0,0.9
+SKU_046,Europe,W06,357,v1.0,0.88
+SKU_046,Europe,W07,290,v1.0,0.92
+SKU_046,Europe,W08,310,v1.0,0.94
+SKU_046,Europe,W09,292,v1.0,0.85
+SKU_046,Europe,W10,273,v1.0,0.86
+SKU_046,Europe,W11,317,v1.0,0.88
+SKU_046,Europe,W12,325,v1.0,0.88
+SKU_046,Europe,M04,364,v1.0,0.82
+SKU_046,Europe,M05,347,v1.0,0.88
+SKU_046,Europe,M06,356,v1.0,0.86
+SKU_046,Asia-Pacific,W01,203,v1.0,0.9
+SKU_046,Asia-Pacific,W02,226,v1.0,0.94
+SKU_046,Asia-Pacific,W03,230,v1.0,0.88
+SKU_046,Asia-Pacific,W04,232,v1.0,0.83
+SKU_046,Asia-Pacific,W05,237,v1.0,0.94
+SKU_046,Asia-Pacific,W06,215,v1.0,0.86
+SKU_046,Asia-Pacific,W07,198,v1.0,0.83
+SKU_046,Asia-Pacific,W08,169,v1.0,0.87
+SKU_046,Asia-Pacific,W09,169,v1.0,0.91
+SKU_046,Asia-Pacific,W10,186,v1.0,0.89
+SKU_046,Asia-Pacific,W11,188,v1.0,0.85
+SKU_046,Asia-Pacific,W12,207,v1.0,0.83
+SKU_046,Asia-Pacific,M04,251,v1.0,0.86
+SKU_046,Asia-Pacific,M05,239,v1.0,0.84
+SKU_046,Asia-Pacific,M06,212,v1.0,0.87
+SKU_046,Latin America,W01,109,v1.0,0.91
+SKU_046,Latin America,W02,109,v1.0,0.91
+SKU_046,Latin America,W03,115,v1.0,0.91
+SKU_046,Latin America,W04,114,v1.0,0.82
+SKU_046,Latin America,W05,116,v1.0,0.9
+SKU_046,Latin America,W06,97,v1.0,0.91
+SKU_046,Latin America,W07,99,v1.0,0.86
+SKU_046,Latin America,W08,98,v1.0,0.94
+SKU_046,Latin America,W09,91,v1.0,0.92
+SKU_046,Latin America,W10,85,v1.0,0.84
+SKU_046,Latin America,W11,91,v1.0,0.84
+SKU_046,Latin America,W12,104,v1.0,0.83
+SKU_046,Latin America,M04,126,v1.0,0.87
+SKU_046,Latin America,M05,115,v1.0,0.82
+SKU_046,Latin America,M06,108,v1.0,0.93
+SKU_047,North America,W01,178,v1.0,0.9
+SKU_047,North America,W02,185,v1.0,0.82
+SKU_047,North America,W03,194,v1.0,0.84
+SKU_047,North America,W04,190,v1.0,0.92
+SKU_047,North America,W05,180,v1.0,0.85
+SKU_047,North America,W06,158,v1.0,0.84
+SKU_047,North America,W07,158,v1.0,0.94
+SKU_047,North America,W08,141,v1.0,0.87
+SKU_047,North America,W09,134,v1.0,0.86
+SKU_047,North America,W10,146,v1.0,0.84
+SKU_047,North America,W11,145,v1.0,0.95
+SKU_047,North America,W12,153,v1.0,0.87
+SKU_047,North America,M04,196,v1.0,0.88
+SKU_047,North America,M05,195,v1.0,0.86
+SKU_047,North America,M06,184,v1.0,0.88
+SKU_047,Europe,W01,143,v1.0,0.89
+SKU_047,Europe,W02,145,v1.0,0.88
+SKU_047,Europe,W03,152,v1.0,0.91
+SKU_047,Europe,W04,160,v1.0,0.9
+SKU_047,Europe,W05,154,v1.0,0.94
+SKU_047,Europe,W06,148,v1.0,0.83
+SKU_047,Europe,W07,121,v1.0,0.93
+SKU_047,Europe,W08,113,v1.0,0.82
+SKU_047,Europe,W09,124,v1.0,0.83
+SKU_047,Europe,W10,121,v1.0,0.9
+SKU_047,Europe,W11,123,v1.0,0.9
+SKU_047,Europe,W12,131,v1.0,0.92
+SKU_047,Europe,M04,161,v1.0,0.93
+SKU_047,Europe,M05,146,v1.0,0.92
+SKU_047,Europe,M06,146,v1.0,0.83
+SKU_047,Asia-Pacific,W01,96,v1.0,0.94
+SKU_047,Asia-Pacific,W02,94,v1.0,0.92
+SKU_047,Asia-Pacific,W03,97,v1.0,0.94
+SKU_047,Asia-Pacific,W04,99,v1.0,0.92
+SKU_047,Asia-Pacific,W05,91,v1.0,0.94
+SKU_047,Asia-Pacific,W06,91,v1.0,0.89
+SKU_047,Asia-Pacific,W07,78,v1.0,0.91
+SKU_047,Asia-Pacific,W08,73,v1.0,0.94
+SKU_047,Asia-Pacific,W09,77,v1.0,0.91
+SKU_047,Asia-Pacific,W10,67,v1.0,0.94
+SKU_047,Asia-Pacific,W11,70,v1.0,0.82
+SKU_047,Asia-Pacific,W12,85,v1.0,0.93
+SKU_047,Asia-Pacific,M04,98,v1.0,0.92
+SKU_047,Asia-Pacific,M05,93,v1.0,0.84
+SKU_047,Asia-Pacific,M06,91,v1.0,0.88
+SKU_047,Latin America,W01,46,v1.0,0.87
+SKU_047,Latin America,W02,49,v1.0,0.87
+SKU_047,Latin America,W03,45,v1.0,0.94
+SKU_047,Latin America,W04,48,v1.0,0.94
+SKU_047,Latin America,W05,45,v1.0,0.91
+SKU_047,Latin America,W06,43,v1.0,0.86
+SKU_047,Latin America,W07,38,v1.0,0.85
+SKU_047,Latin America,W08,39,v1.0,0.84
+SKU_047,Latin America,W09,34,v1.0,0.9
+SKU_047,Latin America,W10,36,v1.0,0.92
+SKU_047,Latin America,W11,40,v1.0,0.93
+SKU_047,Latin America,W12,38,v1.0,0.86
+SKU_047,Latin America,M04,45,v1.0,0.82
+SKU_047,Latin America,M05,44,v1.0,0.92
+SKU_047,Latin America,M06,42,v1.0,0.9
+SKU_048,North America,W01,372,v1.0,0.83
+SKU_048,North America,W02,359,v1.0,0.92
+SKU_048,North America,W03,351,v1.0,0.88
+SKU_048,North America,W04,377,v1.0,0.87
+SKU_048,North America,W05,339,v1.0,0.94
+SKU_048,North America,W06,321,v1.0,0.89
+SKU_048,North America,W07,295,v1.0,0.92
+SKU_048,North America,W08,301,v1.0,0.92
+SKU_048,North America,W09,284,v1.0,0.86
+SKU_048,North America,W10,297,v1.0,0.9
+SKU_048,North America,W11,297,v1.0,0.9
+SKU_048,North America,W12,291,v1.0,0.88
+SKU_048,North America,M04,379,v1.0,0.83
+SKU_048,North America,M05,351,v1.0,0.94
+SKU_048,North America,M06,322,v1.0,0.88
+SKU_048,Europe,W01,287,v1.0,0.93
+SKU_048,Europe,W02,303,v1.0,0.88
+SKU_048,Europe,W03,290,v1.0,0.83
+SKU_048,Europe,W04,334,v1.0,0.83
+SKU_048,Europe,W05,307,v1.0,0.87
+SKU_048,Europe,W06,271,v1.0,0.94
+SKU_048,Europe,W07,272,v1.0,0.84
+SKU_048,Europe,W08,223,v1.0,0.84
+SKU_048,Europe,W09,236,v1.0,0.9
+SKU_048,Europe,W10,216,v1.0,0.95
+SKU_048,Europe,W11,264,v1.0,0.88
+SKU_048,Europe,W12,267,v1.0,0.89
+SKU_048,Europe,M04,297,v1.0,0.92
+SKU_048,Europe,M05,327,v1.0,0.85
+SKU_048,Europe,M06,268,v1.0,0.82
+SKU_048,Asia-Pacific,W01,183,v1.0,0.84
+SKU_048,Asia-Pacific,W02,204,v1.0,0.83
+SKU_048,Asia-Pacific,W03,187,v1.0,0.86
+SKU_048,Asia-Pacific,W04,185,v1.0,0.91
+SKU_048,Asia-Pacific,W05,199,v1.0,0.85
+SKU_048,Asia-Pacific,W06,174,v1.0,0.94
+SKU_048,Asia-Pacific,W07,158,v1.0,0.89
+SKU_048,Asia-Pacific,W08,146,v1.0,0.92
+SKU_048,Asia-Pacific,W09,145,v1.0,0.89
+SKU_048,Asia-Pacific,W10,144,v1.0,0.85
+SKU_048,Asia-Pacific,W11,145,v1.0,0.91
+SKU_048,Asia-Pacific,W12,174,v1.0,0.86
+SKU_048,Asia-Pacific,M04,193,v1.0,0.9
+SKU_048,Asia-Pacific,M05,199,v1.0,0.86
+SKU_048,Asia-Pacific,M06,190,v1.0,0.94
+SKU_048,Latin America,W01,91,v1.0,0.93
+SKU_048,Latin America,W02,95,v1.0,0.92
+SKU_048,Latin America,W03,103,v1.0,0.9
+SKU_048,Latin America,W04,98,v1.0,0.88
+SKU_048,Latin America,W05,94,v1.0,0.87
+SKU_048,Latin America,W06,89,v1.0,0.83
+SKU_048,Latin America,W07,76,v1.0,0.82
+SKU_048,Latin America,W08,76,v1.0,0.9
+SKU_048,Latin America,W09,70,v1.0,0.93
+SKU_048,Latin America,W10,74,v1.0,0.95
+SKU_048,Latin America,W11,74,v1.0,0.82
+SKU_048,Latin America,W12,77,v1.0,0.86
+SKU_048,Latin America,M04,102,v1.0,0.87
+SKU_048,Latin America,M05,89,v1.0,0.91
+SKU_048,Latin America,M06,89,v1.0,0.92
+SKU_049,North America,W01,159,v1.0,0.91
+SKU_049,North America,W02,188,v1.0,0.85
+SKU_049,North America,W03,187,v1.0,0.86
+SKU_049,North America,W04,175,v1.0,0.83
+SKU_049,North America,W05,169,v1.0,0.85
+SKU_049,North America,W06,157,v1.0,0.89
+SKU_049,North America,W07,158,v1.0,0.94
+SKU_049,North America,W08,150,v1.0,0.91
+SKU_049,North America,W09,139,v1.0,0.9
+SKU_049,North America,W10,142,v1.0,0.88
+SKU_049,North America,W11,151,v1.0,0.85
+SKU_049,North America,W12,143,v1.0,0.88
+SKU_049,North America,M04,172,v1.0,0.86
+SKU_049,North America,M05,169,v1.0,0.88
+SKU_049,North America,M06,174,v1.0,0.9
+SKU_049,Europe,W01,139,v1.0,0.82
+SKU_049,Europe,W02,141,v1.0,0.92
+SKU_049,Europe,W03,158,v1.0,0.82
+SKU_049,Europe,W04,153,v1.0,0.84
+SKU_049,Europe,W05,159,v1.0,0.82
+SKU_049,Europe,W06,139,v1.0,0.89
+SKU_049,Europe,W07,125,v1.0,0.82
+SKU_049,Europe,W08,119,v1.0,0.93
+SKU_049,Europe,W09,114,v1.0,0.86
+SKU_049,Europe,W10,113,v1.0,0.86
+SKU_049,Europe,W11,113,v1.0,0.92
+SKU_049,Europe,W12,130,v1.0,0.83
+SKU_049,Europe,M04,151,v1.0,0.95
+SKU_049,Europe,M05,152,v1.0,0.9
+SKU_049,Europe,M06,153,v1.0,0.93
+SKU_049,Asia-Pacific,W01,97,v1.0,0.83
+SKU_049,Asia-Pacific,W02,91,v1.0,0.93
+SKU_049,Asia-Pacific,W03,92,v1.0,0.95
+SKU_049,Asia-Pacific,W04,102,v1.0,0.91
+SKU_049,Asia-Pacific,W05,88,v1.0,0.83
+SKU_049,Asia-Pacific,W06,89,v1.0,0.93
+SKU_049,Asia-Pacific,W07,84,v1.0,0.89
+SKU_049,Asia-Pacific,W08,69,v1.0,0.91
+SKU_049,Asia-Pacific,W09,67,v1.0,0.93
+SKU_049,Asia-Pacific,W10,67,v1.0,0.83
+SKU_049,Asia-Pacific,W11,73,v1.0,0.85
+SKU_049,Asia-Pacific,W12,83,v1.0,0.92
+SKU_049,Asia-Pacific,M04,95,v1.0,0.91
+SKU_049,Asia-Pacific,M05,101,v1.0,0.9
+SKU_049,Asia-Pacific,M06,84,v1.0,0.86
+SKU_049,Latin America,W01,42,v1.0,0.9
+SKU_049,Latin America,W02,50,v1.0,0.94
+SKU_049,Latin America,W03,49,v1.0,0.91
+SKU_049,Latin America,W04,48,v1.0,0.85
+SKU_049,Latin America,W05,46,v1.0,0.88
+SKU_049,Latin America,W06,41,v1.0,0.92
+SKU_049,Latin America,W07,40,v1.0,0.83
+SKU_049,Latin America,W08,39,v1.0,0.91
+SKU_049,Latin America,W09,35,v1.0,0.93
+SKU_049,Latin America,W10,34,v1.0,0.9
+SKU_049,Latin America,W11,40,v1.0,0.91
+SKU_049,Latin America,W12,37,v1.0,0.88
+SKU_049,Latin America,M04,46,v1.0,0.91
+SKU_049,Latin America,M05,47,v1.0,0.87
+SKU_049,Latin America,M06,45,v1.0,0.86
+SKU_050,North America,W01,383,v1.0,0.89
+SKU_050,North America,W02,375,v1.0,0.94
+SKU_050,North America,W03,408,v1.0,0.91
+SKU_050,North America,W04,412,v1.0,0.83
+SKU_050,North America,W05,352,v1.0,0.94
+SKU_050,North America,W06,344,v1.0,0.88
+SKU_050,North America,W07,331,v1.0,0.85
+SKU_050,North America,W08,299,v1.0,0.83
+SKU_050,North America,W09,289,v1.0,0.91
+SKU_050,North America,W10,315,v1.0,0.9
+SKU_050,North America,W11,287,v1.0,0.88
+SKU_050,North America,W12,308,v1.0,0.83
+SKU_050,North America,M04,363,v1.0,0.88
+SKU_050,North America,M05,370,v1.0,0.88
+SKU_050,North America,M06,366,v1.0,0.87
+SKU_050,Europe,W01,291,v1.0,0.89
+SKU_050,Europe,W02,318,v1.0,0.85
+SKU_050,Europe,W03,327,v1.0,0.88
+SKU_050,Europe,W04,319,v1.0,0.88
+SKU_050,Europe,W05,308,v1.0,0.83
+SKU_050,Europe,W06,289,v1.0,0.94
+SKU_050,Europe,W07,260,v1.0,0.84
+SKU_050,Europe,W08,243,v1.0,0.86
+SKU_050,Europe,W09,251,v1.0,0.89
+SKU_050,Europe,W10,232,v1.0,0.83
+SKU_050,Europe,W11,248,v1.0,0.83
+SKU_050,Europe,W12,260,v1.0,0.94
+SKU_050,Europe,M04,336,v1.0,0.85
+SKU_050,Europe,M05,325,v1.0,0.86
+SKU_050,Europe,M06,325,v1.0,0.91
+SKU_050,Asia-Pacific,W01,190,v1.0,0.87
+SKU_050,Asia-Pacific,W02,194,v1.0,0.93
+SKU_050,Asia-Pacific,W03,214,v1.0,0.88
+SKU_050,Asia-Pacific,W04,194,v1.0,0.85
+SKU_050,Asia-Pacific,W05,201,v1.0,0.91
+SKU_050,Asia-Pacific,W06,178,v1.0,0.82
+SKU_050,Asia-Pacific,W07,162,v1.0,0.94
+SKU_050,Asia-Pacific,W08,163,v1.0,0.92
+SKU_050,Asia-Pacific,W09,162,v1.0,0.91
+SKU_050,Asia-Pacific,W10,146,v1.0,0.91
+SKU_050,Asia-Pacific,W11,153,v1.0,0.86
+SKU_050,Asia-Pacific,W12,171,v1.0,0.95
+SKU_050,Asia-Pacific,M04,213,v1.0,0.88
+SKU_050,Asia-Pacific,M05,186,v1.0,0.95
+SKU_050,Asia-Pacific,M06,203,v1.0,0.84
+SKU_050,Latin America,W01,100,v1.0,0.82
+SKU_050,Latin America,W02,99,v1.0,0.88
+SKU_050,Latin America,W03,95,v1.0,0.93
+SKU_050,Latin America,W04,102,v1.0,0.83
+SKU_050,Latin America,W05,90,v1.0,0.91
+SKU_050,Latin America,W06,89,v1.0,0.85
+SKU_050,Latin America,W07,85,v1.0,0.92
+SKU_050,Latin America,W08,83,v1.0,0.83
+SKU_050,Latin America,W09,80,v1.0,0.86
+SKU_050,Latin America,W10,77,v1.0,0.87
+SKU_050,Latin America,W11,81,v1.0,0.91
+SKU_050,Latin America,W12,83,v1.0,0.88
+SKU_050,Latin America,M04,109,v1.0,0.86
+SKU_050,Latin America,M05,98,v1.0,0.89
+SKU_050,Latin America,M06,98,v1.0,0.93
