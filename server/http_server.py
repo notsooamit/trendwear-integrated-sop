@@ -358,7 +358,9 @@ class SOPHandler(SimpleHTTPRequestHandler):
             self._send_json({"error": str(e)}, 500)
 
 
-def run_server(port=8000):
+def run_server(port=None):
+    if port is None:
+        port = int(os.environ.get("PORT", 8000))
     server_address = ("0.0.0.0", port)
     httpd = ThreadedHTTPServer(server_address, SOPHandler)
     print(f"============================================================")

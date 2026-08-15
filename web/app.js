@@ -3,7 +3,9 @@
  * 100% Dynamic Multi-Vendor Engine & Role-Segmented Workspace Controller
  */
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = window.location.origin.includes("localhost") || window.location.origin.includes("127.0.0.1")
+  ? "http://localhost:8000/api"
+  : `${window.location.origin}/api`;
 let currentView = "landing";
 let activeRole = "executive";
 let charts = {};
