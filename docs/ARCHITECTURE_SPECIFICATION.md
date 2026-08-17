@@ -55,7 +55,7 @@ flowchart TD
 | Layer / Tool | Technology Selected | Alternatives Considered | Technical Justification and Trade-off Analysis |
 |---|---|---|---|
 | **Backend Runtime** | Python 3.10+ Standard Library (`http.server`, `socketserver`, `threading`, `json`) | Node.js / Express, Flask, FastAPI, Django | Zero external dependencies for the HTTP layer guarantees instant deployment without packaging failures. Python natively interfaces with scientific computing libraries (`pandas`, `pulp`, `scipy`). |
-| **Optimization Solver** | PuLP Mixed-Integer Linear Programming (MILP) with CBC Solver | SciPy `linprog`, Gurobi, CPLEX, Custom Heuristics | PuLP supports exact discrete integer variables required for Minimum Order Quantities (MOQ) and binary supplier activation ($y \in \{0,1\}$). Gurobi/CPLEX require expensive commercial licenses. The bundled CBC solver executes 150-variable problems in $<0.08\text{ seconds}$. |
+| **Optimization Solver** | PuLP Mixed-Integer Linear Programming (MILP) with CBC Solver | SciPy `linprog`, Gurobi, CPLEX, Custom Heuristics | PuLP supports exact discrete integer variables required for Minimum Order Quantities (MOQ) and binary supplier activation ($y \in \{0,1\}$). Gurobi/CPLEX require expensive commercial licenses. The bundled CBC solver executes 150-variable problems in &lt; 0.08 seconds. |
 | **Data Processing Layer** | Pandas In-Memory Vectorized DataFrames | SQLite, PostgreSQL, DuckDB, Polars | Fast-fashion planning involves interactive matrix operations (BOM explosion across 50 styles $\times$ 30 fabrics). In-memory DataFrames provide microsecond slicing without database connection overhead or disk lock bottlenecks. |
 | **Client Core** | Vanilla ES6+ JavaScript & HTML5 Semantic Structure | React, Angular, Vue, Next.js | Eliminates heavy node_modules dependencies, Webpack/Vite build steps, and hydration delays. Pure ES6 executes instantaneously in any modern browser with zero build pipeline friction. |
 | **Styling & Design System** | Vanilla CSS3 (Custom Design Tokens, Flexbox, CSS Grid, Glassmorphism) | Tailwind CSS, Bootstrap, Material UI | Total control over typography, custom micro-meters, glassmorphism cards, and responsive sidebar filters without CSS purging bugs or framework version incompatibilities. |
@@ -99,10 +99,33 @@ $$
 * **Key Class**: `SourcingOptimizer`
 * **Algorithm**:
   - Builds an optimization model using `pulp.LpProblem("TrendWear_Sourcing_Optimization", pulp.LpMinimize)`.
-  - Defines continuous decision variables $x_{s, f, t} \ge 0$ (allocated meters) and binary indicators $y_{s, f, t} \in \{0, 1\}$ (order placement).
-  - Enforces capacity upper bounds: $x_{s, f, t} \le \text{MaxCapacity}_{s, f, t} \cdot y_{s, f, t}$.
-  - Enforces minimum order quantities: $x_{s, f, t} \ge \text{MOQ}_{s, f} \cdot y_{s, f, t}$.
-  - Backward schedules PO release dates: $\text{PO Release Week} = \text{Target Delivery Week} - \text{Lead Time}$.
+  - Defines continuous decision variables and binary indicators:
+
+$$
+x_{s, f, t} \ge 0 \quad \text{(allocated meters)}
+$$
+
+$$
+y_{s, f, t} \in \{0, 1\} \quad \text{(order placement)}
+$$
+
+  - Enforces capacity upper bounds:
+
+$$
+x_{s, f, t} \le \text{MaxCapacity}_{s, f, t} \cdot y_{s, f, t}
+$$
+
+  - Enforces minimum order quantities:
+
+$$
+x_{s, f, t} \ge \text{MOQ}_{s, f} \cdot y_{s, f, t}
+$$
+
+  - Backward schedules PO release dates:
+
+$$
+\text{PO Release Week} = \text{Target Delivery Week} - \text{Lead Time}
+$$
 * **Solver Benchmark**: Average solve time = **0.062 seconds** across 150 decision variables.
 
 ---
@@ -156,7 +179,7 @@ $$
 * **Purpose**: High-speed interactive What-If simulation engine.
 * **Key Class**: `ScenarioSimulator`
 * **Key Methods**:
-  - `run_scenario(category, demand_pct_change, fabric_lead_time_delay, s004_capacity_pct) -> Dict`: Clones baseline in-memory state, applies parametric shocks, re-runs MRP and PuLP optimization, and returns before/after variance deltas in $<0.08\text{ seconds}$.
+  - `run_scenario(category, demand_pct_change, fabric_lead_time_delay, s004_capacity_pct) -> Dict`: Clones baseline in-memory state, applies parametric shocks, re-runs MRP and PuLP optimization, and returns before/after variance deltas in &lt; 0.08 seconds.
 
 ---
 
