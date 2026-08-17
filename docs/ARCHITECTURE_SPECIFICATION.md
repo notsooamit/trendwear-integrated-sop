@@ -79,9 +79,17 @@ flowchart TD
 * **Key Class**: `MRPEngine`
 * **Mathematical Methods**:
   - `compute_gross_requirements(demand_df, bom_df) -> pd.DataFrame`:
-$$\text{GrossMeters}_{f, t} = \sum_{s} \text{DemandUnits}_{s, t} \times \text{Usage}_{s, f} \times (1 + \text{Scrap}_{s, f})$$
+
+$$
+\text{GrossMeters}_{f, t} = \sum_{s} \text{DemandUnits}_{s, t} \times \text{Usage}_{s, f} \times (1 + \text{Scrap}_{s, f})
+$$
+
   - `net_requirements(gross_df, inventory_df, fabric_df) -> pd.DataFrame`:
-$$\text{NetMeters}_{f, t} = \max(0, \text{GrossMeters}_{f, t} + \text{SafetyStock}_f - \text{OnHand}_f - \text{Inbound}_f)$$
+
+$$
+\text{NetMeters}_{f, t} = \max(0, \text{GrossMeters}_{f, t} + \text{SafetyStock}_f - \text{OnHand}_f - \text{Inbound}_f)
+$$
+
 * **Output**: 450 fabric-period requirement rows with deficit indicator flags.
 
 ---
@@ -115,8 +123,14 @@ $$\text{NetMeters}_{f, t} = \max(0, \text{GrossMeters}_{f, t} + \text{SafetyStoc
 * **Key Methods**:
   - `classify_movers(sell_through_df, inventory_df) -> pd.DataFrame`: Calculates Weeks of Stock (WOS) and assigns styles to `FAST_MOVER`, `NORMAL_MOVER`, or `SLOW_MOVER`.
   - `simulate_markdown_impact(sku_id, discount_pct) -> Dict`: Simulates promotional price elasticity curve:
-$$\text{Clearance Ratio} = \min(1.0, 0.20 + (\text{Discount Pct} \times 0.016))$$
-$$\text{Recovered Working Capital} = (\text{Excess Units} \times \text{Clearance Ratio}) \times \text{Unit Cost} \times (1 - \text{Discount Pct})$$
+
+$$
+\text{Clearance Ratio} = \min(1.0, 0.20 + (\text{Discount Pct} \times 0.016))
+$$
+
+$$
+\text{Recovered Working Capital} = (\text{Excess Units} \times \text{Clearance Ratio}) \times \text{Unit Cost} \times (1 - \text{Discount Pct})
+$$
 
 ---
 
