@@ -10,6 +10,7 @@ The TrendWear Integrated S&OP platform is engineered as a decoupled, multi-tiere
 ```mermaid
 flowchart LR
     subgraph CLIENT_TIER ["Client Presentation Tier (Browser)"]
+        direction TB
         UI1["Role-Segmented Navigation: Executive, Planner, Procurement, Production, Logistics"]
         UI2["Dynamic Multi-Vendor Sourcing Sliders & Fabric Selector"]
         UI3["Dynamic SKU Markdown Elasticity Controller"]
@@ -19,6 +20,7 @@ flowchart LR
     end
 
     subgraph SERVER_TIER ["Application & API Gateway Tier (Python 3.10+)"]
+        direction TB
         S1["Multi-Threaded HTTP Server: ThreadedHTTPServer & SOPHandler"]
         S2["REST API Routing Gateway: 14 Endpoints"]
         S3["Cache-Control & Security Headers Layer"]
@@ -26,6 +28,7 @@ flowchart LR
     end
 
     subgraph ENGINE_TIER ["Computational & Optimization Engine Tier"]
+        direction TB
         E1["Data Loader: Relational Join & Cache Manager"]
         E2["MRP Engine: Multi-Echelon BOM Explosion"]
         E3["Sourcing Optimizer: PuLP Mixed-Integer Linear Program (MILP)"]
@@ -38,6 +41,7 @@ flowchart LR
     end
 
     subgraph DATA_TIER ["Relational Data & File Storage Tier"]
+        direction TB
         D1["Master Datasets: 8 CSV Schemas in data/master/"]
         D2["Transactional Feeds: 7 CSV Schemas in data/demand, data/production, etc."]
         D3["Generated Artifacts: S&OP Plans in data/outputs/"]
