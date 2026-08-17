@@ -37,7 +37,7 @@ Design and build an enterprise-grade, deterministic **Strategic Sourcing & Multi
 Create a `scripts/generate_synthetic_data.py` script that deterministically populates the following 13 relational CSV datasets in `data/`:
 
 ### 3.1 Master Data Layer (`data/master/`)
-1. `material_master.csv`: `material_id` (MAT_001 to MAT_040), `material_name`, `category` (*Structural Steel, Aluminum Alloys, Polymers & Resins, Electronic Subassemblies, Precision Bearings, Hydraulics, High-Tensile Fasteners, Industrial Composites*), `unit_of_measure` (*kg, meters, units*), `standard_cost_usd` ($5.00 to $450.00), `criticality` (*HIGH, MEDIUM, LOW*). (40 rows)
+1. `material_master.csv`: `material_id` (MAT_001 to MAT_040), `material_name`, `category` (*Structural Steel, Aluminum Alloys, Polymers & Resins, Electronic Subassemblies, Precision Bearings, Hydraulics, High-Tensile Fasteners, Industrial Composites*), `unit_of_measure` (*kg, meters, units*), `standard_cost_usd` ($5.00 to $450.00 USD), `criticality` (*HIGH, MEDIUM, LOW*). (40 rows)
 2. `supplier_master.csv`: `supplier_id` (SUP_001 to SUP_012), `supplier_name`, `country` (*USA, Germany, Japan, South Korea, Mexico, Vietnam, India, Taiwan*), `tier` (*Tier-1, Tier-2*), `base_financial_risk_score` (1.0 to 5.0), `iso_certified` (*TRUE/FALSE*). (12 rows)
 3. `plant_master.csv`: `plant_id` (PLANT_01 to PLANT_05), `plant_name`, `location` (*Detroit, Munich, Monterrey, Tokyo, Chennai*), `weekly_assembly_capacity_units` (8,000 to 25,000 units). (5 rows)
 4. `bom_direct_materials.csv`: `sku_id` (SKU_001 to SKU_030), `material_id`, `usage_qty_per_unit`, `scrap_allowance_pct` (0.02 to 0.08). (120 rows)

@@ -1,298 +1,219 @@
-# Strategic Sourcing & Multi-Supplier Allocation Platform
-## Document 2: Core Business Flows, Optimization Formulations and Decision Framework
+# TitanMfg™ Strategic Sourcing & Multi-Supplier Allocation Platform
+## Document 2: Core Business Flows, Mathematical Formulations, and Decision Framework
 
 ---
 
-### 1. Executive Summary and Problem Formulation
+### 1. Executive Summary & Problem Statement
 
-#### 1.1 Business Context
-Global industrial manufacturing enterprises procure a diverse portfolio of direct raw materials, structural commodities, precision subassemblies, and specialized components across multiple operating assembly plants. Managing this supply ecosystem requires balancing landed procurement costs, supplier capacity limitations, lead-time dynamics, quality defect rates, and contractual diversification commitments.
+**TitanMfg™ Strategic Sourcing Platform** orchestrates direct raw material procurement across 40 industrial material codes, 12 certified global suppliers, and 5 assembly manufacturing plants over a 12-week operational planning horizon.
 
-#### 1.2 Core Operational Challenges
-1. **Material-Supplier Capability Disconnects**: In industrial manufacturing, suppliers possess specialized manufacturing capabilities, tooling, and certifications. *Not every supplier can supply every material category*. Allocating demand to an uncertified or unqualified supplier results in immediate production halts.
-2. **Cost vs. Reliability and Quality Trade-offs**: Selecting lowest-unit-cost vendors frequently leads to high lead-time variance, elevated parts-per-million (PPM) defect rates, and poor On-Time Delivery (OTD), which triggers downstream assembly plant shutdowns and emergency expedited freight expenses.
-3. **Single-Source Concentration Vulnerability**: Over-allocating volume to a single low-cost vendor exposes manufacturing hubs to catastrophic disruptions in the event of factory fires, regional labor strikes, or financial insolvency.
-4. **Contractual and Capacity Boundaries**: Procurement teams must satisfy contractually mandated minimum volume commitments (to preserve secondary sourcing relationships) while respecting vendor Maximum Weekly Production Capacities and contract Minimum Order Quantities (MOQs).
-5. **Reactive Delay Management**: Delivery delays are traditionally identified only after confirmed dispatch dates have been missed. Procurement requires pre-release predictive risk modeling to proactively split purchase order volumes before release.
-
-#### 1.3 Expected Strategic Outcomes
-- **Deterministic Multi-Objective Allocation**: Optimally allocate procurement volumes across certified global suppliers using Mixed-Integer Linear Programming (MILP).
-- **Landed Cost Minimization with Quality and Capacity Safeguards**: Minimize total landed cost (purchase price + freight + setup overhead) while enforcing quality thresholds ($\text{PPM} \le 250$), delivery reliability bounds ($\text{OTD} \ge 90\%$), and vendor capacity caps.
-- **Contractual Diversification and Anti-Concentration**: Enforce contractual share bands (e.g., minimum 15% allocation for qualified secondary suppliers, maximum 60% cap on primary suppliers) to maintain resilient dual/multi-sourcing.
-- **Pre-PO Predictive Delivery Delay Classification**: Compute pre-release delivery delay probabilities using supplier historical variance, plant backlog utilization, and logistics risk indicators.
-- **Interactive Disruption Simulation**: Perform real-time What-If stress tests for supplier shutdowns ($-100\%$ capacity), plant demand surges ($+50\%$), and logistics transit shocks ($+3\text{ weeks}$).
+In industrial manufacturing, strategic sourcing operates under multi-dimensional trade-offs:
+1. **Landed Procurement Cost**: Minimizing contract purchase prices and multimodal freight expenses.
+2. **Operational Continuity & Anti-Concentration**: Eliminating single-point-of-failure vulnerabilities through mandatory split-sourcing and Herfindahl-Hirschman Index (HHI) concentration limits.
+3. **Quality Conformance Ceilings**: Preventing assembly line stoppages by enforcing strict Defect Parts Per Million (≤ 250 PPM) and audit score hurdles (≥ 85).
+4. **Physical Supply Constraints**: Respecting vendor production capacity limits and contract Minimum Order Quantities (MOQs).
+5. **Dynamic Lead-Time Synchronization**: Executing exact backward lead-time scheduling from dock-delivery date back to purchase order release date.
 
 ---
 
-### 2. End-to-End Strategic Sourcing Operational Architecture
+### 2. End-to-End Operational Architecture
 
 ```mermaid
 flowchart TD
-    subgraph STAGE_1 [1. Multi-Plant Demand Aggregation & BOM Netting]
-        D1[Master Production Schedule: 5 Assembly Plants] --> D2[BOM Explosion: 40 Direct Industrial Materials]
-        D2 --> D3[Time-Phased Inventory Netting & Safety Buffers]
-        D3 --> D4[Unconstrained Material Sourcing Requirement Vector]
+    subgraph STAGE1 ["1. Multi-Plant Demand Aggregation & MRP Netting"]
+        D1["Plant Gross Demand Forecast"] --> D2["BOM Usage & Machining Scrap Explosion"]
+        D2 --> D3["Time-Phased Inventory Netting & Safety Buffers"]
+        D3 --> D4["Net Sourcing Requirements (NetReq)"]
     end
 
-    subgraph STAGE_2 [2. Supplier Qualification & Performance Auditing]
-        S1[Approved Supplier Master: 12 Global Vendors] --> S2[Material-Supplier Capability & Certification Matrix]
-        S1 --> S3[Historical On-Time Delivery OTD %]
-        S1 --> S4[Quality Defect PPM & Incoming Rejection Rates]
-        S2 & S3 & S4 --> S5[Qualified Sourcing Eligibility & Composite Risk Index]
+    subgraph STAGE2 ["2. Supplier Capability & Performance Auditing"]
+        S1["Supplier Capability Matrix (Certified Pairs)"] --> S2["Historical OTD % & Defect PPM Telemetry"]
+        S2 --> S3["Composite Risk Index R_s & Audit Scores"]
     end
 
-    subgraph STAGE_3 [3. Multi-Objective Mixed-Integer Linear Programming Solver]
-        D4 & S5 --> OPT[PuLP MILP Sourcing Optimization Engine]
-        C1[Supplier Maximum Capacity & Contract MOQs] --> OPT
-        C2[Contract Minimum & Maximum Share Bands] --> OPT
-        C3[Supplier Material Pricing & Freight Matrices] --> OPT
-        
-        OPT --> R1[Optimal Volume Allocation Schedule: kg / meters / units per Vendor]
-        OPT --> R2[Landed Cost vs. Risk Frontier Curve]
-        OPT --> R3[Contract Commitment Compliance Ledger]
+    subgraph STAGE3 ["3. PuLP Mixed-Integer Linear Programming (MILP) Solver"]
+        D4 --> OPT["Global Multi-Objective MILP Optimization Model"]
+        S1 --> OPT
+        S3 --> OPT
+        OPT --> SOL["Solved Optimal Allocation Schedule & Backward Lead-Time Release"]
     end
 
-    subgraph STAGE_4 [4. Pre-PO Predictive Delay & Contingency Allocation]
-        R1 --> P1[Pre-Release Delay Probability Classifier]
-        P1 --> P2{Delay Probability > 35% Threshold?}
-        P2 -- Yes --> P3[Trigger Split-Sourcing Contingency Buffer]
-        P2 -- No --> P4[Approve Direct PO Dispatch Schedule]
+    subgraph STAGE4 ["4. Pre-PO Predictive Delivery Delay Radar"]
+        SOL --> PRED["Logistic Regression Delay Classifier P(Delay)"]
+        PRED --> ALERT["Red / Amber / Green Risk Classification & Mitigation Rebalancing"]
     end
 
-    subgraph STAGE_5 [5. Executive Procurement Committee Award & ERP Commitment]
-        P3 & P4 --> E1[Executive Sourcing Cockpit & Scenario Simulator]
-        E1 --> E2[Consolidated Procurement Spend Waterfall]
-        E2 --> E3[Formal PO Schedule Dispatched to ERP / MES]
+    subgraph STAGE5 ["5. What-If Disruption Simulation & Governance"]
+        ALERT --> SIM["Interactive Scenario Simulator: Outages, Demand Surges, Freight Shocks"]
+        SIM --> GOV["5-Stage Cross-Functional Governance & Cryptographic Audit Ledger"]
     end
 ```
 
 ---
 
-### 3. Detailed Operational Steps and Mathematical Logic
+### 3. Detailed Operational Steps & Mathematical Logic
 
-#### Flow 1: Multi-Plant Material Demand Aggregation and BOM Netting
+#### Flow 1: Multi-Plant Material Demand Aggregation & MRP Netting
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor PlantMgr as Plant Operations Planner
-    participant NettingEngine as Material Netting Module
-    participant DB as Production Database
-    actor SourcingLead as Strategic Sourcing Lead
+##### 1.1. Bill of Materials (BOM) Explosion
+Given weekly assembly requirements for finished SKUs across 5 manufacturing facilities, gross material demand incorporates cutting and machining scrap allowances (2% to 8%):
 
-    PlantMgr->>NettingEngine: Submit weekly Master Production Schedule (Plants P01-P05, Weeks W01-W12)
-    NettingEngine->>DB: Fetch Bill of Materials recipes, scrap allowances, and warehouse stock
-    DB-->>NettingEngine: Return 120 BOM relationships and on-hand inventory levels
-    NettingEngine->>NettingEngine: Execute time-phased explosion: Net = Max(0, Gross + Safety - OnHand - Inbound)
-    NettingEngine-->>SourcingLead: Broadcast Unconstrained Net Material Requirement Matrix (40 Materials)
+```
+GrossDemand[m, p, t] = Sum_k ( ProductionPlan[k, p, t] * UsageQty[k, m] * (1 + ScrapAllowance[k, m]) )
 ```
 
-* **Business Objective**: Transform finished industrial product assembly targets across 5 manufacturing plants into exact raw material and component requirements across 40 direct materials.
-* **Mathematical Formulation**:
-For finished product SKU $k$, direct material $m$, manufacturing plant $p$, and planning week $t$:
+##### 1.2. Time-Phased Inventory Netting
+Net raw material procurement requirements account for physical on-hand warehouse inventory and required safety stock buffers:
 
-$$\text{GrossRequirement}_{m, p, t} = \sum_{k} \left( \text{ProductionSchedule}_{k, p, t} \times \text{BOMUsage}_{k, m} \times (1 + \text{ScrapAllowancePct}_m) \right)$$
+```
+NetReq[m, p, t] = max(0, GrossDemand[m, p, t] + SafetyStock[m, p] - OnHand[m, p] - InTransit[m, p, t])
+```
 
-$$\text{NetRequirement}_{m, p, t} = \max\left(0, \text{GrossRequirement}_{m, p, t} + \text{SafetyStock}_{m, p} - \text{OnHandStock}_{m, p} - \text{ScheduledReceipts}_{m, p, t}\right)$$
+##### 1.3. Inventory Coverage Ratio and Weeks of Supply (WOS)
+To monitor plant stock health before placing purchase orders:
 
-* **Inventory Buffer Coverage Metrics**:
-$$\text{InventoryCoverageRatio}_{m, p} = \left( \frac{\text{OnHandStock}_{m, p} + \text{ScheduledReceipts}_{m, p, t}}{\text{GrossRequirement}_{m, p, t} + \text{SafetyStock}_{m, p}} \right) \times 100$$
+```
+InventoryCoverageRatio[m, p] = OnHand[m, p] / SafetyStock[m, p]
 
-$$\text{WeeksOfSupply}_{m, p} = \frac{\text{OnHandStock}_{m, p}}{\overline{\text{WeeklyDemand}}_{m, p}}$$
+WeeksOfSupply[m, p] = OnHand[m, p] / ( (1/12) * Sum_{t=1..12} GrossDemand[m, p, t] )
+```
 
 ---
 
-#### Flow 2: Supplier Material Capability Matrix and Performance Auditing
+#### Flow 2: Supplier Material Capability Matrix & Performance Auditing
 
-```mermaid
-flowchart LR
-    A[Supplier Registry: 12 Vendors] --> B[Material Capability & Tooling Filter]
-    B --> C{Certified for Material m?}
-    C -- No --> D[Strict Exclusion: Allocation = 0]
-    C -- Yes --> E[Audit Historical Performance Telemetry]
-    
-    E --> F1[Delivery Reliability: OTD %]
-    E --> F2[Quality Performance: Defect PPM]
-    E --> F3[Lead Time Stability: Variance Days]
-    E --> F4[Geopolitical & Financial Risk: 1.0 to 5.0]
-    
-    F1 & F2 & F3 & F4 --> G[Composite Supplier Risk Score R_s]
-    G --> H[PuLP MILP Sourcing Solver Input]
+##### 2.1. Certified Capability Matrix (`C[s, m]`)
+A binary qualification parameter defines whether supplier `s` is certified to produce material `m`:
+- `C[s, m] = 1` if supplier `s` is certified and tooling-validated for material `m`
+- `C[s, m] = 0` otherwise
+
+##### 2.2. Quality Conformance Score (`S_Qual`)
+Quality audit scores combine incoming parts defect rates and annual engineering audits:
+
+```
+S_Qual(s) = 0.50 * (1 - DefectPPM[s] / 1,000,000) + 0.50 * (AuditScore[s] / 100)
 ```
 
-* **Business Objective**: Enforce supplier qualification boundaries (*suppliers can only be allocated materials they are certified and tooled to produce*) and compute empirical reliability scores.
-* **Material Capability Definition**:
-Let $\mathcal{C}_{s, m} \in \{0, 1\}$ be the binary material compatibility parameter:
-$$\mathcal{C}_{s, m} = \begin{cases} 1, & \text{if supplier } s \text{ is certified and approved to manufacture material } m \\ 0, & \text{otherwise} \end{cases}$$
+##### 2.3. Composite Risk Index (`R_s`)
+A unified risk metric weighting delivery variance, financial liquidity, and geopolitical exposure:
 
-* **Supplier Performance Scoring Metrics**:
-  1. **Delivery Reliability Score ($S_{\text{OTD}, s}$)**:
-$$S_{\text{OTD}, s} = \left( \frac{\text{Historical On-Time Deliveries}_s}{\text{Total Historical Shipments}_s} \right) \times 100$$
-
-  2. **Quality Conformance Score ($S_{\text{Qual}, s}$)**:
-$$S_{\text{Qual}, s} = \max\left(0, 100 - \frac{\text{Defective PPM}_s}{50}\right)$$
-
-  3. **Composite Risk Index ($R_s$)**:
-$$R_s = w_{\text{otd}} (100 - S_{\text{OTD}, s}) + w_{\text{qual}} (100 - S_{\text{Qual}, s}) + w_{\text{lt}} (\text{LeadTimeVarianceDays}_s \times 5) + w_{\text{geo}} (\text{FinancialGeoRisk}_s \times 20)$$
-*(where weights $w_{\text{otd}} = 0.35, w_{\text{qual}} = 0.30, w_{\text{lt}} = 0.20, w_{\text{geo}} = 0.15$ and $\sum w_i = 1.0$)*.
+```
+R_s = 0.40 * (1 - OTD[s]) + 0.35 * (LeadTimeVarianceDays[s] / 7.0) + 0.25 * (FinancialRiskScore[s] / 5.0)
+```
 
 ---
 
-#### Flow 3: Multi-Objective Mixed-Integer Linear Programming (MILP) Solver
+#### Flow 3: Multi-Objective Mixed-Integer Linear Programming (PuLP MILP) Solver
 
-```mermaid
-flowchart TD
-    A[Net Sourcing Requirements: 40 Materials, 5 Plants] --> SOLVER[PuLP MILP Sourcing Optimizer]
-    B[Certified Pricing Tiers & Landed Freight Matrix] --> SOLVER
-    C[Supplier Material Compatibility Matrix: C_s,m] --> SOLVER
-    D[Contract Share Bands: Min 15%, Max 60%] --> SOLVER
-    E[Supplier Maximum Capacity & MOQ Bounds] --> SOLVER
-    F[Composite Risk Penalty Factors: R_s] --> SOLVER
+##### 3.1. Decision Variables
+- `x[s, m, p, t] ≥ 0`: Continuous volume of material `m` allocated to supplier `s` for delivery to plant `p` in week `t`.
+- `y[s, m, p, t] ∈ {0, 1}`: Binary order activation indicator (`1` if an order is placed with supplier `s`, `0` otherwise).
 
-    SOLVER --> MIN[Objective: Minimize Total Landed Cost + Risk Penalty + Setup Overhead]
-    MIN --> OUT1[Optimal Volume Allocation: x_s,m,p,t]
-    MIN --> OUT2[Active Supplier Activation Indicators: y_s,m,t]
-    MIN --> OUT3[Spend Distribution, Landed Cost Breakdown & Savings]
+##### 3.2. Objective Function Formulation
+The optimization engine minimizes total landed cost, logistics freight, supplier risk penalties, and fixed PO order processing overhead:
+
+```
+Minimize Z = Sum_{s,m,p,t} [ (UnitPrice[s,m] + FreightCost[s,p]) * x[s,m,p,t]
+                           + lambda_risk * R_s * StandardCost[m] * x[s,m,p,t]
+                           + SetupCost * y[s,m,p,t] ]
 ```
 
-* **Mathematical Optimization Formulation**:
+*Where `lambda_risk = 0.15` is the risk trade-off weighting coefficient.*
 
-  **Decision Variables**:
-  - $x_{s, m, p, t} \ge 0$: Continuous quantity of material $m$ allocated to supplier $s$ for delivery to plant $p$ in week $t$.
-  - $y_{s, m, t} \in \{0, 1\}$: Binary decision variable indicating whether supplier $s$ is actively contracted for material $m$ in week $t$ ($y=1$) or not ($y=0$).
+##### 3.3. Linear Constraints
+1. **Demand Satisfaction**:
+   ```
+   Sum_{s | C[s,m]=1} x[s, m, p, t] = NetReq[m, p, t]    (for all m, p, t)
+   ```
 
-  **Objective Function**:
-$$\min Z = \sum_{s} \sum_{m} \sum_{p} \sum_{t} \left[ \left( \text{UnitPrice}_{s, m} + \text{FreightCost}_{s, p} \right) \cdot x_{s, m, p, t} + \lambda_{\text{risk}} \cdot R_s \cdot x_{s, m, p, t} \right] + \sum_{s} \sum_{m} \sum_{t} \left[ \text{OrderSetupCost}_{s, m} \cdot y_{s, m, t} \right]$$
+2. **Supplier Weekly Production Capacity Limits**:
+   ```
+   Sum_p x[s, m, p, t] <= MaxCapacity[s, m, t] * y[s, m, p, t]    (for all s, m, t)
+   ```
 
-  **Subject to Constraints**:
-  1. **Demand Fulfillment Constraint**:
-$$\sum_{s \in \text{Approved}(m)} x_{s, m, p, t} \ge \text{NetRequirement}_{m, p, t} \quad \forall m, p, t$$
+3. **Contract Minimum Order Quantities (MOQs)**:
+   ```
+   x[s, m, p, t] >= MOQ[s, m] * y[s, m, p, t]    (for all s, m, p, t)
+   ```
 
-  2. **Material Compatibility Restriction**:
-$$x_{s, m, p, t} \le \text{BigM} \cdot \mathcal{C}_{s, m} \quad \forall s, m, p, t$$
-*(Guarantees volume is zero if supplier $s$ is uncertified for material $m$)*.
+4. **Multi-Sourcing Anti-Concentration Share Bands**:
+   ```
+   MinShare[s, m] * NetReq[m, p, t] * y[s, m, p, t] <= x[s, m, p, t] <= MaxShare[s, m] * NetReq[m, p, t]
+   ```
+   *(Typically enforced as `MinShare = 15%`, `MaxShare = 60%` to ensure dual-sourcing resilience).*
 
-  3. **Supplier Maximum Capacity Limit**:
-$$\sum_{p} x_{s, m, p, t} \le \text{MaxCapacity}_{s, m, t} \cdot y_{s, m, t} \quad \forall s, m, t$$
+5. **Quality PPM Threshold**:
+   ```
+   Sum_s ( DefectPPM[s] * x[s, m, p, t] ) <= 250 * NetReq[m, p, t]    (for all m, p, t)
+   ```
 
-  4. **Contract Minimum Order Quantity (MOQ)**:
-$$\sum_{p} x_{s, m, p, t} \ge \text{MOQ}_{s, m} \cdot y_{s, m, t} \quad \forall s, m, t$$
+##### 3.4. Lead-Time Backward PO Scheduling
+Purchase order dispatch dates are calculated backward from the target plant receipt week:
 
-  5. **Contractual Minimum Commitment and Diversification Bands**:
-$$\text{MinCommitmentShare}_{s, m} \cdot \sum_{i} x_{i, m, p, t} \cdot y_{s, m, t} \le x_{s, m, p, t} \le \text{MaxAllocationCap}_{s, m} \cdot \sum_{i} x_{i, m, p, t}$$
-*(e.g., Primary vendor capped at 60% maximum; qualified secondary vendor assigned at least 15% to preserve operational readiness)*.
-
-  6. **Weighted Quality PPM Ceiling**:
-$$\frac{\sum_{s} \left( \text{DefectPPM}_{s, m} \times \sum_p x_{s, m, p, t} \right)}{\sum_s \sum_p x_{s, m, p, t}} \le \text{TargetMaxPPM}_m \quad (\text{e.g., } \le 250\text{ PPM})$$
-
-  7. **Lead-Time Backward Scheduling**:
-$$\text{POReleaseWeek}(s, m, p, t) = t - \left\lceil \frac{\text{LeadTimeDays}_{s, m} + \text{TransitDays}_{s, p}}{7} \right\rceil$$
+```
+POReleaseWeek(s, m, p, t) = t - ceil( (LeadTimeDays[s, m] + TransitDays[s, p]) / 7 )
+```
 
 ---
 
 #### Flow 4: Pre-PO Predictive Delivery Delay Probability Engine
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Solver as Optimization Engine
-    participant Classifier as Predictive Delay Classifier
-    participant Telemetry as Supplier Live Telemetry
-    actor Buyer as Sourcing Category Manager
+##### 4.1. Logistic Regression Delay Scoring Formulation
+Before transmitting POs to ERP/EDI, each allocation is evaluated by a machine learning logistic scoring model predicting the probability of transit delay exceeding 3 days `P(Delay > 3d)`:
 
-    Solver->>Classifier: Send proposed PO volume, supplier ID, required delivery week
-    Classifier->>Telemetry: Query supplier current factory load, transit route status, and variance
-    Telemetry-->>Classifier: Supplier loading = 94.2%, Port congestion factor = Moderate
-    Classifier->>Classifier: Calculate logistic delay probability P(Delay > 3 Days) = 42.6%
-    Classifier-->>Buyer: Trigger Pre-PO High Delay Risk Alert: Recommend 25% Split to Nearshore Supplier
-    Buyer->>Solver: Authorize dual-sourcing contingency split
+```
+z = beta_0 + beta_1 * (1 - OTD[s]) + beta_2 * VarianceDays[s] + beta_3 * TransitDays[s, p] + beta_4 * (1 - LaneReliability[s, p]) + beta_5 * (x[s,m,p,t] / MOQ[s,m])
+
+P(Delay > 3d) = 1 / (1 + exp(-z))
 ```
 
-* **Predictive Delay Model Formulation**:
-Prior to releasing purchase orders, compute the logistic probability that an order will experience a delivery delay exceeding acceptable transit tolerances ($\tau = 3\text{ days}$):
-
-$$P(\text{Delay} > \tau) = \frac{1}{1 + \exp\left(-\left( \beta_0 + \beta_1 \cdot \text{CapacityUtilizationPct}_s + \beta_2 \cdot \text{LeadTimeVarianceDays}_s + \beta_3 \cdot \left(\frac{\text{AllocatedVolume}}{\text{MOQ}}\right) + \beta_4 \cdot \text{GeoRiskScore}_s \right)\right)}$$
-
-* **Automated Action Thresholds**:
-  - $P(\text{Delay}) \le 15.0\% \implies \mathbf{LOW\ RISK\ (GREEN)}$: Automatic Direct PO Dispatch.
-  - $15.0\% < P(\text{Delay}) \le 35.0\% \implies \mathbf{MODERATE\ RISK\ (AMBER)}$: Buffer Transit Window by $+3\text{ Days}$.
-  - $P(\text{Delay}) > 35.0\% \implies \mathbf{HIGH\ RISK\ (RED)}$: Enforce Mandatory Multi-Supplier Split Allocation.
+##### 4.2. Risk Tier Classification & Prescriptive Routing
+| Risk Tier | Probability Threshold | Status Label | Automated Prescriptive Action |
+|---|---|---|---|
+| **GREEN** | `P(Delay) < 0.25` | Low Disruption Risk | Approve standard EDI purchase order release. |
+| **AMBER** | `0.25 <= P(Delay) <= 0.50` | Moderate Lead-Time Variance | Schedule +3 day warehouse buffer or shift to expedited freight. |
+| **RED** | `P(Delay) > 0.50` | Critical Delivery Bottleneck | Trigger split-sourcing reallocation to certified secondary supplier. |
 
 ---
 
 #### Flow 5: Interactive What-If Disruption Simulation & Stress-Testing
 
-```mermaid
-flowchart TD
-    A[Baseline Optimal Sourcing Plan] --> B[Apply Parametric Disruption Shocks]
-    
-    B --> S1[Scenario 1: Supplier Outage - S004 Capacity = 0%]
-    B --> S2[Scenario 2: Plant Demand Surge - Plant P01 +45%]
-    B --> S3[Scenario 3: Global Shipping Delay - Transit +3 Weeks]
-    B --> S4[Scenario 4: Quality Standard Tightening - PPM <= 150]
-    
-    S1 & S2 & S3 & S4 --> C[Execute PuLP MILP Solver]
-    C --> D[Compute Landed Cost Delta, Fill Rate %, and Risk Index]
-    D --> E[Generate Real-Time Contingency Action Plan]
-```
-
-* **Scenario Parameter Controls**:
-  1. **Supplier Shutdown**: Simulate factory shutdown or regional embargo for any selected supplier ($0\%$ to $-100\%$ capacity).
-  2. **Assembly Demand Surge**: Simulate unexpected manufacturing spikes ($0\%$ to $+100\%$ units).
-  3. **Lead-Time Disruption**: Add $+1$ to $+4$ weeks to international transit lanes.
-  4. **Quality Ceiling Filter**: Exclude all vendors exceeding strict defect limits ($\text{PPM} \le 150$).
+Planners simulate macroeconomic shocks in sub-second real time:
+1. **Supplier Shutdown / Outage**: Simulates complete shutdown (`Capacity = 0`) of a Tier-1 vendor (e.g., `SUP_001`). Re-optimizes across remaining certified vendors to evaluate landed spend cost surges.
+2. **Plant Demand Spikes**: Injects +10% to +50% surges across automotive assembly hubs.
+3. **Logistics Bottlenecks**: Adds +1 to +3 weeks of transit delay to trans-Pacific/trans-Atlantic maritime corridors.
+4. **Quality Ceiling Purge**: Disqualifies vendors exceeding 150 PPM, demonstrating quality trade-offs.
 
 ---
 
-#### Flow 6: 5-Stage Strategic Sourcing Governance Cadence
+#### Flow 6: 5-Stage Strategic Sourcing Governance Cadence & Audit Ledger
 
 ```mermaid
 stateDiagram-v2
-    [*] --> DEMAND_AGGREGATION : Stage 1
-    DEMAND_AGGREGATION --> SUPPLIER_SCORECARD : Multi-Plant Demand Signed Off
-    SUPPLIER_SCORECARD --> MILP_OPTIMIZATION : Quality & Capability Audited
-    MILP_OPTIMIZATION --> PREDICTIVE_DELAY_REVIEW : Sourcing Allocation Solved
-    PREDICTIVE_DELAY_REVIEW --> EXECUTIVE_AWARD : Contingency Splits Approved
-    EXECUTIVE_AWARD --> [*] : PO Released to EDI / ERP System
+    [*] --> Stage1_DemandValidation
+    Stage1_DemandValidation --> Stage2_SupplierCapabilityAudit: Plant Materials Lead Sign-Off
+    Stage2_SupplierCapabilityAudit --> Stage3_AllocationOptimization: Quality Assurance Lead Sign-Off
+    Stage3_AllocationOptimization --> Stage4_ExecutiveSignOff: Strategic Sourcing Lead Sign-Off
+    Stage4_ExecutiveSignOff --> Stage5_POReleaseEDI: Chief Procurement Officer CPO Sign-Off
+    Stage5_POReleaseEDI --> [*]: PO Transmitted to ERP/EDI
 ```
 
-* **Governance Stages**:
-  1. **Demand Aggregation**: Plant materials managers review unconstrained BOM explosion and inventory buffers.
-  2. **Supplier Scorecarding**: Quality and procurement teams verify capability matrices, defect PPM, and ISO compliance.
-  3. **MILP Sourcing Optimization**: Algorithmic engine solves cost-risk balance subject to MOQs and contractual share bands.
-  4. **Predictive Delay Review**: Category buyers evaluate pre-PO delivery probabilities and enforce split-sourcing buffers.
-  5. **Executive Award & Lock**: Chief Procurement Officer signs off the reconciled procurement plan with tamper-evident audit timestamps.
+Each stage transition generates a tamper-evident audit record hashed with SHA-256:
+
+```
+AuditHash = SHA256( CycleID || Stage || Approver || Timestamp || FinancialImpact )
+```
 
 ---
 
-### 4. Relational Dataset Mapping and Data Dictionary
+### 4. Cross-Functional RACI Responsibility Matrix
 
-| Layer | File Path | Key Primary / Foreign Keys | Tuples | Description |
+| Sourcing Workflow Step | David Miller (Plant Buyer) | Dr. Aris Thorne (Quality Lead) | Marcus Vance (Category Lead) | Robert Sterling (CPO) |
 |---|---|---|---|---|
-| Master | `data/master/material_master.csv` | `material_id`, `category`, `unit_of_measure` | 40 | Catalog of direct raw materials across 8 categories |
-| Master | `data/master/supplier_master.csv` | `supplier_id`, `supplier_name`, `country`, `tier` | 12 | Approved global industrial supplier registry |
-| Master | `data/master/plant_master.csv` | `plant_id`, `plant_name`, `location`, `capacity` | 5 | Manufacturing assembly plant hubs |
-| Master | `data/master/bom_direct_materials.csv` | `sku_id`, `material_id`, `usage_qty`, `scrap_pct` | 120 | Bill of Materials recipe for finished industrial assemblies |
-| Sourcing | `data/suppliers/supplier_material_pricing.csv`| `supplier_id`, `material_id`, `unit_price`, `moq` | 120 | Certified vendor pricing, MOQs, and lead times |
-| Sourcing | `data/suppliers/supplier_capacity_limits.csv`| `supplier_id`, `material_id`, `period_week`, `cap` | 1,440 | Supplier max weekly production capacity limits |
-| Sourcing | `data/suppliers/supplier_scorecards.csv` | `supplier_id`, `historical_otd_pct`, `defect_ppm` | 12 | Empirical supplier reliability, quality PPM, and risk ratings |
-| Sourcing | `data/suppliers/contract_commitments.csv` | `supplier_id`, `material_id`, `min_share`, `max_share`| 120 | Contractual minimum and maximum allocation share bands |
-| Operational | `data/demand/plant_material_demand.csv` | `material_id`, `plant_id`, `period_week`, `demand` | 2,400 | Weekly material demand forecast across 5 plants |
-| Operational | `data/inventory/current_inventory.csv` | `material_id`, `plant_id`, `on_hand`, `safety_stock` | 200 | Plant warehouse stock balances and safety thresholds |
-| Logistics | `data/logistics/freight_lane_matrix.csv` | `supplier_id`, `plant_id`, `transit_days`, `freight` | 60 | Inter-facility freight cost and transit times |
-| Optimization | `data/outputs/optimized_sourcing_plan.csv`| `material_id`, `supplier_id`, `plant_id`, `alloc` | Dynamic | Solved optimal procurement purchase order plan |
-| Optimization | `data/outputs/predictive_delay_alerts.csv` | `po_id`, `supplier_id`, `delay_prob`, `risk_level` | Dynamic | Pre-PO delivery delay risk predictions and alerts |
-| Optimization | `data/outputs/sourcing_decisions.csv` | `cycle_id`, `stage`, `owner_role`, `decision`, `status`| Dynamic | Auditable executive sourcing decision ledger |
-
----
-
-### 5. Cross-Functional RACI Responsibility Matrix
-
-| Operational Workflow | Plant Materials | Sourcing Category Leads | Quality Engineering | Logistics & Freight | Chief Procurement Officer |
-|---|---|---|---|---|---|
-| **Demand Forecasting & Netting** | **Accountable (A)** | Consulted (C) | Informed (I) | Informed (I) | Informed (I) |
-| **Capability Matrix & Scorecards** | Informed (I) | Responsible (R) | **Accountable (A)** | Informed (I) | Informed (I) |
-| **MILP Sourcing Optimization** | Consulted (C) | **Accountable (A)** | Consulted (C) | Consulted (C) | Approver (A) |
-| **Predictive Delay & Split-Sourcing**| Consulted (C) | **Accountable (A)** | Informed (I) | **Responsible (R)**| Informed (I) |
-| **Contract Share & MOQ Compliance** | Informed (I) | **Accountable (A)** | Informed (I) | Informed (I) | Approver (A) |
-| **Final Sourcing Award & PO Release** | Informed (I) | Responsible (R) | Informed (I) | Informed (I) | **Accountable (A)** |
+| **1. Demand & MRP Netting** | **Accountable (A)** | Informed (I) | Consulted (C) | Informed (I) |
+| **2. Supplier Auditing & Scorecards**| Informed (I) | **Accountable (A)** | Consulted (C) | Informed (I) |
+| **3. Sourcing Allocation & Sliders** | Consulted (C) | Consulted (C) | **Accountable (A)** | Informed (I) |
+| **4. Pre-PO Delay Radar & Split-Sourcing**| Informed (I) | Consulted (C) | **Accountable (A)** | Informed (I) |
+| **5. What-If Disruption Simulation** | Informed (I) | Informed (I) | **Responsible (R)** | **Accountable (A)** |
+| **6. 5-Stage Governance Sign-Off** | Responsible (R) | Responsible (R) | Responsible (R) | **Accountable (A)** |
+| **7. 1-Click PO Release to EDI** | **Accountable (A)** | Informed (I) | Informed (I) | **Accountable (A)** |
