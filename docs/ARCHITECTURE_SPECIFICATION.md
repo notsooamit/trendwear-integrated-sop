@@ -8,7 +8,7 @@
 The TrendWear Integrated S&OP platform is engineered as a decoupled, multi-tiered enterprise web application. It integrates high-performance mathematical optimization, in-memory relational data modeling, and a reactive role-segmented user interface.
 
 ```mermaid
-flowchart TD
+flowchart LR
     subgraph CLIENT_TIER ["Client Presentation Tier (Browser)"]
         UI1["Role-Segmented Navigation: Executive, Planner, Procurement, Production, Logistics"]
         UI2["Dynamic Multi-Vendor Sourcing Sliders & Fabric Selector"]
