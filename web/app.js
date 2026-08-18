@@ -321,16 +321,19 @@ function loadDynamicFabricSliders() {
     const isRisky = v.computed_risk_category === "HIGH";
     const accentCol = isRisky ? "accent-rose-500" : (idx === 0 ? "accent-emerald-500" : "accent-indigo-500");
     const textCol = isRisky ? "text-rose-400" : (idx === 0 ? "text-emerald-400" : "text-indigo-400");
+    const unitCost = Number(v.price_per_meter || v.unit_cost_per_meter || 15.0).toFixed(2);
+    const otdScore = Number(v.otd_score || 0.90);
+    const moqVal = Number(v.minimum_order_qty_meters || v.moq_meters || 2500);
     return `
       <div class="space-y-1">
         <div class="flex justify-between items-center text-xs">
-          <span class="text-slate-300 font-semibold">${v.supplier_name} (${v.supplier_id}):</span>
+          <span class="text-slate-300 font-semibold">${v.supplier_name || v.supplier_id} (${v.supplier_id}):</span>
           <span class="font-mono ${textCol} font-bold dynamic-slider-val" id="dyn-val-${v.supplier_id}">${initialShare}%</span>
         </div>
-        <input type="range" id="dyn-slider-${v.supplier_id}" min="0" max="100" value="${initialShare}" step="5" class="w-full ${accentCol} dynamic-vendor-slider" data-supplier="${v.supplier_id}" data-otd="${v.otd_score}" data-cost="${v.unit_cost_per_meter}" data-moq="${v.moq_meters}" oninput="recalcDynamicSourcingMetrics()">
+        <input type="range" id="dyn-slider-${v.supplier_id}" min="0" max="100" value="${initialShare}" step="5" class="w-full ${accentCol} dynamic-vendor-slider" data-supplier="${v.supplier_id}" data-otd="${otdScore}" data-cost="${unitCost}" data-moq="${moqVal}" oninput="recalcDynamicSourcingMetrics()">
         <div class="flex justify-between items-center text-[10px] font-mono">
-          <span class="text-slate-400">$${v.unit_cost_per_meter}/m • OTD ${(v.otd_score * 100).toFixed(0)}%</span>
-          <span class="text-slate-400" id="dyn-moq-badge-${v.supplier_id}">MOQ: ${v.moq_meters.toLocaleString()}m</span>
+          <span class="text-slate-400">$${unitCost}/m • OTD ${(otdScore * 100).toFixed(0)}%</span>
+          <span class="text-slate-400" id="dyn-moq-badge-${v.supplier_id}">MOQ: ${moqVal.toLocaleString()}m</span>
         </div>
       </div>
     `;
@@ -876,9 +879,9 @@ async function loadProcurementData() {
           <td class="font-mono font-bold text-indigo-300">${s.supplier_id}</td>
           <td>${s.supplier_name}</td>
           <td><span class="badge ${s.supplier_risk_category === 'HIGH' ? 'badge-rose' : 'badge-emerald'}">${s.supplier_risk_category}</span></td>
-          <td class="font-mono font-bold">${s.total_allocated_meters.toLocaleString()}</td>
-          <td class="font-mono text-emerald-400">$${s.total_purchase_cost.toLocaleString()}</td>
-          <td class="font-mono">${s.mean_risk_score.toFixed(1)}</td>
+          <td class="font-mono font-bold">${Number(s.total_allocated_meters || 0).toLocaleString()}</td>
+          <td class="font-mono text-emerald-400">$${Number(s.total_purchase_cost || 0).toLocaleString()}</td>
+          <td class="font-mono">${Number(s.mean_risk_score || 0).toFixed(1)}</td>
         </tr>
       `).join("");
     } catch (e) {
@@ -917,11 +920,9 @@ async function loadProcurementData() {
       tbodyPO.innerHTML = data.procurement_plan.map(p => `
         <tr>
           <td class="font-mono font-semibold">${p.fabric_id}</td>
-        <td>${p.supplier_name}</td>
-        <td class="font-mono">${p.period}</td>
           <td>${p.supplier_name}</td>
           <td class="font-mono">${p.period}</td>
-          <td class="font-mono font-bold">${p.recommended_order_qty.toLocaleString()}</td>
+          <td class="font-mono font-bold">${Number(p.recommended_order_qty || 0).toLocaleString()}</td>
           <td class="font-mono">$${p.unit_price}</td>
           <td class="font-mono text-emerald-400">$${p.purchase_cost.toLocaleString()}</td>
           <td class="font-mono text-amber-300 font-bold">${p.po_release_week}</td>

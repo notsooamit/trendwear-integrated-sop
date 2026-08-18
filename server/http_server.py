@@ -159,15 +159,23 @@ class SOPHandler(SimpleHTTPRequestHandler):
                     
                     # Full supplier-fabric pricing matrix for dynamic dropdowns
                     sup_pricing = loader.supplier_pricing
+                    sup_contracts = loader.supplier_contracts
                     sup_m = optimizer.compute_supplier_risk_scores()
                     fab_m = loader.fabric_master
+                    
                     merged_pricing = sup_pricing.merge(
                         sup_m[["supplier_id", "supplier_name", "otd_score", "quality_score", "risk_score", "computed_risk_category"]],
                         on="supplier_id", how="left"
                     ).merge(
                         fab_m[["fabric_id", "fabric_name", "criticality"]],
                         on="fabric_id", how="left"
+                    ).merge(
+                        sup_contracts[["supplier_id", "fabric_id", "minimum_order_qty_meters", "maximum_allocation_pct"]],
+                        on=["supplier_id", "fabric_id"], how="left"
                     )
+                    
+                    merged_pricing["unit_cost_per_meter"] = merged_pricing["price_per_meter"]
+                    merged_pricing["moq_meters"] = merged_pricing["minimum_order_qty_meters"].fillna(2500).astype(int)
 
                     self._send_json({
                         "procurement_plan": opt_df.to_dict("records"),
