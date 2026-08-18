@@ -28,7 +28,7 @@ P003,W02,18000,13578,0,4422,Asia Pacific MegaPlant,Asia-Pacific,High Volume Appa
 P003,W03,18000,12520,1000,4480,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,69.6,0,OPTIMAL
 P003,W04,18000,15303,500,2197,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17500,85.0,0,OPTIMAL
 P003,W05,18000,13052,1000,3948,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,72.5,0,OPTIMAL
-P003,W06,18000,12000,1000,0,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,66.7,0,OPTIMAL
+P003,W06,18000,10560,1000,0,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,58.7,0,UNDER_UTILIZED
 P003,W07,18000,13616,1000,3384,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,75.6,0,OPTIMAL
 P003,W08,18000,12770,1000,4230,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,17000,70.9,0,OPTIMAL
 P003,W09,18000,13839,0,4161,Asia Pacific MegaPlant,Asia-Pacific,High Volume Apparel,18000,0.12,18000,76.9,0,OPTIMAL
@@ -40,7 +40,7 @@ P004,W02,8500,6634,0,1866,Latin America Production,Latin America,Flexible Quick-
 P004,W03,8500,6010,1000,1490,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,70.7,0,OPTIMAL
 P004,W04,8500,6078,500,1922,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8000,71.5,0,OPTIMAL
 P004,W05,8500,6095,0,2405,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,71.7,0,OPTIMAL
-P004,W06,8500,8128,0,2233,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,95.6,0,HIGH_UTILIZATION
+P004,W06,8500,9568,0,2233,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,112.6,1068,OVERLOADED
 P004,W07,8500,6051,1000,1449,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,71.2,0,OPTIMAL
 P004,W08,8500,6166,0,2334,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,8500,72.5,0,OPTIMAL
 P004,W09,8500,5956,1000,1544,Latin America Production,Latin America,Flexible Quick-Turn,8500,0.2,7500,70.1,0,OPTIMAL
