@@ -870,59 +870,73 @@ async function loadProcurementData() {
 
   const tbodyAlloc = document.querySelector("#supplier-alloc-table tbody");
   if (tbodyAlloc) {
-    tbodyAlloc.innerHTML = data.supplier_allocation_summary.map(s => `
-      <tr>
-        <td class="font-mono font-bold text-indigo-300">${s.supplier_id}</td>
-        <td>${s.supplier_name}</td>
-        <td><span class="badge ${s.supplier_risk_category === 'HIGH' ? 'badge-rose' : 'badge-emerald'}">${s.supplier_risk_category}</span></td>
-        <td class="font-mono font-bold">${s.total_allocated_meters.toLocaleString()}</td>
-        <td class="font-mono text-emerald-400">$${s.total_purchase_cost.toLocaleString()}</td>
-        <td class="font-mono">${s.mean_risk_score.toFixed(1)}</td>
-      </tr>
-    `).join("");
+    try {
+      tbodyAlloc.innerHTML = data.supplier_allocation_summary.map(s => `
+        <tr>
+          <td class="font-mono font-bold text-indigo-300">${s.supplier_id}</td>
+          <td>${s.supplier_name}</td>
+          <td><span class="badge ${s.supplier_risk_category === 'HIGH' ? 'badge-rose' : 'badge-emerald'}">${s.supplier_risk_category}</span></td>
+          <td class="font-mono font-bold">${s.total_allocated_meters.toLocaleString()}</td>
+          <td class="font-mono text-emerald-400">$${s.total_purchase_cost.toLocaleString()}</td>
+          <td class="font-mono">${s.mean_risk_score.toFixed(1)}</td>
+        </tr>
+      `).join("");
+    } catch (e) {
+      tbodyAlloc.innerHTML = `<tr><td colspan="6" class="text-rose-500 font-bold p-4">JS Error in Alloc Table: ${e.message}</td></tr>`;
+    }
   }
 
   const ctx = document.getElementById("chart-supplier-share");
   if (ctx) {
-    if (charts.supplierShare) charts.supplierShare.destroy();
-    charts.supplierShare = new Chart(ctx, {
-      type: "doughnut",
-      data: {
-        labels: data.supplier_allocation_summary.map(s => s.supplier_name),
-        datasets: [{
-          data: data.supplier_allocation_summary.map(s => s.total_allocated_meters),
-          backgroundColor: ["#6366f1", "#10b981", "#ec4899", "#f59e0b", "#8b5cf6", "#3b82f6", "#14b8a6", "#f43f5e"],
-          borderWidth: 0
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 9 } } } }
-      }
-    });
+    try {
+      if (charts.supplierShare) charts.supplierShare.destroy();
+      charts.supplierShare = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: data.supplier_allocation_summary.map(s => s.supplier_name),
+          datasets: [{
+            data: data.supplier_allocation_summary.map(s => s.total_allocated_meters),
+            backgroundColor: ["#6366f1", "#10b981", "#ec4899", "#f59e0b", "#8b5cf6", "#3b82f6", "#14b8a6", "#f43f5e"],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 9 } } } }
+        }
+      });
+    } catch (e) {
+      console.error("Chart Error:", e);
+    }
   }
 
   const tbodyPO = document.querySelector("#procurement-plan-table tbody");
   if (tbodyPO) {
-    tbodyPO.innerHTML = data.procurement_plan.map(p => `
-      <tr>
-        <td class="font-mono font-semibold">${p.fabric_id}</td>
+    try {
+      tbodyPO.innerHTML = data.procurement_plan.map(p => `
+        <tr>
+          <td class="font-mono font-semibold">${p.fabric_id}</td>
         <td>${p.supplier_name}</td>
         <td class="font-mono">${p.period}</td>
-        <td class="font-mono font-bold">${p.recommended_order_qty.toLocaleString()}</td>
-        <td class="font-mono">$${p.unit_price}</td>
-        <td class="font-mono text-emerald-400">$${p.purchase_cost.toLocaleString()}</td>
-        <td class="font-mono text-amber-300 font-bold">${p.po_release_week}</td>
-        <td class="font-mono text-indigo-300">${p.expected_arrival_week}</td>
-        <td><span class="badge ${p.delivery_risk === 'HIGH' ? 'badge-rose' : 'badge-emerald'}">${p.delivery_risk}</span></td>
-        <td>
-          <button class="px-2 py-0.5 rounded bg-indigo-600/30 hover:bg-indigo-600 text-indigo-200 text-[10px] font-semibold transition" onclick="openPOModalFor('${p.supplier_id}', '${p.supplier_name}', '${p.fabric_id}', 'Raw Fabric', ${p.recommended_order_qty}, ${p.unit_price}, '${p.expected_arrival_week}')">
-            Generate PO
-          </button>
-        </td>
-      </tr>
-    `).join("");
+          <td>${p.supplier_name}</td>
+          <td class="font-mono">${p.period}</td>
+          <td class="font-mono font-bold">${p.recommended_order_qty.toLocaleString()}</td>
+          <td class="font-mono">$${p.unit_price}</td>
+          <td class="font-mono text-emerald-400">$${p.purchase_cost.toLocaleString()}</td>
+          <td class="font-mono text-amber-300 font-bold">${p.po_release_week}</td>
+          <td class="font-mono text-indigo-300">${p.expected_arrival_week}</td>
+          <td><span class="badge ${p.delivery_risk === 'HIGH' ? 'badge-rose' : 'badge-emerald'}">${p.delivery_risk}</span></td>
+          <td>
+            <button class="px-2 py-0.5 rounded bg-indigo-600/30 hover:bg-indigo-600 text-indigo-200 text-[10px] font-semibold transition" onclick="openPOModalFor('${p.supplier_id}', '${p.supplier_name}', '${p.fabric_id}', 'Raw Fabric', ${p.recommended_order_qty}, ${p.unit_price}, '${p.expected_arrival_week}')">
+              Generate PO
+            </button>
+          </td>
+        </tr>
+      `).join("");
+    } catch (e) {
+      tbodyPO.innerHTML = `<tr><td colspan="10" class="text-rose-500 font-bold p-4">JS Error in PO Table: ${e.message}</td></tr>`;
+    }
   }
 }
 
