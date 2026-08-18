@@ -4,7 +4,7 @@
  */
 
 const API_BASE = window.location.origin.includes("localhost") || window.location.origin.includes("127.0.0.1")
-  ? "http://localhost:8000/api"
+  ? "http://localhost:5000/api"
   : `${window.location.origin}/api`;
 let currentView = "landing";
 let activeRole = "executive";
