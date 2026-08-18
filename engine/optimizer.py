@@ -136,11 +136,15 @@ class SourcingOptimizer:
                 # Linking MOQ & Cap Constraints
                 prob += order_vars[key] >= c_info["moq"] * use_vars[key]
                 prob += order_vars[key] <= max(avail_cap, c_info["moq"]) * use_vars[key]
-                prob += order_vars[key] <= c_info["max_alloc"] * (net_need * 1.5) * use_vars[key]
+                
+                # Allow exceeding max_alloc if we are forced to buy MOQ
+                upper_limit = max(c_info["moq"], c_info["max_alloc"] * (net_need * 1.5))
+                prob += order_vars[key] <= upper_limit * use_vars[key]
 
             # Demand coverage for this need
             prob += pulp.lpSum(pair_order_vars) >= net_need
-            prob += pulp.lpSum(pair_order_vars) <= net_need * 1.6
+            # We rely on objective function (minimize cost) to prevent excessive overbuying.
+            # Removed arbitrary upper bound that causes infeasibility when net_need < MOQ.
 
         # Objective Function: Sum of all (Price + Risk Penalty + Lead Time Penalty)
         objective_terms = []
