@@ -4,19 +4,31 @@ Loads and validates all relational CSV datasets from the data directory.
 """
 
 import os
+import sqlite3
 import pandas as pd
-from typing import Dict
+from typing import Dict, List, Any
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_DIR = os.path.join(DATA_DIR, "outputs")
+DB_PATH = os.path.join(DATA_DIR, "trendwear_sop.db")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
 class DataLoader:
     def __init__(self, data_dir: str = DATA_DIR):
         self.data_dir = data_dir
+        self.db_path = os.path.join(self.data_dir, "trendwear_sop.db")
         self._cache: Dict[str, pd.DataFrame] = {}
+
+    def get_db_connection(self) -> sqlite3.Connection:
+        """Returns a live sqlite3 connection to the data/trendwear_sop.db database."""
+        return sqlite3.connect(self.db_path)
+
+    def query_sql(self, query: str, params: tuple = ()) -> pd.DataFrame:
+        """Executes a SQL query directly against the SQLite database and returns a DataFrame."""
+        with self.get_db_connection() as conn:
+            return pd.read_sql_query(query, conn, params=params)
 
     def get_table(self, relative_path: str) -> pd.DataFrame:
         if relative_path not in self._cache:
